@@ -16,8 +16,17 @@ const ImagesAnimate = ({
 }) => {
   const [handleAnimationIMAGES, setHandleAnimationIMAGES] = useState(true)
   const cardRef = useRef<HTMLImageElement | null>(null)
+  const [isMobile , setIsMobile] = useState(false)
   const [a, setA] = useState<any>()
   const [b, setB] = useState<any>()
+  const [c, setC] = useState<any>()
+
+  useEffect(() => {
+      var largura = window.screen.width;
+      if(largura > 600){
+        setIsMobile(true)
+      }
+  },[])
 
   const handleScrollMove = () => {
     const scrollPosition = window.pageYOffset
@@ -34,6 +43,22 @@ const ImagesAnimate = ({
   }, [])
 
   const dampen = 60
+
+  useEffect(() => {
+    if(isMobile){
+        window.addEventListener('deviceorientation', handleMobileMove)
+    }
+  }, [isMobile])
+  
+
+  const handleMobileMove = (e:any ) => {
+    const r = e.rotationRate;
+    console.log(e)
+    const initialOrientation =  Object.assign({}, r); // first time
+    setA(r?.alpha - initialOrientation.alpha)
+    setB(r?.beta - initialOrientation.beta)
+    setC(r?.gamma - initialOrientation.gamma)
+  }
 
   const handleMouseMove = (e: MouseEvent) => {
     if (!cardRef.current) return 0
@@ -85,7 +110,7 @@ const ImagesAnimate = ({
       <motion.div
         variants={variants}
         className="w-full max-lg:flex max-lg:justify-center"
-        style={{ rotateX: a, rotateY: b }}
+        style={{ rotateX: a, rotateY: b, rotateZ: c}}
       >
         <Image
           ref={cardRef}
