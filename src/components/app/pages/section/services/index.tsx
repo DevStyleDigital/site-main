@@ -20,7 +20,7 @@ const ServicesSection = () => {
               <HeaderSection.Path>
                 <span className="font-extrabold text-[1rem] tracking-widest text-[#FEC90C] max-lg:text-[.8rem]">
                   //
-                </span>
+                </span>{' '}
                 01 . Serviços
               </HeaderSection.Path>
               <HeaderSection.Title asChild>

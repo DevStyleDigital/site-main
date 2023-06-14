@@ -17,7 +17,7 @@ const Process = () => {
             <HeaderSection.Path dark>
               <span className="font-extrabold text-[1rem] tracking-widest text-[#5956E8]">
                 //
-              </span>
+              </span>{' '}
               03 . Processos
             </HeaderSection.Path>
             <HeaderSection.Title asChild>

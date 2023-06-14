@@ -32,7 +32,7 @@ const AboutSection = () => {
                 <HeaderSection.Path dark>
                   <span className="font-extrabold text-[1rem] tracking-widest text-[#FEC90C]">
                     //
-                  </span>
+                  </span>{' '}
                   02 . Sobre nós
                 </HeaderSection.Path>
                 <HeaderSection.Title asChild>

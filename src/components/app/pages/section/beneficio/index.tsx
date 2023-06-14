@@ -20,7 +20,7 @@ const Beneficios = () => {
                 <HeaderSection.Path dark>
                   <span className="font-extrabold text-[1rem] tracking-widest text-[#FEC90C]">
                     //
-                  </span>
+                  </span>{' '}
                   07 . Benefício
                 </HeaderSection.Path>
                 <HeaderSection.Title asChild>

@@ -14,7 +14,7 @@ const Team = () => {
             <HeaderSection.Path dark>
               <span className="font-extrabold text-[1rem] tracking-widest text-[#5956E8]">
                 //
-              </span>
+              </span>{' '}
               06 . Nosso Time
             </HeaderSection.Path>
             <HeaderSection.Title asChild>

@@ -16,7 +16,7 @@ const Witness = () => {
               <HeaderSection.Path dark>
                 <span className="font-extrabold text-[1rem] tracking-widest text-[#FEC90C]">
                   //
-                </span>
+                </span>{' '}
                 04 . Testemunhas
               </HeaderSection.Path>
               <HeaderSection.Title asChild>
