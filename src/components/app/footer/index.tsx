@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
           </div>
           <Link
-            href={'/'}
+            href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
             className="w-full h-full rounded-md bg-green-500 flex justify-center gap-[1rem] items-center footer-card transition-all max-lg:h-[4rem] max-sm:h-[3.5rem] hover:scale-[1.02]"
           >
             <span className="text-secondary_black-950 font-semibold text-[1.1rem] max-lg:text-[1.2rem] max-sm:text-[1rem]">
@@ -55,7 +55,7 @@ const Footer = () => {
                 +55 15 98804 5279
               </span>
               <span className="text-white/50 font-medium text-[.8rem]">
-                afonsobezerra199@gmail.com
+                comercial@devstyle.com.br
               </span>
             </div>
             <div className="flex flex-col gap-[1rem] max-sm:items-center max-sm:text-center">

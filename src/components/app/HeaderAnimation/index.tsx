@@ -183,8 +183,8 @@ const HeaderAnimation = () => {
           mensagem exclusiva.
         </HeroText.SubTitle>
         <HeroText.Buttons>
-          <Button fill>Nossos serviços</Button>
-          <Button>Get Started</Button>
+          <Button fill href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">Nossos serviços</Button>
+          <Button href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">Get Started</Button>
         </HeroText.Buttons>
       </motion.div>
       <motion.div
