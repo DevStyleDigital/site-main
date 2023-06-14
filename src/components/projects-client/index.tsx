@@ -53,7 +53,7 @@ const ProjectCLient = () => {
     >
       <motion.div
         variants={variants}
-        className="h-[30rem] w-[50%] overflow-y-scroll pr-[1rem] scroll-style max-md:w-[95%]"
+        className="h-[30rem] w-[50%] overflow-y-scroll pr-[1rem] scroll-style max-md:w-full"
       >
         <div className="w-full flex flex-col gap-[1rem]">
           {ProjectsArray.map((project) => (
@@ -94,7 +94,7 @@ const ProjectCLient = () => {
       </motion.div>
       <motion.div
         variants={variants}
-        className="h-[25rem] w-[50%] rounded-lg fundo-1 shadow-lg flex justify-center items-center max-md:w-[95%]"
+        className="h-[25rem] w-[50%] rounded-lg fundo-1 shadow-lg flex justify-center items-center max-md:w-full max-md:h-auto  max-md:p-[1rem]"
       >
         <div className="w-auto h-auto rounded-lg shadow-lg ">
           <Image
