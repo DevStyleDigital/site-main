@@ -45,12 +45,9 @@ const ImagesAnimate = ({
   const dampen = 60  
 
   const handleMobileMove = (e:any ) => {
-    const r = e.rotationRate;
-    console.log(e)
-    const initialOrientation =  Object.assign({}, r); // first time
-    setA(r?.alpha - initialOrientation.alpha)
-    setB(r?.beta - initialOrientation.beta)
-    setC(r?.gamma - initialOrientation.gamma)
+    setA(e?.alpha || 0)
+    setB(e?.beta  || 0)
+    setC(e?.gamma || 0)
   }
 
   const handleMouseMove = (e: MouseEvent) => {
