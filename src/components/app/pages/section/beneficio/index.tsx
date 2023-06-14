@@ -25,7 +25,7 @@ const Beneficios = () => {
                 </HeaderSection.Path>
                 <HeaderSection.Title asChild>
                   <h1 className="text-[1.4rem] text-secondary_black-950 font-medium leading-tight max-md:text-[1rem] max-md:w-[90%]">
-                    Benificios de tarbalhar com a DevStyle
+                    Benefícios de trabalhar com a DevStyle
                   </h1>
                 </HeaderSection.Title>
               </div>
