@@ -45,8 +45,8 @@ const ImagesAnimate = ({
 
   const handleMobileMove = (e:any ) => {
     // setA(e?.alpha || 0)
-    setB(e?.beta  || 0)
-    setC(e?.gamma || 0)
+    setB(e?.beta / 2  || 0)
+    setC(e?.gamma / 2 || 0)
   }
 
   const handleMouseMove = (e: MouseEvent) => {
