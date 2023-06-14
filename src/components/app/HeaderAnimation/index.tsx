@@ -170,7 +170,7 @@ const HeaderAnimation = () => {
         <HeroText.Rota>
           <span className="font-extrabold text-[1rem] tracking-widest text-[#FEC90C]">
             //
-          </span>
+          </span>{' '}
           INÍCIO
         </HeroText.Rota>
         <HeroText.Title>
