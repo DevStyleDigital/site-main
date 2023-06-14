@@ -32,7 +32,7 @@ export const WitnessArray: iWitness[] = [
     authorcareer: 'CO',
     commented:
       "Lorem Ipsum has been the industry's standard from dummy text ever since the unknown printer to galley of type and make a type specimen book. ",
-    companyName: 'Lions Ag',
+    companyName: 'Core Ag',
     companyImage: coreImg,
     autorImage:Guilherme
   }
