@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full h-fit min-h-[80vh] flex justify-center py-[4rem] bg-secondary_black-950"
+      className="w-full h-fit flex justify-center py-[4rem] bg-secondary_black-950"
     >
       <div className="w-[60%] h-full flex flex-col gap-[3rem] relative max-2xl:w-[70%] max-xl:w-[80%] max-lg:w-[90%]">
         <HeaderSection.Root>
