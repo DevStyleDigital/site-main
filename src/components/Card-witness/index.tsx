@@ -27,7 +27,7 @@ const CardWitness = ({
       variants={variants}
       className="w-full flex flex-col justify-between p-[2rem] gap-[2rem] h-full card-witness rounded-lg shadow-sm transition-all hover:scale-[1.02]"
     >
-      <div className="w-full h-full p-[2rem] bg-white rounded-md shadow-md flex flex-col gap-[2rem]">
+      <div className="w-full h-full p-[2rem] bg-white rounded-md shadow-md flex flex-col gap-[1rem]">
         <div className="w-full h-[30%] flex justify-between items-center border-b-[1px] border-[#CFCFCF]/40 pb-[1rem] ">
           <div className="flex items-center gap-4">
             <div className="w-[2.5rem] h-[2.5rem] rounded-full">
