@@ -14,6 +14,9 @@ const nunito = Nunito({
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" href="/icon.png" sizes="any" />
+      </head>
       <body className={nunito.className}>
         <SideBarRoot>
           <Header />
