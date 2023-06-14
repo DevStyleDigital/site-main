@@ -24,15 +24,6 @@ const ProjectCLient = () => {
     },
   }
 
-  useEffect(() => {
-    const allBox = document.querySelectorAll('.box-content-projects')
-    allBox.forEach((boxSelect) => {
-      if (boxSelect.classList.contains('active')) {
-        console.log(boxSelect)
-      }
-    })
-  }, [])
-
   function handleActive(identifier: any) {
     const allBox = document.querySelectorAll('.box-content-projects')
     const boxSelect = document.querySelector(`#box-${identifier}`)
