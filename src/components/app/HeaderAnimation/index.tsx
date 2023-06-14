@@ -175,7 +175,7 @@ const HeaderAnimation = () => {
         </HeroText.Rota>
         <HeroText.Title>
           Construindo marcas,
-          <br /> uma história de <span className="text-[#5956E8]">sucesso</span>
+          <br /> uma história de <span className="text-[#5956E8]">sucesso </span>
           por vez.
         </HeroText.Title>
         <HeroText.SubTitle>
