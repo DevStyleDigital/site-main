@@ -17,7 +17,7 @@ const AboutSection = () => {
           max={3000}
           src={About}
           alt="img-about"
-          className="w-[100%] max-lg:w-[60%]"
+          className="w-[100%] max-lg:w-[60%] max-md:w-[80%]"
           width={1280}
           height={1704}
         />
