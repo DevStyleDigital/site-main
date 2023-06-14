@@ -23,7 +23,7 @@ const ImagesAnimate = ({
 
   useEffect(() => {
       var largura = window.screen.width;
-      if(largura > 600){
+      if(largura < 600){
         setIsMobile(true)
       }
   },[])
