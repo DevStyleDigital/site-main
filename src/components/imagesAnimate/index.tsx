@@ -42,14 +42,7 @@ const ImagesAnimate = ({
     window.addEventListener('scroll', handleScrollMove)
   }, [])
 
-  const dampen = 60
-
-  useEffect(() => {
-    if(isMobile){
-        window.addEventListener('deviceorientation', handleMobileMove)
-    }
-  }, [isMobile])
-  
+  const dampen = 60  
 
   const handleMobileMove = (e:any ) => {
     const r = e.rotationRate;
@@ -69,6 +62,14 @@ const ImagesAnimate = ({
     setB(newRotateY / dampen)
   }
 
+  const EventoAddMobile = useCallback(() => {
+    window.addEventListener('deviceorientation', handleMobileMove)
+  }, [])
+
+  const EventoRemoveMobile = useCallback(() => {
+    window.removeEventListener('deviceorientation', handleMobileMove)
+  }, [])
+
   const EventoAdd = useCallback(() => {
     window.addEventListener('mousemove', handleMouseMove)
   }, [])
@@ -76,6 +77,16 @@ const ImagesAnimate = ({
   const EventoRemove = useCallback(() => {
     window.removeEventListener('mousemove', handleMouseMove)
   }, [])
+
+  
+  useEffect(() => {
+    if(isMobile){
+      EventoAddMobile()
+    }
+    else {
+      EventoRemoveMobile()
+    }
+  }, [isMobile])
 
   useEffect(() => {
     if (handleAnimationIMAGES) {
