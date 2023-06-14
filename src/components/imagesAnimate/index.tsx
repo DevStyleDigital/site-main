@@ -47,7 +47,6 @@ const ImagesAnimate = ({
   const handleMobileMove = (e:any ) => {
     setA(e?.alpha || 0)
     setB(e?.beta  || 0)
-    setC(e?.gamma || 0)
   }
 
   const handleMouseMove = (e: MouseEvent) => {
@@ -118,7 +117,7 @@ const ImagesAnimate = ({
       <motion.div
         variants={variants}
         className="w-full max-lg:flex max-lg:justify-center"
-        style={{ rotateX: a, rotateY: b, rotateZ: c}}
+        style={{ rotateX: a, rotateY: b}}
       >
         <Image
           ref={cardRef}
