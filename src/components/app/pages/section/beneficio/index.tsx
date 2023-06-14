@@ -44,7 +44,7 @@ const Beneficios = () => {
             <div className="absolute left-[20%] top-[25%] painel-bg max-md:top-[0%] " />
           </div>
         </div>
-        <div className="w-full h-full flex flex-col gap-[3rem] items-end mt-[1.5rem] max-md:items-center">
+        <div className="w-full h-full flex flex-col gap-[3rem] items-end mt-[1.5rem] max-md:items-center max-sm:mt-[2.5rem]">
           <div className="w-[90%] flex flex-col items-start content">
             <div className="w-full border-b-[1px] border-[#CFCFCF]/80 relative">
               <h1 className="font-bold text-[1.3rem] ml-[6rem] max-sm:text-[1rem]">
