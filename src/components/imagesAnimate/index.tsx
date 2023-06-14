@@ -45,7 +45,7 @@ const ImagesAnimate = ({
 
   const handleMobileMove = (e:any ) => {
     // setA(e?.alpha || 0)
-    setB(e?.beta / 3  || 0)
+    setB(e?.beta   || 0)
     setC(e?.gamma / 3 || 0)
   }
 
