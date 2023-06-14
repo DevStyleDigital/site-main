@@ -4,7 +4,7 @@ export interface iWitness {
   id: number
   companyName: string
   authorName: string
-  autorImage?: string
+  autorImage: StaticImageData
   companyImage: StaticImageData
   authorcareer: string
   commented: string

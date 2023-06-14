@@ -9,7 +9,7 @@ interface CardWitnessProps {
   name: string
   commented: string
   cargo: string
-  imgAuthor?: string
+  imgAuthor: StaticImageData
   variants?: any
 }
 
@@ -20,14 +20,15 @@ const CardWitness = ({
   imgCompany,
   name,
   variants,
+  imgAuthor,
 }: CardWitnessProps) => {
   return (
     <motion.div
       variants={variants}
-      className="w-full flex flex-col justify-between p-[2rem] h-full card-witness rounded-lg shadow-sm transition-all hover:scale-[1.02]"
+      className="w-full flex flex-col justify-between p-[2rem] gap-[2rem] h-full card-witness rounded-lg shadow-sm transition-all hover:scale-[1.02]"
     >
-      <div className="w-full h-[80%] p-[2rem] bg-white rounded-md shadow-md flex flex-col gap-[2rem]">
-        <div className="w-full h-[30%] flex justify-between items-center border-b-[1px] border-[#CFCFCF]/40 max-sm:pb-[1rem] ">
+      <div className="w-full h-full p-[2rem] bg-white rounded-md shadow-md flex flex-col gap-[2rem]">
+        <div className="w-full h-[30%] flex justify-between items-center border-b-[1px] border-[#CFCFCF]/40 pb-[1rem] ">
           <div className="flex items-center gap-4">
             <div className="w-[2.5rem] h-[2.5rem] rounded-full">
               <Image
@@ -56,7 +57,15 @@ const CardWitness = ({
       </div>
       <div className="flex w-full max-sm:justify-between">
         <div className="flex w-full gap-[.8rem] items-center">
-          <div className="w-[3rem] h-[3rem] rounded-full bg-white max-sm:w-[2rem] max-sm:h-[2rem]" />
+          <div className="w-[3rem] h-[3rem] rounded-full max-sm:w-[2rem] max-sm:h-[2rem]">
+              <Image
+                  src={imgAuthor}
+                  className="rounded-full"
+                  alt="img-author"
+                  width={100}
+                  height={100}
+                />
+          </div>
           <div className="flex flex-col">
             <h1 className="font-bold text-[1.1rem] text-[#292930] max-sm:text-[.8rem]">
               {name}

@@ -10,7 +10,7 @@ const CarouselWitness = () => {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.2 }}
-      className="w-full h-[25rem]"
+      className="w-full h-full"
     >
       <Swiper
         grabCursor={true}
@@ -52,6 +52,7 @@ const CarouselWitness = () => {
                 name={witness.authorName}
                 companyName={witness.companyName}
                 imgCompany={witness.companyImage}
+                imgAuthor={witness.autorImage}
               />
             </SwiperSlide>
           )
