@@ -6,9 +6,9 @@ const Process = () => {
   return (
     <section
       id="process"
-      className="w-full h-fit flex justify-center pb-[4rem] bg-background_process  max-lg:min-h-[110vh]"
+      className="w-full h-fit flex justify-center pb-[4rem] bg-background_process min-h-[160vh] 2xl:min-h-[140vh]  max-lg:min-h-[130vh]  max-sm:min-h-[100vh]"
     >
-      <div className="w-[60%] h-auto bg-process flex flex-col items-center p-[4rem] rounded-md  max-2xl:w-[70%] max-xl:w-[80%] max-lg:w-[90%] max-sm:w-[95%] max-sm:p-[1rem]">
+      <div className="w-[60%] h-auto bg-process flex flex-col items-center p-[4rem] rounded-md  max-2xl:w-[70%] max-xl:w-[80%] max-lg:w-[90%] max-sm:w-[95%] max-sm:p-[1rem] max-[320px]:p-[.5rem] max-[320px]:w-full">
         <HeaderSection.Root>
           <div className="flex flex-col items-center gap-[1rem] py-[2rem]">
             <HeaderSection.Icon bgColor="#292930">
