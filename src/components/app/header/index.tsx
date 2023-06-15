@@ -12,7 +12,7 @@ const Header = () => {
     <header className="w-full h-auto flex justify-center items-center px-[2rem] absolute top-0 bg-transparent z-50">
       <div className="flex justify-between max-w-[1400px] items-center w-full border-black-500 pt-[2rem] pb-[.7rem]">
         <h1 className="font-extrabold text-[1.5rem]">{`</> DevStyle`}</h1>
-        <ul className="flex items-center gap-[2rem] max-md:hidden">
+        <ul className="flex items-center gap-[2rem] max-md:hidden max-lg:gap-[1.5rem]">
           {NavsItems.map((item) => {
             return (
               <li
