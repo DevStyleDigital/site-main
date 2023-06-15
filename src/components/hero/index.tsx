@@ -19,7 +19,7 @@ const Hero = ({
 }) => {
   return (
     <div
-      className={`${className} w-full h-fit min-h-[85vh] max-lg:pt-[6rem] max-sm:pt-[3rem] pb-[3rem] flex flex-col gap-[.7rem] items-center justify-center px-[4rem] relative overflow-hidden max-lg:text-center `}
+      className={`${className} w-full h-fit min-h-[85vh] max-lg:pt-[6rem] pb-[3rem] flex flex-col gap-[.7rem] items-center justify-center px-[4rem] relative overflow-hidden max-lg:text-center `}
     >
       {children}
     </div>
