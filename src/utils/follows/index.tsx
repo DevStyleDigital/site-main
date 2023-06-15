@@ -9,16 +9,16 @@ export const FollowsArray: iFollows[] = [
   {
     id: 2,
     label: 'Instagram',
-    link: '/',
+    link: 'https://www.instagram.com/devstyled/',
   },
   {
     id: 3,
     label: 'Github',
-    link: '/',
+    link: 'https://github.com/DevStyleDigital',
   },
   {
     id: 4,
     label: 'LinkedIn',
-    link: '/',
+    link: 'https://www.linkedin.com/in/afonso-bezerra-33b495174/',
   },
 ]
