@@ -47,7 +47,7 @@ const ProcessAnimation = () => {
           />
         </div>
         <div className="w-full h-full flex items-end justify-center relative">
-          <div className="h-[50%] outline-dashed outline-[1.5px] outline-[#E38676]"></div>
+          <div className="h-[50%] outline-dashed outline-1 outline-[#E38676]"></div>
           <div className="w-[5rem] h-[5rem] max-sm:w-[3rem] max-sm:h-[3rem] absolute top-[50%] translate-y-[-50%] bg-[#FFD1C8] flex justify-center items-center rounded-full">
             <div className="w-[80%] h-[80%] bg-white rounded-full flex justify-center items-center">
               <h1 className="font-bold text-[1.5rem] max-md:text-[1rem]">1</h1>
