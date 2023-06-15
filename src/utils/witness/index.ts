@@ -9,7 +9,7 @@ export const WitnessArray: iWitness[] = [
   {
     id: 1,
     authorName: 'Emanuel',
-    authorcareer: 'CO',
+    authorcareer: 'CEO',
     commented:
       "O trabalho da DevStyle é uma parceria que já está sendo construída em dois anos com nós aqui da Core. A Devstyle faz parte desse núcleo e de resultados excelente que construímos ao longos dos anos de trabalho em conjunto.",
     companyName: 'Core Ag',

@@ -7,7 +7,7 @@ export const TeamArray: iTeams[] = [
   {
     id: 2,
     name: 'Thainara Camargo',
-    carer: 'Ceo Founder',
+    carer: 'Co Founder',
     instagram: 'google.com',
     img: Thainara,
   },
