@@ -8,7 +8,7 @@ const ResultsTag = () => {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.2 }}
-      className="w-full h-full flex justify-between items-center max-md:grid max-md:grid-cols-2 max-md:justify-items-center max-md:gap-[2rem]"
+      className="w-full h-auto flex justify-between items-center max-md:grid max-md:grid-cols-2 max-md:grid-rows-2 max-md:justify-items-center max-md:gap-[2rem]"
     >
       {ResultsTagArray.map((result) => {
         const variants = {
