@@ -113,7 +113,7 @@ const Footer = () => {
                 {FollowsArray.map((item) => {
                   return (
                     <li key={item.id} className="font-medium text-white">
-                      <Link href={item.link}>{item.label}</Link>
+                      <Link href={item.link} target='blank'>{item.label}</Link>
                     </li>
                   )
                 })}
