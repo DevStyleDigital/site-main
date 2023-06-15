@@ -50,7 +50,7 @@ const Cards = () => {
             <div className="w-[4rem] h-[2px] bg-[#5956E8] mt-[.5rem]"></div>
             <div className="flex flex-col items-center gap-[.3rem]">
               <h1 className="font-bold text-[1rem]">{team.name}</h1>
-              <span className="font-semibold text-[.8rem] text-secondary_black-950/80">
+              <span className="font-semibold text-[.8rem] text-secondary_black-950/80 text-center">
                 {team.carer}
               </span>
               <div className="flex gap-[1rem] mt-[.5rem]">
