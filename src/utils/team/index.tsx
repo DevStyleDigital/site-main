@@ -8,7 +8,7 @@ export const TeamArray: iTeams[] = [
     id: 2,
     name: 'Thainara Camargo',
     carer: 'Co Founder',
-    instagram: 'google.com',
+    linkedin: 'https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADtyPYEBJm0aow4oxyT_O4bghI52wpyY06M&keywords=thainara%20camargo&origin=RICH_QUERY_SUGGESTION&position=0&searchId=5946fa62-1c5c-4836-b5fc-1686f9a0b983&sid=Ggp',
     img: Thainara,
   },
   {
@@ -16,15 +16,15 @@ export const TeamArray: iTeams[] = [
     name: 'Afonso Bezerra',
     carer: 'Ceo Founder & FrontEnd Development',
     instagram: 'https://www.instagram.com/teiir_/',
-    facebook: 'google.com',
+    linkedin: 'https://www.linkedin.com/in/afonso-bezerra-33b495174/',
     img: Afonso,
-    github: 'https://github.com/DevStyleDigital',
+    github: 'https://github.com/AfonsoBezerra',
   },
   {
     id: 3,
     name: 'Guilheme Brogio',
     carer: 'FullStack Development',
     img: Guilherme,
-    github: 'https://github.com/DevStyleDigital',
+    github: 'https://github.com/gbrogio',
   },
 ]

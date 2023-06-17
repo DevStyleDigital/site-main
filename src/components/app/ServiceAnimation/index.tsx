@@ -54,7 +54,7 @@ const ServiceAnimation = () => {
                     {item.text}
                   </Card.Text>
                 </div>
-                <Card.Button className="w-full rounded-lg card-button p-[1rem] border-[1px] transition-color duration-500 border-[#424245] text-[#424245] flex items-center justify-center gap-[.7rem] hover:font-bold hover:text-black">
+                <Card.Button className="w-full rounded-lg card-button p-[1rem] border-[1px] transition-color duration-500 border-[#6d6d6f] text-[#6d6d6f] flex items-center justify-center gap-[.7rem] hover:font-bold hover:text-black">
                   Veja Mais
                   <IconProx />
                 </Card.Button>

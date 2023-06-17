@@ -105,7 +105,7 @@ body{
 }
 
 .card-button svg path {
-    fill: #424245
+    fill: #6d6d6f;
 }
 
 .card-button:hover {

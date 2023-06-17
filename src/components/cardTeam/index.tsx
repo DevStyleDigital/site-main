@@ -1,5 +1,4 @@
 'use client'
-import FacebookIcon from '@/assets/svg/Facebook'
 import InstagramIcon from '@/assets/svg/Instagram'
 import GitHubIcon from '@/assets/svg/github'
 import { TeamArray } from '@/utils/team'
@@ -7,6 +6,7 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import LinkedinIcon from '@/assets/svg/Linkedin'
 
 const Cards = () => {
   return (
@@ -54,12 +54,12 @@ const Cards = () => {
                 {team.carer}
               </span>
               <div className="flex gap-[1rem] mt-[.5rem]">
-                {team.facebook && (
+                {team.linkedin && (
                   <Link
-                    href={team.facebook}
+                    href={team.linkedin}
                     className="transition-all hover:scale-[1.2]"
                   >
-                    <FacebookIcon />
+                    <LinkedinIcon />
                   </Link>
                 )}
                 {team.instagram && (

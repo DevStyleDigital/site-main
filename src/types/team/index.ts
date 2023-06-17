@@ -7,5 +7,5 @@ export interface iTeams {
   img: StaticImageData
   instagram?: string
   github?: string
-  facebook?: string
+  linkedin?: string
 }
