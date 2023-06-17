@@ -34,10 +34,10 @@ export const ResultsTagArray: iResults[] = [
   {
     id: 4,
     color: '#09ff15',
-    number: '50m',
+    number: '3',
     text: (
       <span className="uppercase text-[.7rem] text-white/50 font-bold max-sm:text-[.6rem]">
-        Receita <br /> Gerada
+        Atuando em <br /> países
       </span>
     ),
   },
