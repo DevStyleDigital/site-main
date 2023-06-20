@@ -81,8 +81,8 @@ const HeaderAnimationAbout = () => {
                 width={450}
                 height={519}
               ></Image>
-          <div className='w-full h-full flex justify-center items-center pb-[2rem] max-sm:translate-y-[-3rem]'>
-            <HeroText.Title className='text-[7rem] max-2xl:text-[5rem] max-xl:text-[4rem]'>
+          <div className='w-full h-full flex justify-center items-center pb-[2rem] max-sm:translate-y-[-3rem] max-2xl:translate-y-[-3rem] max-xl:translate-y-[-2rem]'>
+            <HeroText.Title className='text-[7rem] max-2xl:text-[5rem]'>
               About <span className="text-[#5956E8]">Us </span>
             </HeroText.Title>
           </div>
