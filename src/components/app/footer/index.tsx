@@ -63,7 +63,7 @@ const Footer = () => {
               <h1 className="text-white font-semibold text-[1.3rem] flex gap-[1rem] items-center">
                 <LocationIcon /> Localização
               </h1>
-              <span className="text-white/80 font-semibold text-[1rem] flex justify-center w-[20rem]">
+              <span className=" text-white/80 font-semibold text-[1rem] flex justify-center w-[90%]">
                 Rua Maria aparecida Massa 251 Jardim Europa
                 Votorantim, Brasil
               </span>

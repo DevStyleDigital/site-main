@@ -67,12 +67,12 @@ const HeaderAnimationAbout = () => {
   return (
     <HeroText.Root className="header_about">
       <motion.div
-        className="max-w-[1400px] w-full flex flex-col z-30 items-start max-lg:items-center max-lg:gap-[1rem] "
+        className="max-w-[1400px] w-full flex flex-col z-30 items-start max-lg:items-center max-lg:gap-[1rem]"
         variants={container}
         initial="hidden"
         animate="visible"
       >
-      <HeroText.Img className='right-[50%]  w-[50rem] h-[50rem] translate-x-[50%] top-[15%] max-lg:text-[3rem] max-md:w-[30rem] max-sm:w-screen max-md:h-[35rem] max-md:translate-y-[20%]'>
+      <HeroText.Img className='right-[50%]  w-[50rem] h-[50rem]  translate-x-[50%] top-[15%] max-lg:text-[3rem] max-md:w-[30rem] max-xl:w-full max-sm:w-screen max-md:h-[35rem] max-xl:h-screen max-md:translate-y-[20%] max-[920px]:translate-y-[10%]'>
         <div className="w-full h-full rounded-full relative">
             <Image
                 src={Fundo}
@@ -81,7 +81,7 @@ const HeaderAnimationAbout = () => {
                 width={450}
                 height={519}
               ></Image>
-          <div className='w-full h-full flex justify-center items-center pb-[2rem] max-sm:translate-y-[-3rem] max-2xl:translate-y-[-3rem] max-xl:translate-y-[-2rem]'>
+          <div className='w-full h-full flex justify-center items-center pb-[2rem] max-sm:translate-y-[-3rem] max-sm:items-center max-2xl:translate-y-[-3rem] max-[920px]:items-start max-[920px]:translate-y-[30%] max-md:translate-y-[20%]'>
             <HeroText.Title className='text-[7rem] max-2xl:text-[5rem]'>
               About <span className="text-[#5956E8]">Us </span>
             </HeroText.Title>

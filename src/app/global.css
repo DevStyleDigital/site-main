@@ -19,6 +19,7 @@ body{
 }
 
 .header_about{
+    height: fit-content;
     min-height: 70vh;
     background: linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%);
 }
