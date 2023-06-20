@@ -53,12 +53,12 @@ const HeaderAnimationAbout = () => {
   }, [handleAnimationIMAGES])
 
   const container = {
-    hidden: { opacity: 1, y: 200 },
+    hidden: { opacity: 1, y: 400 },
     visible: {
       y: -200, 
       opacity: 1,
       transition: {
-        delayChildren: 0.2,
+        delayChildren: 0.3,
         staggerChildren: 0.2,
       },
     },
