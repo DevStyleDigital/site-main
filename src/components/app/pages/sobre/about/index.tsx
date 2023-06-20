@@ -13,13 +13,13 @@ const AboutSectionPage = () => {
       id="about"
       className="w-full h-fit flex justify-center bg-white py-[5rem]"
     >
-      <div className="w-[60%] flex h-full relative max-2xl:w-[80%] max-lg:flex-col max-lg:items-center max-md:justify-center max-md:text-center">
+      <div className="w-[60%] flex h-full relative max-2xl:w-[80%] max-xl:flex-col max-xl:items-center max-md:justify-center max-md:text-center">
         <ImagesAnimate
           min={200}
           max={2000}
           src={About}
           alt="img-about"
-          className="w-[100%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]"
+          className="w-[100%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%] max-xl:w-[50%]"
           width={1280}
           height={1704}
         />
@@ -46,12 +46,12 @@ const AboutSectionPage = () => {
               </div>
             </div>
           </HeaderSection.Root>
-          <div className='w-full flex gap-[2rem] max-md:justify-center max-md:gap-[1rem] max-sm:flex-wrap'>
-            <Button className='py-[2rem]' fill href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">
+          <div className='w-full flex gap-[1rem] max-md:justify-center max-md:gap-[1rem] max-sm:flex-wrap'>
+            <Button className='!w-fit py-[2rem] pr-[3rem]' fill href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">
               <Image className='mira-img-button' src={Mira} alt="Mira" width={138} height={190}></Image>
               Desenvolvimento em escala
             </Button>
-            <Button className='py-[2rem]' fill href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">
+            <Button className='!w-fit py-[2rem] pr-[3rem]' fill href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">
               <Image className='phone-img-button' src={Phone} alt="Mira" width={138} height={190}></Image>
               Estratégia & Resultados
             </Button>

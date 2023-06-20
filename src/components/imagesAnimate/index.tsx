@@ -117,7 +117,7 @@ const ImagesAnimate = ({
     >
       <motion.div
         variants={variants}
-        className="w-full max-lg:flex max-lg:justify-center"
+        className="w-full max-xl:flex max-xl:justify-center "
         style={{ rotateX: a, rotateY: b, rotateZ: c}}
       >
         <Image
