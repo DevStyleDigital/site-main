@@ -36,6 +36,7 @@ const Footer = () => {
             </div>
           </div>
           <Link
+            target='blank'
             href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
             className="w-full h-full rounded-md bg-green-500 flex justify-center gap-[1rem] items-center footer-card transition-all max-lg:h-[4rem] max-sm:h-[3.5rem] hover:scale-[1.02]"
           >
@@ -68,7 +69,7 @@ const Footer = () => {
               </span>
               <Link
                 href="https://goo.gl/maps/JH2MEKGPQyvHHM966"
-                target="_blank"
+                target="blank"
                 className="text-[#FFDC60] underline"
               >
                 location

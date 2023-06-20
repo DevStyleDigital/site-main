@@ -6,6 +6,7 @@ import 'swiper/css/navigation'
 import './global.css'
 import { SideBarRoot } from '@/components/app/sidebar'
 import Script from 'next/script';
+import Footer from '@/components/app/footer'
 
 const nunito = Nunito({
   weight: ['400', '500', '600', '700', '800'],
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <SideBarRoot>
           <Header />
           {children}
+          <Footer />
         </SideBarRoot>
         {/* Google Tag Manager (noscript) */}
         <noscript

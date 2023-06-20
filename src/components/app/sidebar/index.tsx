@@ -12,6 +12,7 @@ import { Cross1Icon } from '@radix-ui/react-icons'
 import { NavsItems } from '@/utils/navs'
 import Button from '@/components/button'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 interface SideBarProps {
   sidebarOpen: boolean
   setSidebarOpen: Dispatch<SetStateAction<boolean>>
@@ -38,6 +39,7 @@ export const SideBarRoot = ({ children }: { children: any }) => {
 }
 
 export const SideBarFundo = () => {
+  const pathname = usePathname()
   const { sidebarOpen, setSidebarOpen } = useSideBar()
   return (
     <section
@@ -67,7 +69,7 @@ export const SideBarFundo = () => {
                 <li
                   key={item.id}
                   className={clsx('font-medium text-white', {
-                    // 'border-b-[1px] border-white text-white': item.link === pathname,
+                    'border-b-[1px] border-white text-white': item.link === pathname,
                   })}
                 >
                   <Link href={item.link}>{item.label}</Link>

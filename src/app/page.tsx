@@ -26,9 +26,8 @@ export default function Home() {
         <Process />
         <Witness />
         <Projects />
-        <Team />
+        <Team numSection="06"/>
         <Beneficios />
-        <Footer />
       </main>
     </>
   )

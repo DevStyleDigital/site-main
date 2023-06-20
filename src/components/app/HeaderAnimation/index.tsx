@@ -71,7 +71,7 @@ const HeaderAnimation = () => {
 
   return (
     <HeroText.Root className="header_home">
-      <HeroText.Img>
+      <HeroText.Img  className='w-[45%] h-full top-[-50%] right-[-50%]  max-lg:opacity-[15%] translate-x-[-85%] translate-y-[40%] max-2xl:w-[70%] max-2xl:translate-x-[-40%] max-xl:w-[80%] max-xl:translate-x-[-30%]'>
         <div className="w-full h-full rounded-full relative">
           <Image
             src={Fundo}
@@ -173,7 +173,7 @@ const HeaderAnimation = () => {
           </span>{' '}
           INÍCIO
         </HeroText.Rota>
-        <HeroText.Title>
+        <HeroText.Title className='max-2xl:max-w-[40rem] max-2xl:text-[2.5rem] max-xl:text-[2rem] max-lg:text-[3rem] max-sm:text-[1.5rem]'>
           Construindo marcas,
           <br /> uma história de <span className="text-[#5956E8]">sucesso </span>
           por vez.

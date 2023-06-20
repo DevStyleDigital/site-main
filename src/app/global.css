@@ -15,11 +15,42 @@ body{
 }
 
 .header_home{
-    background: linear-gradient(111.23deg, #E9F7FF 9.95%, #FFDBD5 85.17%);;
+    background: linear-gradient(111.23deg, #E9F7FF 9.95%, #FFDBD5 85.17%);
+}
+
+.header_about{
+    min-height: 70vh;
+    background: linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%);
+}
+
+@media (max-width:500px){
+    .header_about{
+        min-height: 60vh;
+    }
+}
+
+.mira-img-button{
+    width: 27px;
+    height: 35px;
+}
+
+.phone-img-button{
+    width: 30px;
+    height: 25px;
 }
 
 .preserve {
     transform-style: preserve-3d;
+}
+
+.sombra-1 {
+    background: #E326AE;
+    filter: blur(163px);
+}
+
+.sombra-2 {
+    background: #FFC4BB;
+    filter: blur(163px);
 }
 
 .iconPc{
@@ -92,6 +123,23 @@ body{
     position: absolute;
 }
 
+.FundoImgCenter{
+        width: 55%;
+        height: 55%;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%,-60%);
+        position: absolute;
+        overflow-x: hidden;
+}
+
+@media (max-width:500px){
+    .FundoImgCenter{
+        width: 70%;
+    }
+}
+
+
 .triangulo{
     position: absolute;
     top: 85%;
@@ -155,6 +203,21 @@ body{
     transform: scale(.8);
 }
 
+.sombra-about{
+    width: 260px;
+    height: 399px;
+    background: #94bfffb5;
+    filter: blur(165.5px);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    z-index: 1;
+    
+}
+
+@media (max-width:768px){
+    .sombra-about{
+        width: 80%;
+    }
+}
 .sombra{ 
     width: 399px;
     height: 399px;
@@ -194,13 +257,69 @@ body{
     background: linear-gradient(151.16deg, #fcf4f4 10.38%, #ebf0fe 95.44%);
 }
 
+.follow-button:hover svg path{
+    fill: white;
+}
+
 .mySwiper {
     width: 100%;
 }
 
+
+@media (min-width: 768px) {
+    .aboutSwiper{
+        padding-left: 4.5rem;
+    }
+    .aboutSwiper .swiper-button-next,
+    .aboutSwiper .swiper-button-prev {
+        visibility: visible;
+    }
+}
+
+.swiper-button-prev{
+    background-color: #454545;
+}
+.swiper-button-next{
+    background-color: #5956E8;
+}
+
+
+
+.swiper-button-next:after{
+    transform: translateX(2px);
+}
+.swiper-button-prev:after{
+    transform: translateX(-2px);
+}
+
+.swiper-button-next:after,.swiper-button-prev:after{
+    font-size: 1.5rem;
+    color: white;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
+    display: flex;
+    padding:1.7rem;
+    border-radius: 100%;
     visibility: hidden;
+}
+
+.swiper-button-prev:active{
+    animation: ClickEffect alternate 1s;
+}
+
+.swiper-button-next:active{
+    animation: ClickEffect alternate 1s;
+}
+
+@keyframes ClickEffect {
+    from {
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(.9);
+    }
 }
 
 .button-next {

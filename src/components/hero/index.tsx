@@ -26,10 +26,10 @@ const Hero = ({
   )
 }
 
-export const TitleHero = ({ children }: { children: ReactNode }) => {
+export const TitleHero = ({ children, ...props }: { children: ReactNode, className?: string }) => {
   return (
     <motion.h1
-      className="font-bold text-[3.5rem] leading-tight z-10 relative max-2xl:max-w-[40rem] max-2xl:text-[2.5rem] max-xl:text-[2rem] max-xl:max-w-[25rem] max-lg:max-w-[30rem]  max-lg:text-[3rem] max-sm:text-[1.5rem]"
+      className={`font-bold text-[3.5rem] leading-tight z-10 relative max-xl:max-w-[25rem] max-lg:max-w-[30rem] ${props.className}`}
       variants={item}
     >
       {children}
@@ -59,9 +59,9 @@ export const SubHero = ({ children }: { children: ReactNode }) => {
   )
 }
 
-export const Image = ({ children }: { children: ReactNode }) => {
+export const Image = ({ children, ...props }: { children: ReactNode, className?: string }) => {
   return (
-    <div className="absolute w-[45%] h-full shadow-md rounded-full bg-white top-[-50%] right-[-50%] translate-x-[-85%] translate-y-[40%] max-2xl:w-[70%] max-2xl:translate-x-[-40%] max-xl:w-[80%] max-xl:translate-x-[-30%] max-lg:opacity-[15%]">
+    <div className={`absolute shadow-md rounded-full bg-white  ${props.className}`}>
       {children}
     </div>
   )

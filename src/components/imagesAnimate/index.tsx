@@ -30,6 +30,7 @@ const ImagesAnimate = ({
 
   const handleScrollMove = () => {
     const scrollPosition = window.pageYOffset
+    console.log(scrollPosition)
     if (scrollPosition >= props.min && scrollPosition < props.max) {
       setHandleAnimationIMAGES(true)
     } else {

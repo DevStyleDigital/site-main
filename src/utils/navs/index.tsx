@@ -14,7 +14,7 @@ export const NavsItems: iNavs[] = [
   {
     id: '3',
     label: 'Sobre',
-    link: '#about',
+    link: '/sobre',
   },
   {
     id: '4',
