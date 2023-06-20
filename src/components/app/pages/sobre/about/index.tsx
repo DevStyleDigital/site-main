@@ -13,7 +13,7 @@ const AboutSectionPage = () => {
       id="about"
       className="w-full h-fit flex justify-center bg-white py-[5rem]"
     >
-      <div className="w-[60%] flex h-full relative max-xl:w-[80%] max-lg:flex-col max-lg:items-center max-md:justify-center max-md:text-center">
+      <div className="w-[60%] flex h-full relative max-2xl:w-[80%] max-lg:flex-col max-lg:items-center max-md:justify-center max-md:text-center">
         <ImagesAnimate
           min={200}
           max={2000}
