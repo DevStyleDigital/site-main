@@ -57,7 +57,7 @@ const AboutSectionPage = () => {
             </Button>
           </div>
           <span className="text-secondary_black-950/70 relative z-10 max-md:text-[.8rem]">
-            Uma empresa de desenvolvimento de aplicações web e mobile trazendo soluções para sua empresa, trazendo maior visibilidade para sua 
+            Uma empresa de desenvolvimento de aplicações web e mobile trazendo soluções para sua empresa e maior visibilidade para sua 
             marca e com isso melhores resultados para que consiga atingir um maior número de clientes. DevStyle foi criada em 2021 e desde então focamos 
             em deixar nossos clientes satisfeitos com o nosso trabalho.
           </span>
