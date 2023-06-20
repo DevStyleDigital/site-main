@@ -60,7 +60,7 @@ const ProcessAnimation = () => {
           </h1>
           <span className="text-[.9rem] max-md:text-[.7rem] max-sm:text-[.55rem]">
             Criação da estrutura em design para uma visualização da página
-            passando pela aprovacao do Cliente.
+            passando pela aprovação do Cliente.
           </span>
         </div>
       </motion.div>

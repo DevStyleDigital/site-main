@@ -34,7 +34,6 @@ const Beneficios = () => {
           <div className="w-full h-full relative">
             <ImagesAnimate
               min={5950}
-              max={9000}
               src={Painel}
               alt="img-about"
               className="w-[90%]"
@@ -83,7 +82,7 @@ const Beneficios = () => {
               </div>
             </div>
             <span className="ml-[6rem] mt-[1rem] text-[1rem] text-secondary_black-950/60 max-sm:text-[.8rem]">
-              Melhores analizes e resultados de quem esta acessando a sua página
+              Melhores análises e resultados de quem esta acessando a sua página
               através da gestão de trafego.
             </span>
           </div>

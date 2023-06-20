@@ -12,7 +12,6 @@ const ImagesAnimate = ({
   width: number
   height: number
   min: number
-  max: number
 }) => {
   const [handleAnimationIMAGES, setHandleAnimationIMAGES] = useState(true)
   const cardRef = useRef<HTMLImageElement | null>(null)
@@ -30,8 +29,7 @@ const ImagesAnimate = ({
 
   const handleScrollMove = () => {
     const scrollPosition = window.pageYOffset
-    console.log(scrollPosition)
-    if (scrollPosition >= props.min && scrollPosition < props.max) {
+    if (scrollPosition >= props.min) {
       setHandleAnimationIMAGES(true)
     } else {
       setHandleAnimationIMAGES(false)
@@ -100,7 +98,6 @@ const ImagesAnimate = ({
     onscreen: {
       scale: 1,
       transition: {
-        type: 'spring',
         stiffness: 30,
         damping: 7,
       },

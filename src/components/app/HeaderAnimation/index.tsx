@@ -71,7 +71,7 @@ const HeaderAnimation = () => {
 
   return (
     <HeroText.Root className="header_home">
-      <HeroText.Img  className='w-[45%] h-full top-[-50%] right-[-50%]  max-lg:opacity-[15%] translate-x-[-85%] translate-y-[40%] max-2xl:w-[70%] max-2xl:translate-x-[-40%] max-xl:w-[80%] max-xl:translate-x-[-30%]'>
+      <HeroText.Img  className='w-[45%] h-full top-[-50%] right-[-50%]  max-lg:opacity-[15%] translate-x-[-85%] translate-y-[40%] max-2xl:w-[70%] max-[1700px]:w-[50%] max-2xl:translate-x-[-40%] max-xl:w-[80%] max-xl:translate-x-[-30%] max-2xl:h-screen'>
         <div className="w-full h-full rounded-full relative">
           <Image
             src={Fundo}
@@ -98,7 +98,7 @@ const HeaderAnimation = () => {
               <Image src={Pc} alt="PC" width={695} height={594}></Image>
             </motion.div>
             <motion.div
-              className="microfone max-xl:w-[150px]"
+              className="microfone max-2xl:w-[150px]"
               ref={cardRef}
               initial={{ scale: 0 }}
               animate={{ rotateY: 180, scale: 1 }}
@@ -116,7 +116,7 @@ const HeaderAnimation = () => {
               ></Image>
             </motion.div>
             <motion.div
-              className="selo max-xl:w-[80px]"
+              className="selo max-2xl:w-[80px]"
               ref={cardRef}
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -134,7 +134,7 @@ const HeaderAnimation = () => {
               <Image src={Selo} alt="Selo" width={155} height={155}></Image>
             </motion.div>
             <motion.div
-              className="mira max-xl:w-[80px]"
+              className="mira max-2xl:w-[80px] max-2xl:mb-[4rem]"
               ref={cardRef}
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}

@@ -28,13 +28,13 @@ export const ServicesUtils: iService[] = [
   {
     id: 4,
     label: 'Page Development',
-    text: 'Desenvolvimento de páginas únicas e lindas para capitação de leads rapidos',
+    text: 'Desenvolvimento de páginas únicas e lindas para capitação de leads rápidos',
     image: LpIcon,
   },
   {
     id: 5,
     label: 'Gestor de Tráfego',
-    text: 'Cuidaremos dos tráfegos de sua página melhorando o indice de Leads.',
+    text: 'Cuidaremos dos tráfegos de sua página melhorando o índice de Leads.',
     image: Trafego,
   },
   {

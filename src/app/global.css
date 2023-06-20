@@ -61,6 +61,12 @@ body{
     transform: translateY(-30%) rotateY(180deg);
     
 }
+@media (max-width: 1440px) {
+    .iconPc img{
+        transform: translateY(-40%);
+    }
+}
+
 
 .microfone{
     position: absolute;
@@ -95,8 +101,13 @@ body{
     position: absolute;
     top: 90%;
     left: 50%;
-    transform: translateY(-40%);
     width: 100px;
+}
+
+@media (max-width: 1440px) {
+    .mira img{
+        transform: translateY(-120%);
+    }
 }
 
 
@@ -104,7 +115,6 @@ body{
     width: 100%;
     height: 100%; 
     -webkit-user-drag: none;
-    transform: translateY(-40%);
 }
 
 
