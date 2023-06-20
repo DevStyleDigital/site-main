@@ -19,7 +19,7 @@ const Sobre = () => {
       <main className="w-full flex flex-col items-center">
         <ToTop />
         <HeaderAnimationAbout />
-        <section className="w-full h-fit flex justify-center py-[4rem] bg-secondary_black-950">
+        <section className="w-full h-fit flex justify-center py-[4rem] max-md:py-[2rem] bg-secondary_black-950">
           <div className="w-[60%] h-full flex max-2xl:w-[70%] max-xl:w-[80%] max-lg:w-[90%]">
             <ResultsTag />
           </div>

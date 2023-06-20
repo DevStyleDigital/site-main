@@ -93,8 +93,8 @@ const HeaderAnimationAbout = () => {
         className="w-[100vw] h-[90vh] absolute select-none"
         style={{ rotateX: a, rotateY: b }}
       >
-        <div className="w-[15rem] h-[15rem] rounded-full sombra-1 absolute bottom-[8rem] left-[35%] z-2  max-md:top-[15rem] max-md:w-[20rem] max-sm:w-[50%] max-md:right-[0rem]"></div>
-        <div className="w-[15rem] h-[15rem] rounded-full sombra-2 absolute bottom-[8rem] right-[20%] z-2  max-md:left-[0rem] max-md:top-[15rem] max-md:w-[20rem] max-sm:w-[50%]"></div>
+        <div className="w-[15rem] h-[15rem] rounded-full sombra-1 absolute bottom-[8rem] left-[35%] z-2 max-md:top-[15rem] max-md:w-[50%] max-md:right-0"></div>
+        <div className="w-[15rem] h-[15rem] rounded-full sombra-2 absolute bottom-[8rem] right-[20%] z-2 max-md:left-0 max-md:top-[15rem] max-md:w-[50%]"></div>
         <div className="w-[5rem] h-[2rem] shadow-md absolute bottom-[13rem] rotate-45 left-[10rem] bg-[#bee1f9] z-2 max-md:left-[2rem] max-md:top-[15rem] max-lg:opacity-[60%]"></div>
         <div className="w-[2.5rem] h-[2.5rem] right-[20%] absolute  bottom-[50%] max-md:right-[2rem] max-md:top-[10rem] max-lg:opacity-[60%]">
         <Image

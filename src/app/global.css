@@ -23,12 +23,6 @@ body{
     background: linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%);
 }
 
-@media (max-width:500px){
-    .header_about{
-        min-height: 60vh;
-    }
-}
-
 .mira-img-button{
     width: 27px;
     height: 35px;
