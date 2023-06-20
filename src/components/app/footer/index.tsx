@@ -86,7 +86,7 @@ const Footer = () => {
                 {NavsItems.map((item) => {
                   return (
                     <li key={item.id} className="font-medium text-white">
-                      <Link href={item.link}>{item.label}</Link>
+                      <a href={item.link}>{item.label}</a>
                     </li>
                   )
                 })}

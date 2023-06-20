@@ -72,7 +72,7 @@ export const SideBarFundo = () => {
                     'border-b-[1px] border-white text-white': item.link === pathname,
                   })}
                 >
-                  <Link href={item.link}>{item.label}</Link>
+                  <a href={item.link}>{item.label}</a>
                 </li>
               )
             })}
