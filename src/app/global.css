@@ -39,12 +39,12 @@ body{
 
 .sombra-1 {
     background: #E326AE;
-    filter: blur(163px);
+    filter: blur(12px);
 }
 
 .sombra-2 {
     background: #FFC4BB;
-    filter: blur(163px);
+    filter: blur(12px);
 }
 
 .iconPc{
