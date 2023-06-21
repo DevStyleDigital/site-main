@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const ServiceAnimation = () => {
   return (
-    <motion.div className="w-full flex justify-center">
+    <motion.div className="w-full h-full flex justify-center">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
@@ -35,7 +35,7 @@ const ServiceAnimation = () => {
             <motion.div variants={variants} key={item.id}>
               <Card.Root
                 key={item.id}
-                className="w-full h-fit min-h-[500px] max-sm:h-[400px] flex flex-col justify-between gap-[2rem] p-[2rem] rounded-3xl card-color-gradient-service border-[1px] border-[#424245]"
+                className="w-full h-fit min-h-[500px] max-sm:min-h-[400px] flex flex-col justify-between gap-[2rem] p-[2rem] rounded-3xl card-color-gradient-service border-[1px] border-[#424245]"
               >
                 <Card.Image className="w-[8rem] h-[8rem] max-sm:w-[6rem]  max-sm:h-[6rem] rounded-full flex justify-center items-center bg-[#292930] shadow-md">
                   <Image
@@ -50,7 +50,7 @@ const ServiceAnimation = () => {
                   <Card.Title className="text-[1.4rem] text-white max-sm:text-[1rem]">
                     {item.label}
                   </Card.Title>
-                  <Card.Text className="text-white/70 text-[1.1rem] max-lg:text-[.9rem] max-md:text-[1.1rem] max-sm:text-[.8rem]">
+                  <Card.Text className="text-white/70 break-words text-[1.1rem] max-lg:text-[.9rem] max-md:text-[1.1rem] max-sm:text-[.8rem]">
                     {item.text}
                   </Card.Text>
                 </div>
