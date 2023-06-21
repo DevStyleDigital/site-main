@@ -11,6 +11,7 @@ import Footer from '@/components/app/footer'
 const nunito = Nunito({
   weight: ['400', '500', '600', '700', '800'],
   subsets: ['latin'],
+  preload: false,
 })
 
 export default function RootLayout({ children }: { children: ReactNode }) {
