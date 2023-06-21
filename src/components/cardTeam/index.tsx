@@ -57,6 +57,7 @@ const Cards = () => {
                 {team.linkedin && (
                   <Link
                     href={team.linkedin}
+                    target='blank'
                     className="transition-all hover:scale-[1.2]"
                   >
                     <LinkedinIcon />
@@ -65,6 +66,7 @@ const Cards = () => {
                 {team.instagram && (
                   <Link
                     href={team.instagram}
+                    target='blank'
                     className="transition-all hover:scale-[1.2]"
                   >
                     <InstagramIcon />
@@ -73,6 +75,7 @@ const Cards = () => {
                 {team.github && (
                   <Link
                     href={team.github}
+                    target='blank'
                     className="transition-all hover:scale-[1.2]"
                   >
                     <GitHubIcon />
