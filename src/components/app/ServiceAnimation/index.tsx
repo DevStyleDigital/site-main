@@ -35,7 +35,7 @@ const ServiceAnimation = () => {
             <motion.div variants={variants} key={item.id}>
               <Card.Root
                 key={item.id}
-                className="w-full h-[500px] max-sm:h-[400px] flex flex-col justify-between gap-[2rem] p-[2rem] rounded-3xl card-color-gradient-service border-[1px] border-[#424245]"
+                className="w-full h-fit min-h-[500px] max-sm:h-[400px] flex flex-col justify-between gap-[2rem] p-[2rem] rounded-3xl card-color-gradient-service border-[1px] border-[#424245]"
               >
                 <Card.Image className="w-[8rem] h-[8rem] max-sm:w-[6rem]  max-sm:h-[6rem] rounded-full flex justify-center items-center bg-[#292930] shadow-md">
                   <Image
