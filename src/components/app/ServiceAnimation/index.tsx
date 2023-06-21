@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const ServiceAnimation = () => {
   return (
-    <motion.div className="w-full h-full flex justify-center">
+    <motion.div className="w-full flex justify-center">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
@@ -50,7 +50,7 @@ const ServiceAnimation = () => {
                   <Card.Title className="text-[1.4rem] text-white max-sm:text-[1rem]">
                     {item.label}
                   </Card.Title>
-                  <Card.Text className="text-white/70 break-words text-[1.1rem] max-lg:text-[.9rem] max-md:text-[1.1rem] max-sm:text-[.8rem]">
+                  <Card.Text className="text-white/70 text-[1rem] max-lg:text-[.9rem] max-md:text-[1.1rem] max-sm:text-[.8rem] elipses max-h-[6.5rem]">
                     {item.text}
                   </Card.Text>
                 </div>

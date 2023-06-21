@@ -24,6 +24,18 @@ body{
     background: linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%);
 }
 
+.elipses {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    position: relative;
+    display: -webkit-box;
+
+}
+
+
+
 .mira-img-button{
     width: 27px;
     height: 35px;
