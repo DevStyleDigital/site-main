@@ -24,6 +24,12 @@ body{
     background: linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%);
 }
 
+.header_service{
+    height: fit-content;
+    min-height: 70vh;
+    background: linear-gradient(140deg, #CFD4FF 0%, #FFFFFD 100%);
+}
+
 .elipses {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -31,10 +37,12 @@ body{
     -webkit-box-orient: vertical;
     position: relative;
     display: -webkit-box;
-
 }
 
-
+.sombra-hero{
+    background: #cfddec25;
+    filter: blur(100px)
+}
 
 .mira-img-button{
     width: 27px;
@@ -58,6 +66,21 @@ body{
 .sombra-2 {
     background: #FFC4BB;
     filter: blur(163px);
+}
+
+.sombra-3 {
+    background: #7CFF99;
+    filter: blur(160px);
+}
+
+.sombra-4 {
+    background: #f5fc9d;
+    filter: blur(160px);
+}
+
+.sombra-5 {
+    background: #7DFFE8;
+    filter: blur(120px);
 }
 
 .iconPc{
@@ -149,6 +172,7 @@ body{
         position: absolute;
         overflow-x: hidden;
 }
+
 
 @media (max-width:500px){
     .FundoImgCenter{

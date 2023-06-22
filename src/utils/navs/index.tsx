@@ -9,7 +9,7 @@ export const NavsItems: iNavs[] = [
   {
     id: '2',
     label: 'Serviços',
-    link: '#service',
+    link: '/service',
   },
   {
     id: '3',

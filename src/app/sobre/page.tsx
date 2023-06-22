@@ -1,4 +1,3 @@
-import Footer from "@/components/app/footer"
 import Team from "@/components/app/pages/section/team"
 import AboutSectionPage from "@/components/app/pages/sobre/about"
 import HeaderAnimationAbout from "@/components/app/pages/sobre/header"
