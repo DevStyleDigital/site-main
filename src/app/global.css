@@ -83,12 +83,50 @@ body{
     filter: blur(120px);
 }
 
+
+.sombra-6 {
+    background: #D6FF94;
+    filter: blur(160px);
+}
+
+.sombra-7 {
+    background: #94BFFF;
+    filter: blur(120px);
+}
+
 .iconPc{
     position: absolute;
     top: 50%;
     left: 10%;
     width: 550px;
 }
+
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 550px;
+}
+
+.iconProcess{
+    position: absolute;
+    top: 50%;
+    width: 600px;
+}
+
+.iconProcess img {
+    width: 100%;
+    height: 100%; 
+    -webkit-user-drag: none;
+    transform: translateY(-30%) rotateY(180deg);
+    
+}
+@media (max-width: 1440px) {
+    .iconProcess img{
+        transform: translateY(-40%);
+    }
+}
+
 
 .iconPc img {
     width: 100%;

@@ -6,8 +6,7 @@ import Mira from '@/assets/img/mira.png'
 import Triangulo from '@/assets/img/triangulo.png'
 import Button from '@/components/button'
 import { motion } from 'framer-motion'
-import { use, useEffect, useState } from 'react'
-import { removeAllListeners } from 'process'
+import { useEffect, useState } from 'react'
 
 const HeroStartAnimation = () => {
     const [newVariant , setNewVariant] = useState<{} | undefined>(undefined)
