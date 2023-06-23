@@ -66,14 +66,14 @@ const HeaderAnimationProcess = () => {
 
   return (
     <HeroText.Root className="header_process">
-      <HeroText.Img  className='w-[53%] h-full top-[-53%] max-xl:top-[-50%] !shadow-none max-lg:opacity-[20%]  !rounded-none right-[-50%]  translate-x-[-85%] translate-y-[40%] max-[1700px]:w-[50%] max-xl:w-[80%] max-xl:translate-x-[-30%]'>
+      <HeroText.Img  className='w-[53%] h-full top-[-53%] max-xl:top-[-50%] max-sm:top-[-45%] !shadow-none max-lg:opacity-[20%]  !rounded-none right-[-50%]  translate-x-[-85%] translate-y-[40%] max-[1700px]:w-[50%] max-xl:w-[80%] max-xl:translate-x-[-30%]'>
         <div className="w-full h-full rounded-full relative z-50">
           <motion.div
             className="w-full h-full relative preserve"
             style={{ rotateX: a, rotateY: b }}
           >
            <motion.div
-              className="iconProcess max-xl:w-[500px] z-40"
+              className="iconProcess max-xl:w-[500px] max-sm:w-[300px] z-40"
               ref={cardRef}
               initial={{ scale: 0 }}
               animate={{ rotateY: 180, scale: 1 }}
