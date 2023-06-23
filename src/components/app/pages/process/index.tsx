@@ -79,7 +79,7 @@ const HeaderAnimationProcess = () => {
               animate={{ rotateY: 180, scale: 1 }}
               transition={{
                 type: 'spring',
-                stiffness: 60,
+                stiffness: 40,
                 damping: 5,
               }}
             >
@@ -87,8 +87,8 @@ const HeaderAnimationProcess = () => {
             </motion.div>
            </motion.div>
         </div>
-        <div className="w-[20rem] h-[20rem] rounded-full sombra-6 absolute bottom-[1rem] left-[0] z-2 max-md:top-[10rem] max-md:right-0"></div>
-        <div className="w-[20rem] h-[20rem] rounded-full sombra-7 absolute bottom-[1rem] right-[30%] z-2 max-md:bottom-[0rem] max-md:left-0"></div>
+        <div className="w-[20rem] h-[20rem] rounded-full sombra-6 absolute bottom-[1rem] left-[0] max-md:top-[10rem] max-md:right-0"></div>
+        <div className="w-[20rem] h-[20rem] rounded-full sombra-7 absolute bottom-[1rem] right-[30%] max-md:bottom-[0rem] max-md:left-0"></div>
       </HeroText.Img>
       <motion.div
         className="max-w-[1400px] w-full flex flex-col items-start max-lg:items-center max-lg:gap-[1rem] "
