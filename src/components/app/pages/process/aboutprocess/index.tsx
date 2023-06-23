@@ -10,7 +10,7 @@ const ProcessSectionPage = () => {
       id="process"
       className="w-full h-fit flex justify-center bg-white py-[5rem]"
     >
-      <div className="w-[70%] flex h-full relative max-2xl:w-[80%] max-xl:flex-col max-xl:items-center max-md:justify-center max-md:text-center">
+      <div className="w-[70%] flex h-full relative max-2xl:w-[80%] max-lg:w-[90%] max-xl:flex-col max-xl:items-center max-md:justify-center max-md:text-center">
         <ImagesAnimate
           min={200}
           src={PC}
@@ -46,15 +46,15 @@ const ProcessSectionPage = () => {
               período reduzido e mantendo a qualidade do produto, quando passamos por partes podemos bater com o cliente todas as suas ideias e então inserindo como solução de seus problemas.
           </span>
           <div className='flex flex-col gap-[1rem]'>
-            <span className='flex gap-[1rem] max-sm:gap-[.5rem]  items-center transition-all cursor-pointer hover:scale-[1.1] hover:translate-x-[3rem]'>
+            <span className='flex gap-[1rem] max-sm:gap-[.5rem]  items-center transition-all cursor-pointer hover:scale-[1.1] hover:translate-x-[.5rem] md:hover:!translate-x-[3rem]'>
               <CheckBlack /> 
               <h1 className='font-semibold max-sm:text-[.7rem]'>Manter dialogo com o cliente em todos os processos</h1>     
             </span>
-            <span className='flex gap-[1rem] max-sm:gap-[.5rem] items-center  transition-all cursor-pointer hover:scale-[1.1] hover:translate-x-[3rem]'>
+            <span className='flex gap-[1rem] max-sm:gap-[.5rem] items-center  transition-all cursor-pointer hover:scale-[1.1] hover:translate-x-[.5rem] md:hover:!translate-x-[3rem]'>
               <CheckBlack /> 
               <h1 className='font-semibold max-sm:text-[.7rem]'>Trabalhar com metodologias ágeis</h1>     
             </span>
-            <span className='flex gap-[1rem] max-sm:gap-[.5rem] items-center transition-all cursor-pointer hover:scale-[1.1] hover:translate-x-[3rem]'>
+            <span className='flex gap-[1rem] max-sm:gap-[.5rem] items-center transition-all cursor-pointer hover:scale-[1.1] hover:translate-x-[.5rem] md:hover:!translate-x-[3rem]'>
               <CheckBlack /> 
               <h1 className='font-semibold max-sm:text-[.7rem]'>Máxima eficiência e entrega</h1>     
             </span>

@@ -36,15 +36,15 @@ const AnimationRevenue = () => {
                     </span> 
                     <div className='w-full flex max-lg:justify-center'>
                         <div className="flex flex-col gap-[1rem]">
-                            <span className='flex gap-[1rem] items-center transition-all cursor-pointer hover:scale-[1.1] hover:translate-x-[2rem]'>
+                            <span className='flex gap-[1rem] items-center transition-all cursor-pointer hover:scale-[1.1] hover:translate-x-[.5rem]'>
                                 <CheckBlack />
                                 <h1 className='font-semibold max-sm:text-[.8rem]'>Entender e atender as necessidades</h1>
                             </span>
-                            <span className='flex gap-[1rem] items-center transition-all cursor-pointer hover:scale-[1.1] hover:translate-x-[2rem]'>
+                            <span className='flex gap-[1rem] items-center transition-all cursor-pointer hover:scale-[1.1] hover:translate-x-[.5rem]'>
                                 <CheckBlack />
                                 <h1 className='font-semibold max-sm:text-[.8rem]'>Elaborar uma Ui para a Ux necessaria</h1>
                             </span>
-                            <span className='flex gap-[1rem] items-center transition-all cursor-pointer hover:scale-[1.1] hover:translate-x-[2rem]'>
+                            <span className='flex gap-[1rem] items-center transition-all cursor-pointer hover:scale-[1.1] hover:translate-x-[.5rem]'>
                                 <CheckBlack />
                                 <h1 className='font-semibold max-sm:text-[.8rem]'>Layout Clean e elegânte</h1>
                             </span>
