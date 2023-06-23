@@ -14,6 +14,7 @@ const AboutSection = () => {
       <div className="w-[70%] flex h-full relative max-xl:w-[80%] max-lg:flex-col max-lg:items-center">
         <ImagesAnimate
           min={1320}
+          max={3000}
           src={About}
           alt="img-about"
           className="w-[100%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]"

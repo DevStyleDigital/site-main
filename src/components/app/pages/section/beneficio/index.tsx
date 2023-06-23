@@ -34,6 +34,7 @@ const Beneficios = () => {
           <div className="w-full h-full relative">
             <ImagesAnimate
               min={5950}
+              max={8000}
               src={Painel}
               alt="img-about"
               className="w-[90%]"
