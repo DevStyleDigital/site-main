@@ -69,7 +69,7 @@ const HeaderAnimationProcess = () => {
       <HeroText.Img  className='w-[53%] h-full top-[-53%] max-xl:top-[-50%] max-sm:top-[-45%] !shadow-none max-lg:opacity-[20%]  !rounded-none right-[-50%]  translate-x-[-85%] translate-y-[40%] max-[1700px]:w-[50%] max-xl:w-[80%] max-xl:translate-x-[-30%]'>
         <div className="w-full h-full rounded-full relative z-50">
           <motion.div
-            className="w-full h-full relative preserve"
+            className="w-full h-full relative preserve z-40"
             style={{ rotateX: a, rotateY: b }}
           >
            <motion.div
@@ -87,8 +87,8 @@ const HeaderAnimationProcess = () => {
             </motion.div>
            </motion.div>
         </div>
-        {/* <div className="w-[20rem] h-[20rem] rounded-full sombra-6 absolute bottom-[1rem] left-[0] max-md:top-[10rem] max-md:right-0"></div>
-        <div className="w-[20rem] h-[20rem] rounded-full sombra-7 absolute bottom-[1rem] right-[30%] max-md:bottom-[0rem] max-md:left-0"></div> */}
+        <div className="w-[20rem] h-[20rem] rounded-full sombra-6 absolute z-0 bottom-[1rem] left-[0] max-md:top-[10rem] max-md:right-0"></div>
+        <div className="w-[20rem] h-[20rem] rounded-full sombra-7 absolute z-0 bottom-[1rem] right-[30%] max-md:bottom-[0rem] max-md:left-0"></div>
       </HeroText.Img>
       <motion.div
         className="max-w-[1400px] w-full flex flex-col items-start max-lg:items-center max-lg:gap-[1rem] "
