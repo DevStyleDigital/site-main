@@ -74,6 +74,14 @@ const HeaderAnimationProcess = () => {
           >
            <motion.div
               className="iconProcess max-xl:w-[500px] z-40"
+              ref={cardRef}
+              initial={{ scale: 0 }}
+              animate={{ rotateY: 180, scale: 1 }}
+              transition={{
+                type: 'spring',
+                stiffness: 60,
+                damping: 5,
+              }}
             >
               <Image src={Process} alt="PC" width={2525} height={2278}></Image>
             </motion.div>
