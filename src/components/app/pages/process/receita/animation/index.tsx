@@ -6,6 +6,19 @@ import clsx from "clsx"
 import { motion } from 'framer-motion'
 
 const AnimationRevenue = () => {
+    const container = {
+        offscreen: {
+          opacity: 0,
+        },
+        onscreen: {
+          opacity: 1,
+          transition: {
+            type: 'spring',
+            duration: 1.2,
+          },
+        },
+      }
+
     return (
         <motion.div 
             initial="offscreen"
@@ -13,7 +26,7 @@ const AnimationRevenue = () => {
             viewport={{ once: true, amount: 0.2 }}
             style={{ perspective: 2000 }}
             className="w-[65%] bg-process rounded-2xl p-[3rem] max-sm:py-[2rem] max-sm:px-[1rem] h-fit items-center flex max-lg:gap-[1rem] max-lg:flex-col  max-xl:w-[95%] max-[1630px]:w-[85%]  ">
-                <motion.div className="flex flex-col gap-[1rem] max-lg:gap-[2rem] max-lg:text-center">
+                <motion.div variants={container} className="flex flex-col gap-[1rem] max-lg:gap-[2rem] max-lg:text-center">
                     <h1 className="font-semibold text-[2rem] leading-tight max-xl:text-[1.8rem] max-sm:text-[1.5rem] max-w-[70%] max-xl:max-w-[80%] max-lg:max-w-[100%]">Nossa receita aprova de balas para um sistema elegante</h1>
                     <span className="w-[70%] max-lg:w-full h-[1px] bg-[#CFCFCF]"></span>
                     <span className="text-secondary_black-950/70 relative z-10 max-md:text-[.8rem] max-xl:text-[.9rem] max-w-[70%] max-xl:max-w-[80%] max-lg:max-w-[100%]">
