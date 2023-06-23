@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 const AnimationRevenue = () => {
     const container = {
         offscreen: {
-          y: 200,
+          y: -200,
           opacity: 0,
         },
         onscreen: {
