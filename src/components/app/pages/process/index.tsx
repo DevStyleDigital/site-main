@@ -73,7 +73,7 @@ const HeaderAnimationProcess = () => {
             style={{ rotateX: a, rotateY: b }}
           >
            <motion.div
-              className="iconProcess max-xl:w-[500px] max-sm:w-[300px] z-40"
+              className="iconProcess max-xl:w-[500px] max-sm:w-[400px] z-40"
               ref={cardRef}
               initial={{ scale: 0 }}
               animate={{ rotateY: 180, scale: 1 }}
@@ -87,8 +87,8 @@ const HeaderAnimationProcess = () => {
             </motion.div>
            </motion.div>
         </div>
-        <div className="w-[20rem] h-[20rem] rounded-full sombra-6 absolute z-0 bottom-[1rem] left-[0] max-md:top-[10rem] max-md:right-0"></div>
-        <div className="w-[20rem] h-[20rem] rounded-full sombra-7 absolute z-0 bottom-[1rem] right-[30%] max-md:bottom-[0rem] max-md:left-0"></div>
+        <div className="w-[20rem] h-[20rem] rounded-full sombra-6 absolute z-0 bottom-[1rem] left-[0] max-md:top-[10rem] max-md:right-0 max-sm:hidden"></div>
+        <div className="w-[20rem] h-[20rem] rounded-full sombra-7 absolute z-0 bottom-[1rem] right-[30%] max-md:bottom-[0rem] max-md:left-0 max-sm:hidden"></div>
       </HeroText.Img>
       <motion.div
         className="max-w-[1400px] w-full flex flex-col items-start max-lg:items-center max-lg:gap-[1rem] "
