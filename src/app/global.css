@@ -121,11 +121,6 @@ body{
     transform: translateY(-30%) rotateY(180deg);
     
 }
-@media (max-width: 1440px) {
-    .iconProcess img{
-        transform: translateY(-40%);
-    }
-}
 
 
 .iconPc img {
@@ -330,6 +325,12 @@ body{
 
 .value-cols{
     grid-template-columns: 1fr 15% 1fr;
+}
+
+@media(max-width:1024px){
+    .value-cols-process{
+        grid-template-columns: 1fr 15% 1fr;
+    }
 }
 
 .card-witness {

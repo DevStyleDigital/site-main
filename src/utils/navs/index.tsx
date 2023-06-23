@@ -19,7 +19,7 @@ export const NavsItems: iNavs[] = [
   {
     id: '4',
     label: 'Processos',
-    link: '#process',
+    link: '/process',
   },
   {
     id: '5',

@@ -38,7 +38,7 @@ const ProcessAnimation = () => {
                 <Card.Image className="w-[8rem] h-[8rem] max-sm:w-[6rem]  max-sm:h-[6rem] rounded-full flex justify-center items-center bg-[#292930] shadow-md">
                   <Image
                     src={item.icon}
-                    className="scale-[0.7]"
+                    className="scale-[0.6]"
                     alt={item.label}
                     width={173}
                     height={138}

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Process from '@/assets/img/Image.png'
 import { motion } from 'framer-motion'
 import { useCallback, useEffect, useRef, useState } from 'react'
+import Button from '@/components/button'
 
 const HeaderAnimationProcess = () => {
   const [handleAnimationIMAGES, setHandleAnimationIMAGES] = useState(true)
@@ -65,14 +66,14 @@ const HeaderAnimationProcess = () => {
 
   return (
     <HeroText.Root className="header_process">
-      <HeroText.Img  className='w-[53%] h-full top-[-53%] !shadow-none  !rounded-none right-[-50%]  max-lg:opacity-[15%] translate-x-[-85%] translate-y-[40%] max-2xl:w-[70%] max-[1700px]:w-[50%] max-2xl:translate-x-[-40%] max-xl:w-[80%] max-xl:translate-x-[-30%] max-2xl:h-screen'>
+      <HeroText.Img  className='w-[53%] h-full top-[-53%] max-xl:top-[-50%] !shadow-none  !rounded-none right-[-50%]  translate-x-[-85%] translate-y-[40%] max-[1700px]:w-[50%] max-xl:w-[80%] max-xl:translate-x-[-30%]'>
         <div className="w-full h-full rounded-full relative z-50">
           <motion.div
             className="w-full h-full relative preserve"
             style={{ rotateX: a, rotateY: b }}
           >
            <motion.div
-              className="iconProcess max-xl:w-[400px] z-40"
+              className="iconProcess max-xl:w-[500px] z-40 max-lg:opacity-[20%]"
               ref={cardRef}
               initial={{ scale: 0 }}
               animate={{ rotateY: 180, scale: 1 }}
@@ -86,8 +87,8 @@ const HeaderAnimationProcess = () => {
             </motion.div>
            </motion.div>
         </div>
-        <div className="w-[20rem] h-[20rem] rounded-full sombra-6 absolute bottom-[1rem] left-[0] z-2 max-md:top-[10rem] max-md:right-0"></div>
-        <div className="w-[20rem] h-[20rem] rounded-full sombra-7 absolute bottom-[1rem] right-[30%] z-2 max-md:top-[10rem] max-md:left-0"></div>
+        <div className="w-[20rem] h-[20rem] rounded-full sombra-6 absolute bottom-[1rem] max-lg:opacity-[70%] left-[0] z-2 max-md:top-[10rem] max-md:right-0"></div>
+        <div className="w-[20rem] h-[20rem] rounded-full sombra-7 absolute bottom-[1rem] max-lg:opacity-[70%] right-[30%] z-2 max-md:bottom-[0rem] max-md:left-0"></div>
       </HeroText.Img>
       <motion.div
         className="max-w-[1400px] w-full flex flex-col items-start max-lg:items-center max-lg:gap-[1rem] "
@@ -102,10 +103,10 @@ const HeaderAnimationProcess = () => {
           Seja desenvolvimento web ou mobile nós encontramos e desenvolvemos a solução para o seu problema!
           De maneira performatica atualizada e muito elegante você tera suas soluções unicas e costumizadas. 
         </HeroText.SubTitle>
-        {/* <HeroText.Buttons>
+        <HeroText.Buttons>
           <Button fill href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">Nossos serviços</Button>
           <Button href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">Get Started</Button>
-        </HeroText.Buttons> */}
+        </HeroText.Buttons>
       </motion.div>
     </HeroText.Root>
   )

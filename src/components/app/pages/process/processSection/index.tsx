@@ -2,6 +2,8 @@ import ProcessIcon from '@/assets/svg/process'
 import { HeaderSection } from '@/components/titleSection'
 import clsx from 'clsx'
 import ProcessAnimation from '../ProcessAnimation'
+import Button from '@/components/button'
+import IconProx from '@/assets/svg/iconProx'
 
 const ProcessSection = () => {
   return (
@@ -31,6 +33,7 @@ const ProcessSection = () => {
           </div>
         </HeaderSection.Root>
         <ProcessAnimation />
+        <Button href='' fill light>Começar agora <IconProx /></Button>
       </div>
     </section>
   )
