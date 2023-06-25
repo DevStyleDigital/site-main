@@ -10,7 +10,7 @@ import { usePathname } from 'next/navigation'
 const Header = () => {
   const pathname = usePathname()
   const { setSidebarOpen } = useSideBar()
-  
+  const newPathname = pathname.split('/')[1]
   return (
     <header className="w-full h-auto flex justify-center items-center px-[2rem] absolute top-0 bg-transparent z-50">
       <div className="flex justify-between max-w-[1400px] items-center w-full border-black-500 pt-[2rem] pb-[.7rem]">
@@ -21,7 +21,7 @@ const Header = () => {
               <li
                 key={item.id}
                 className={clsx('font-medium text-secondary_black-950', {
-                  'border-b-[1px] border-black text-neutral-950': item.link === pathname,
+                  'border-b-[1px] border-black text-neutral-950': item.link === `/${newPathname}`,
                 })}
               >
                 <Link href={item.link}>{item.label}</Link>

@@ -47,7 +47,7 @@ const CardSocial = () => {
                 </div>
                 <h1 className='font-bold text-[1.1rem]'>{social.label}</h1>
                 <span className='font-medium text-[.8rem] text-[#7f7f7f]/80'>{social.name}</span>
-                <Link target='blank' href={social.link} className='w-fit mt-[.5rem] flex items-center gap-[.5rem] py-[.5rem] px-[1.5rem] border follow-button font-semibold border-[#5956E8]/70 text-[#5956E8] hover:bg-[#5956E8] hover:text-white transition-all rounded-lg text-[.9rem]'><Follows /> Follow</Link>
+                <Link target='_blank' href={social.link} className='w-fit mt-[.5rem] flex items-center gap-[.5rem] py-[.5rem] px-[1.5rem] border follow-button font-semibold border-[#5956E8]/70 text-[#5956E8] hover:bg-[#5956E8] hover:text-white transition-all rounded-lg text-[.9rem]'><Follows /> Follow</Link>
               </motion.div>
             )
           })}

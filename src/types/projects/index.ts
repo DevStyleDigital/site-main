@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image'
+import { Stacks } from './stacks'
 
 export interface iProjects {
   id: number
@@ -8,4 +9,11 @@ export interface iProjects {
   img: StaticImageData
   color: string
   order: number
+  hash: string
+  client: string
+  duration: number
+  commit: number
+  bgColor: string
+  link?: string
+  stacks : Stacks[]
 }

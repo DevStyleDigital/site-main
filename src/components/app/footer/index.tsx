@@ -10,9 +10,10 @@ import { NavsItems } from '@/utils/navs'
 import { UltilidadeArray } from '@/utils/page-ultilidade'
 import Image from 'next/image'
 import Link from 'next/link'
+
 const Footer = () => {
   return (
-    <div className="w-full h-fit py-[4rem] flex justify-center items-center bg-secondary_black-950 max-sm:pb-[2rem] max-sm:px-[1rem]">
+    <section className="w-full h-fit py-[4rem] flex justify-center items-center bg-secondary_black-950 max-sm:pb-[2rem] max-sm:px-[1rem]">
       <div className="w-[80%] h-[80%] flex gap-[5rem] justify-center max-xl:w-[95%] max-lg:flex-col max-lg:items-center">
         <div className="w-[22rem] h-[35rem] max-lg:w-[60%] max-sm:w-[90%] max-lg:h-auto flex flex-col gap-[1rem] items-center rounded-lg shadow-md bg-[#3C3C45] py-[3.5rem] px-[2rem]">
           <h1 className="text-white font-bold text-[1.9rem]">
@@ -36,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
           <Link
-            target='blank'
+            target='_blank'
             href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
             className="w-full h-full rounded-md bg-green-500 flex justify-center gap-[1rem] items-center footer-card transition-all max-lg:h-[4rem] max-sm:h-[3.5rem] hover:scale-[1.02]"
           >
@@ -69,7 +70,7 @@ const Footer = () => {
               </span>
               <Link
                 href="https://goo.gl/maps/JH2MEKGPQyvHHM966"
-                target="blank"
+                target="_blank"
                 className="text-[#FFDC60] underline"
               >
                 location
@@ -114,7 +115,7 @@ const Footer = () => {
                 {FollowsArray.map((item) => {
                   return (
                     <li key={item.id} className="font-medium text-white">
-                      <Link href={item.link} target='blank'>{item.label}</Link>
+                      <Link href={item.link} target='_blank'>{item.label}</Link>
                     </li>
                   )
                 })}
@@ -130,7 +131,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

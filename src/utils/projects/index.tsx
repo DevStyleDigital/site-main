@@ -8,6 +8,15 @@ import Cardapio from '@/assets/img/projects/cardapio.png'
 import Haia from '@/assets/img/projects/haia.png'
 import Amac from '@/assets/img/projects/amac.png'
 import GRM from '@/assets/img/projects/grm.png'
+import GRMBanner from '@/assets/img/projects/grmbanner.png'
+import Material from '@/assets/img/stacks/maetrial.png'
+import Next from '@/assets/img/stacks/NEXT.png'
+import React from '@/assets/img/stacks/react.png'
+import SupaBase from '@/assets/img/stacks/supabase.png'
+import Ts from '@/assets/img/stacks/ts.png'
+import Tailwind from '@/assets/img/stacks/tailwind.png'
+import Styled from '@/assets/img/stacks/styled.png'
+
 
 export const ProjectsArray: iProjects[] = [
   {
@@ -18,6 +27,29 @@ export const ProjectsArray: iProjects[] = [
     img: Authentic,
     color: '#E9F7FF',
     order: 4,
+    client: 'AG VELASCO',
+    duration: 24,
+    commit: 47,
+    link:'https://www.authenticsorocaba.com.br/',
+    bgColor: 'linear-gradient(111.23deg, #E9F7FF 9.95%, #FFDBD5 85.17%)',
+    hash: '8c1ae39af7a28c68059cca416fe6cb8d',
+    stacks: [
+      {
+        id: 1,
+        name: 'NextJs',
+        icon: Next
+      },
+      {
+        id: 2,
+        name: 'Styled-Components',
+        icon: Styled
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        icon: Ts
+      }
+    ]
   },
   {
     id: 2,
@@ -25,8 +57,41 @@ export const ProjectsArray: iProjects[] = [
     type: 'WebSite',
     comment: 'TratyVet é um WebSite completo com a apresentação da empresa e dos produtos, com um sistema de cadastro como um CMS deixando a empresa com o poder de cadastrar, remover e atualizar produtos. Possibilitando também uma busca dos distribuidores através do cep ou cidade do cliente.',
     img: TratyVet,
-    color: '#FFDBD4',
+    color: '#ffd4d4',
     order: 3,
+    client: 'TratyVet',
+    duration: 120,
+    commit: 25,
+    link:'https://tratyvet.com.br/pt-br',
+    bgColor: 'linear-gradient(140deg, #CFD4FF 0%, #FFFFFD 100%)',
+    hash: 'a0921d0835c4c79d632a3438f248461d',
+    stacks: [
+      {
+        id: 1,
+        name: 'NextJs',
+        icon: Next
+      },
+      {
+        id: 2,
+        name: 'TailWind CSS',
+        icon: Tailwind
+      },
+      {
+        id: 3,
+        name: 'SupaBase',
+        icon: SupaBase
+      },
+      {
+        id: 4,
+        name: 'TypeScript',
+        icon: Ts
+      },
+      {
+        id: 5,
+        name: 'Material UI',
+        icon: Material
+      }
+    ]
   },
   {
     id: 3,
@@ -36,15 +101,61 @@ export const ProjectsArray: iProjects[] = [
     img: Prime,
     color: '#FFF3CA',
     order: 5,
+    client: 'Prime',
+    duration: 16,
+    commit: 32,
+    link:'https://www.primesorocaba.com.br/',
+    bgColor: 'linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%)',
+    hash: '5fb707b099825db764df989e8d8edb4c',
+    stacks: [
+      {
+        id: 1,
+        name: 'ReactJs',
+        icon: React
+      },
+      {
+        id: 2,
+        name: 'TailWind CSS',
+        icon: Tailwind
+      },
+      {
+        id:3,
+        name: 'TypeScript',
+        icon: Ts
+      }
+    ]
   },
   {
     id: 4,
     title: 'Domus',
     type: 'Landing Page',
-    comment: 'Domus é um site criado para a apresentar a loja de materiais de construção, mostrando os valores dos materiais mais procurados e procurando sempre fixar a marca e as cores da logo. É um site simples porém com todos os elementos para claro e não ficar massante para o cliente.',
+    comment: 'Domus é um site criado para a apresentar a loja de materiais de construção, mostrando os valores dos materiais mais procurados e procurando sempre fixar a marca e as cores da logo. Um site simples porém com todos os elementos claros não ficando massante para o cliente.',
     img: Domus,
     color: '#d1ffca',
     order: 7,
+    client: 'Domus',
+    duration: 16,
+    commit: 11,
+    link:'https://www.domusmateriaisconstrucao.com.br/',
+    bgColor: 'linear-gradient(111.23deg, #E9F7FF 9.95%, #FFDBD5 85.17%)',
+    hash: 'c27401142dad1fde3b1760ccdedcd7dc',
+    stacks: [
+      {
+        id: 1,
+        name: 'NextJs',
+        icon: Next
+      },
+      {
+        id: 2,
+        name: 'Styled-Components',
+        icon: Styled
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        icon: Ts
+      }
+    ]
   },
   {
     id: 5,
@@ -54,6 +165,29 @@ export const ProjectsArray: iProjects[] = [
     img: Vista,
     color: '#e7caff',
     order: 6,
+    client: 'Julio&Julio',
+    duration: 32,
+    commit: 14,
+    link:'https://www.vistajatai.com.br/',
+    bgColor: 'linear-gradient(140deg, #CFD4FF 0%, #FFFFFD 100%)',
+    hash: 'eee6228aa9a24a02d52c54b3264b0726',
+    stacks: [
+      {
+        id: 1,
+        name: 'NextJs',
+        icon: Next
+      },
+      {
+        id: 2,
+        name: 'Styled-Components',
+        icon: Styled
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        icon: Ts
+      },
+    ]
   },
   {
     id: 6,
@@ -63,6 +197,43 @@ export const ProjectsArray: iProjects[] = [
     img: Cardapio,
     color: '#cad0ff',
     order: 8,
+    client: "Yoshi's",
+    duration: 240,
+    commit: 132,
+    bgColor: 'linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%)',
+    hash: 'd26ae16eba99059bcd105b3eab7acdca',
+    stacks: [
+      {
+        id: 1,
+        name: 'NextJs',
+        icon: Next
+      },
+      {
+        id: 2,
+        name: 'Styled-Components',
+        icon: Styled
+      }, 
+      {
+        id: 3,
+        name: 'TailWind CSS',
+        icon: Tailwind
+      },
+      {
+        id: 4,
+        name: 'SupaBase',
+        icon: SupaBase
+      },
+      {
+        id: 5,
+        name: 'TypeScript',
+        icon: Ts
+      },
+      {
+        id: 6,
+        name: 'Material UI',
+        icon: Material
+      }
+    ]
   },
   {
     id: 7,
@@ -72,6 +243,29 @@ export const ProjectsArray: iProjects[] = [
     img: Haia,
     color: '#caffec',
     order: 2,
+    client: "GRM Incorporadora",
+    duration: 40,
+    commit: 6,
+    link: 'https://haiaboavista.com.br/',
+    bgColor: 'linear-gradient(111.23deg, #E9F7FF 9.95%, #FFDBD5 85.17%)',
+    hash: 'd7ab63432188f288fa402419f55d6410',
+    stacks: [
+      {
+        id: 1,
+        name: 'NextJs',
+        icon: Next
+      },
+      {
+        id: 2,
+        name: 'Styled-Components',
+        icon: Styled
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        icon: Ts
+      },
+    ]
   },
   {
     id: 8,
@@ -79,8 +273,31 @@ export const ProjectsArray: iProjects[] = [
     type: 'Landing Page',
     comment: 'AMAC é um site criado para apresentação da empresa, podendo conhecer seus projetos e os serviços oferecidos pela mesma tendo maior conhecimento da sua localização além de conseguir vizualizar seus projetos passados.',
     img: Amac,
-    color: '#ffe1ca',
+    color: '#ffecca',
     order: 9,
+    client: "AMAC",
+    duration: 32,
+    commit: 30,
+    link: 'https://www.amac.eng.br/',
+    bgColor: 'linear-gradient(140deg, #CFD4FF 0%, #FFFFFD 100%)',
+    hash: 'ded34ec551e090ada54b8524f64e75c1',
+    stacks: [
+      {
+        id: 1,
+        name: 'NextJs',
+        icon: Next
+      },
+      {
+        id: 2,
+        name: 'Styled-Components',
+        icon: Styled
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        icon: Ts
+      },
+    ]
   },
   {
     id: 9,
@@ -91,5 +308,37 @@ export const ProjectsArray: iProjects[] = [
     img: GRM,
     color: '#ffcae3',  
     order: 1,
+    client: "GRM Incorpodora",
+    duration: 120,
+    commit: 132,
+    bgColor: 'linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%)',
+    hash: 'ef4b80de830651001e1539bbf4bea609',
+    stacks: [
+      {
+        id: 1,
+        name: 'NextJs',
+        icon: Next
+      },
+      {
+        id: 2,
+        name: 'Styled-Components',
+        icon: Styled
+      }, 
+      {
+        id: 3,
+        name: 'SupaBase',
+        icon: SupaBase
+      },
+      {
+        id: 4,
+        name: 'TypeScript',
+        icon: Ts
+      },
+      {
+        id: 5,
+        name: 'Material UI',
+        icon: Material
+      }
+    ]
   },
 ]

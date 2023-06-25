@@ -9,10 +9,19 @@
     scroll-behavior: smooth !important;
 }
 
+html{
+    scroll-snap-type: y proximity;
+}
+
+.scroll-snap{
+    scroll-snap-align: start;
+}
+
 body{
     position: relative;
     overflow-x: hidden;    
 }
+
 
 .header_projects{
     background: linear-gradient(140deg, #F5E9FF 0%, #FFDBD4 100%);
@@ -23,6 +32,7 @@ body{
 .header_home{
     background: linear-gradient(111.23deg, #E9F7FF 9.95%, #FFDBD5 85.17%);
 }
+
 
 .header_about{
     height: fit-content;

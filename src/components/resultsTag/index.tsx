@@ -1,8 +1,9 @@
 'use client'
 import { ResultsTagArray } from '@/utils/results'
+import { ResultsProjectsArray } from '@/utils/resultsProjects'
 import { motion } from 'framer-motion'
 
-const ResultsTag = () => {
+const ResultsTag = ({project} : {project?: boolean}) => {
   return (
     <motion.div
       initial="offscreen"
@@ -10,7 +11,7 @@ const ResultsTag = () => {
       viewport={{ once: true, amount: 0.2 }}
       className="w-full h-auto flex justify-between items-center max-md:grid max-md:grid-cols-2 max-md:grid-rows-2 max-md:justify-items-center max-md:gap-[2rem]"
     >
-      {ResultsTagArray.map((result) => {
+      {(project ? ResultsProjectsArray : ResultsTagArray).map((result) => {
         const variants = {
           offscreen: {
             scale: 0,

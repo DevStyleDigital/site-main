@@ -4,7 +4,7 @@ import { HeaderSection } from '@/components/titleSection'
 
 const Team = ({numSection}: {numSection: string}) => {
   return (
-    <div className="w-full h-fit flex justify-center pt-[5rem] pb-[4rem] max-lg:pb-[6rem] max-md:pt-[3rem] max-sm:pb-[3rem]">
+    <section className="w-full h-fit flex justify-center pt-[5rem] pb-[4rem] max-lg:pb-[6rem] max-md:pt-[3rem] max-sm:pb-[3rem]">
       <div className="w-[60%] flex flex-col gap-[2.5rem] items-center max-2xl:w-[70%] max-xl:w-[80%] max-lg:w-[90%]">
         <HeaderSection.Root>
           <div className="flex flex-col items-center gap-[1rem]">
@@ -26,7 +26,7 @@ const Team = ({numSection}: {numSection: string}) => {
         </HeaderSection.Root>
         <Cards />
       </div>
-    </div>
+    </section>
   )
 }
 
