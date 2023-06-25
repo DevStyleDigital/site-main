@@ -82,7 +82,7 @@ const HeaderAnimationProjects = () => {
                 height={519}
               ></Image>
           <div className='w-full h-full flex justify-center items-center pb-[2rem] max-sm:translate-y-[-3rem] max-sm:items-center max-2xl:translate-y-[-3rem] max-[920px]:items-start max-[920px]:translate-y-[30%] max-md:translate-y-[20%]'>
-            <HeroText.Title className='text-[6rem] max-2xl:text-[4rem]'>
+            <HeroText.Title className='text-[6rem] max-2xl:text-[4rem] max-sm:text-[3rem]'>
               Case <span className="text-[#5956E8]">Studies </span>
             </HeroText.Title>
           </div>
