@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 const HeaderProject = ({projeto}: { projeto : iProjects}) => {
     return (
         <motion.section className={`w-full h-fit flex py-[120px] pb-[60px] justify-center min-h-[25vh]  relative`} style={{background: projeto.bgColor}}>
-            <motion.div className="w-[75%] grid grid-cols-2 max-[870px]:grid-cols-1 max-[870px]:auto-rows-min items-center gap-[3rem]  absolute max-[870px]:!relative top-[55%] max-xl:w-[95%] max-[870px]:w-[60%] max-sm:w-[92%]">
+            <motion.div className="w-[75%] grid grid-cols-2 max-[870px]:grid-cols-1 max-[870px]:auto-rows-min items-center gap-[3rem]  absolute max-[870px]:!relative top-[55%] max-[870px]:top-0 max-xl:w-[95%] max-[870px]:w-[60%] max-sm:w-[92%]">
                 <motion.div     
                     initial={{  scale: 0, opacity: 0 }}
                     animate={{ scale: 1,  opacity: 1 }}
