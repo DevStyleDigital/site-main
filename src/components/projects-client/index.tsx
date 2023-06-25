@@ -47,7 +47,7 @@ const ProjectCLient = () => {
         className="h-[30rem] w-[50%] overflow-y-scroll pr-[1rem] scroll-style max-md:w-full"
       >
         <div className="w-full flex flex-col gap-[1rem]">
-          {ProjectsArray.map((project) => (
+          {ProjectsArray.sort((a, b) => a.order - b.order).map((project) => (
             <div
               id={`box-${project.id}`}
               key={project.id}
@@ -64,7 +64,7 @@ const ProjectCLient = () => {
                   <h1 className="text-white/50 font-semibold text-[1.2rem] max-sm:text-[1rem]">
                     {project.title}
                   </h1>
-                  <span className="opacity-0 h-0 text-[white]/70 font-medium max-sm:text-[.9rem]">
+                  <span className="opacity-0 h-0 text-[white]/70 font-medium max-sm:text-[.9rem]  elipses2 max-h-[4rem]">
                     {project.comment}
                   </span>
                 </div>

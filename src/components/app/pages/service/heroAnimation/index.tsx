@@ -87,7 +87,6 @@ const HeroStartAnimation = () => {
         }
     }, [])
 
-    console.log(newVariant, newVariantFoguete)
     return (
         <motion.div
             initial="offscreen"

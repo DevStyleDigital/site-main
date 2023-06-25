@@ -1,5 +1,4 @@
 'use client'
-import { WitnessArray } from '@/utils/witness'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { motion } from 'framer-motion'
 import { Navigation } from 'swiper'

@@ -6,4 +6,6 @@ export interface iProjects {
   type: string
   comment: string
   img: StaticImageData
+  color: string
+  order: number
 }

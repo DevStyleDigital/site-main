@@ -14,6 +14,12 @@ body{
     overflow-x: hidden;    
 }
 
+.header_projects{
+    background: linear-gradient(140deg, #F5E9FF 0%, #FFDBD4 100%);
+    height: fit-content;
+    min-height: 70vh;
+}
+
 .header_home{
     background: linear-gradient(111.23deg, #E9F7FF 9.95%, #FFDBD5 85.17%);
 }
@@ -31,6 +37,24 @@ body{
 }
 
 .elipses {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    position: relative;
+    display: -webkit-box;
+}
+
+.elipses2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    position: relative;
+    display: -webkit-box;
+}
+
+.elipses3 {
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 4;
@@ -93,6 +117,22 @@ body{
     background: #94BFFF;
     filter: blur(120px);
 }
+
+.sombra-8 {
+    background: #DDFF7C;
+    filter: blur(163px);
+}
+
+.sombra-9 {
+    background: #FFC4BB;
+    filter: blur(163px);
+}
+
+.sombra-10 {
+    background: #FA95D1;
+    filter: blur(163px);
+}
+
 
 .iconPc{
     position: absolute;
