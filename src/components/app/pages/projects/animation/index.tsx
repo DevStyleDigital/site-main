@@ -10,7 +10,7 @@ const AnimationCards = () => {
         <motion.div
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.1 }}
             className="w-full h-full grid grid-cols-2 max-[1150px]:grid-cols-1 grid-rows-auto gap-[2rem] content-center">
             {ProjectsArray.sort((a, b) => a.order - b.order).map(project => {
                 const variants = {

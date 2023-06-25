@@ -11,7 +11,7 @@ const ServiceAnimation = () => {
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.1 }}
         className="w-[80%] h-full grid grid-cols-3 gap-[2rem] max-xl:w-[80%] max-lg:w-[90%] max-xl:grid-cols-2 max-md:grid-cols-1 max-md:w-[80%] max-sm:w-[90%]"
         style={{ perspective: 2000 }}
       >

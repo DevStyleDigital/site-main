@@ -2,13 +2,13 @@
 import Next from '@/assets/svg/next'
 import Image, { StaticImageData } from 'next/image'
 import { useEffect, useState } from 'react'
-import Authentic from '@/assets/img/projects/authenticImg.png'
+import GRM from '@/assets/img/projects/grm.png'
 import { ProjectsArray } from '@/utils/projects'
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
 
 const ProjectCLient = () => {
-  const [ImageAtual, setImageAtual] = useState<StaticImageData>(Authentic)
+  const [ImageAtual, setImageAtual] = useState<StaticImageData>(GRM)
 
   const variants = {
     offscreen: {
@@ -53,7 +53,7 @@ const ProjectCLient = () => {
               key={project.id}
               className={clsx(
                 `w-full h-[5rem] bg-[#383840] rounded-md p-[2rem] box-content-projects border-[1px] border-[black]/10`,
-                { active: project.id === 1 },
+                { active: project.order === 1 },
               )}
             >
               <div className="w-full h-full flex justify-between items-center">
