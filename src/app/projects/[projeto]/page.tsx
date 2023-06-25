@@ -1,7 +1,7 @@
 import { SideBarFundo } from "@/components/app/sidebar"
 import ToTop from "@/components/toTop"
 import { ProjectsArray } from "@/utils/projects"
-import { redirect } from "next/navigation"
+import { notFound, redirect } from "next/navigation"
 import { Metadata } from 'next'
 import HeaderProject from "@/components/headerProject"
 
@@ -17,7 +17,7 @@ export async function generateMetadata(
 
 const AboutProject = ({ params }: { params: { projeto: string } }) => {
     const validHash = ProjectsArray.find(project => project.hash === params.projeto)
-    if(!validHash) redirect('/')
+    if(!validHash) notFound()
     return (
         <>   
         <SideBarFundo />
