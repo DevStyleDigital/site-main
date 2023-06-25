@@ -8,11 +8,12 @@ interface ButtonProps {
   light?: boolean
   href: string
   className?: string
+  notBlank?: boolean
 }
-const Button = ({ children, fill, light, href, className }: ButtonProps) => {
+const Button = ({ children, fill, light, href, className, notBlank }: ButtonProps) => {
   return (
     <Link
-      target='_blank'
+      target={!notBlank ? '_blank' : ''}
       href={href}
       className={clsx(
         `py-[.7rem] flex items-center gap-[.7rem] max-h-[3rem] max-lg:py-[.5rem] whitespace-nowrap px-[1.5rem] max-lg:px-[1rem] max-md:text-[.8rem] bg-transparent border-secondary_black-950 rounded-md border-[1px] font-semibold text-neutral-950  duration-500 transition-color hover:bg-[#F6F6F6] ${className}`,

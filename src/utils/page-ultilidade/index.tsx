@@ -9,7 +9,7 @@ export const UltilidadeArray: iUltilidade[] = [
   {
     id: 2,
     label: 'NotFound',
-    link: '/',
+    link: '/notfound',
   },
   {
     id: 3,
