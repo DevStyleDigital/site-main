@@ -62,7 +62,7 @@ const Beneficios = () => {
           <div className="w-[90%] flex flex-col items-start content">
             <div className="w-full border-b-[1px] border-[#CFCFCF]/80 relative">
               <h1 className="font-bold text-[1.3rem] ml-[6rem] max-sm:text-[1rem]">
-                Site Optimisation
+                Site Optimization
               </h1>
               <div className="absolute w-[80px] h-[80px] max-sm:w-[60px] max-sm:h-[60px] flex justify-center items-center border-[1px] border-[#CFCFCF]/80 bg-white bottom-0 translate-y-2/4 rounded-full">
                 <EngrenagemBene />

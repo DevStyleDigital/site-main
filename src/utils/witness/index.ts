@@ -31,7 +31,7 @@ export const WitnessArray: iWitness[] = [
     authorName: 'Guilherme',
     authorcareer: 'CO',
     commented:
-      "Lorem Ipsum has been the industry's standard from dummy text ever since the unknown printer to galley of type and make a type specimen book. ",
+      "A empresa demonstrou um profissionalismo exemplar ao prestar serviços de construção e desenvolvimento de sites para os clientes que atendo. A equipe entregou soluções modernas e funcionais, superando as expectativas. O atendimento ao cliente foi excelente. Recomendo fortemente os serviços da DevStyle.",
     companyName: 'Core Ag',
     companyImage: coreImg,
     autorImage:Guilherme
