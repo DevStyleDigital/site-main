@@ -39,7 +39,7 @@ const AnimationCards = () => {
                                 <span className="text-secondary_black-950/70 text-[.8rem] elipses3 max-h-[5rem]">
                                     {project.comment}
                                 </span>
-                                <Button href={`projects/${project.hash}`} className="w-fit !p-[.5rem] !text-[.8rem]" fill >Leia sobre <IconProx white /></Button>
+                                <Button  href={`projects/${project.hash}`} className="w-fit !p-[.5rem] !text-[.8rem]" fill >Leia sobre <IconProx white /></Button>
                         </div>
                     </motion.div>
                 )

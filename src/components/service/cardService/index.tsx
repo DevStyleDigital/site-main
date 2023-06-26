@@ -45,7 +45,7 @@ const Button = ({
   children: ReactNode
   className: string
 }) => {
-  return <button {...props}>{children}</button>
+  return <button aria-label='button' {...props}>{children}</button>
 }
 
 const Image = ({

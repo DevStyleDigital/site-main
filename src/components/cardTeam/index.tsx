@@ -56,6 +56,7 @@ const Cards = () => {
               <div className="flex gap-[1rem] mt-[.5rem]">
                 {team.linkedin && (
                   <Link
+                    aria-label='linkedin'
                     href={team.linkedin}
                     target='_blank'
                     className="transition-all hover:scale-[1.2]"
@@ -65,6 +66,7 @@ const Cards = () => {
                 )}
                 {team.instagram && (
                   <Link
+                    aria-label='instagram'
                     href={team.instagram}
                     target='_blank'
                     className="transition-all hover:scale-[1.2]"
@@ -74,6 +76,7 @@ const Cards = () => {
                 )}
                 {team.github && (
                   <Link
+                    aria-label='github'
                     href={team.github}
                     target='_blank'
                     className="transition-all hover:scale-[1.2]"

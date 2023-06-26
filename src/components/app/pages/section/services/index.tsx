@@ -34,7 +34,7 @@ const ServicesSection = ({isPage} : {isPage?: boolean}) => {
           </div>
           {!isPage && (
             <div className="max-sm:hidden">
-              <Button href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle." fill light>
+              <Button  href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle." fill light>
                 Nossos Serviços <IconProx />
               </Button>
             </div>

@@ -69,6 +69,7 @@ const ProjectCLient = () => {
                   </span>
                 </div>
                 <button
+                  aria-label='prox'
                   type="button"
                   onClick={() => {
                     handleActive(project.id)

@@ -25,6 +25,7 @@ const ToTop = () => {
   return (
     <>
       <button
+        aria-label="button"
         type="button"
         className={clsx(
           'w-[3rem] h-[3rem] fixed bottom-[5rem] right-[1rem] lg:right-[5rem] lg:w-[4rem] lg:h-[4rem] bg-[#FFDC60] shadow-lg z-[88] rounded-md flex justify-center items-center opacity-0 transition-all',

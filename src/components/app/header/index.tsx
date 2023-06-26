@@ -29,10 +29,11 @@ const Header = () => {
             )
           })}
           <li>
-            <Button href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle." fill>Get Started</Button>
+            <Button  href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle." fill>Get Started</Button>
           </li>
         </ul>
         <button
+          aria-label='open'
           onClick={() => setSidebarOpen((prev) => !prev)}
           className="w-[3rem] h-[3rem] justify-center items-center bg-white rounded-full shadow-md hidden max-md:flex"
         >

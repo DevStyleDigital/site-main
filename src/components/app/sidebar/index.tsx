@@ -57,6 +57,7 @@ export const SideBarFundo = () => {
         <div className="absolute w-full flex flex-col gap-12 p-[2rem] top-0 h-full z-50">
           <div className="w-full flex justify-end">
             <button
+              aria-label='open sidebar'
               className="w-[3rem] h-[3rem] bg-white rounded-full shadow-md flex justify-center items-center"
               onClick={() => setSidebarOpen(false)}
             >

@@ -100,8 +100,8 @@ const HeroStartAnimation = () => {
                     Entre em contato e <span className="text-[#5956E8]">comece</span> <span className="text-[#5956E8]">crescendo </span>sua startup hoje mesmo!
                 </h1>
                 <div className='flex items-center gap-[1rem]'>
-                    <Button href='/' fill>Saber mais</Button>
-                    <Button href='/'>Começar agora</Button>
+                    <Button href='https://api.whatsapp.com/send/?phone=5515988045279&text=Ol%C3%A1%2C+vim+do+site+DevStyle.&type=phone_number&app_absent=0' fill>Saber mais</Button>
+                    <Button href='https://api.whatsapp.com/send/?phone=5515988045279&text=Ol%C3%A1%2C+vim+do+site+DevStyle.&type=phone_number&app_absent=0'>Começar agora</Button>
                 </div>
             </div>
             <motion.div className='w-full max-md:h-[20rem]'>
