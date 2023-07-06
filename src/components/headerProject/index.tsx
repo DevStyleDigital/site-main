@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 const HeaderProject = ({projeto}: { projeto : iProjects}) => {
     return (
         <motion.section className={`w-full h-fit flex py-[120px] pb-[60px] justify-center min-h-[25vh]  relative`} style={{background: projeto.bgColor}}>
-            <motion.div className="w-[75%] grid grid-cols-2 max-[870px]:grid-cols-1 max-[870px]:auto-rows-min items-center gap-[3rem]  absolute max-[870px]:!relative top-[55%] max-[870px]:!top-0 max-xl:w-[95%] max-[870px]:w-[60%] max-sm:w-[92%]">
+            <motion.div className="w-[75%] grid grid-cols-2 max-[1100px]:grid-cols-1 max-[1100px]:auto-rows-min items-center gap-[3rem]  absolute max-[1100px]:!relative top-[55%] max-[1100px]:!top-0 max-xl:w-[95%] max-[1100px]:w-[60%] max-sm:w-[92%]">
                 <motion.div     
                     initial={{  scale: 0, opacity: 0 }}
                     animate={{ scale: 1,  opacity: 1 }}
@@ -19,7 +19,7 @@ const HeaderProject = ({projeto}: { projeto : iProjects}) => {
                     }} 
                     className="w-full flex flex-col gap-[1rem]">
                     <div className="w-full flex flex-col items-center">
-                        <Image src={projeto.img} alt={projeto.title} className="w-full mt-[.5rem] h-[30rem] shadow-lg rounded-2xl object-cover max-[870px]:h-[30rem]" />
+                        <Image src={projeto.img} alt={projeto.title} className="w-full mt-[.5rem] h-[30rem] shadow-lg rounded-2xl object-cover max-[1100px]:h-[30rem]" />
                     </div>
                     <div className="w-full justify-between flex items-center max-sm:grid-cols-2 max-sm:!grid max-sm:grid-rows-auto justify-items-center max-sm:gap-[1rem] ">
                         <div className="flex flex-col gap-[.2rem] max-sm:items-center">

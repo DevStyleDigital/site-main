@@ -4,7 +4,7 @@ import CarrosselValues from "../carrosselValues"
 
 const Values = () => {
     return (
-        <section className="w-full h-fit min-h-[80vh] flex justify-center py-[4rem] px-[3rem] bg-secondary_black-950 max-md:px-[1rem] z-50">
+        <section className="w-full h-fit flex justify-center pt-[4rem] pb-[6rem] px-[3rem] bg-secondary_black-950 max-md:px-[1rem] z-50">
             <div className="w-[72%] flex flex-col gap-[2.5rem] items-center max-2xl:w-[70%] max-xl:w-[80%] max-lg:w-[90%] max-md:w-[95%]">
                 <HeaderSection.Root>
                 <div className="flex flex-col items-center gap-[1rem]">

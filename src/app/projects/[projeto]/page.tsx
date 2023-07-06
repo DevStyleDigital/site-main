@@ -24,7 +24,7 @@ const AboutProject = ({ params }: { params: { projeto: string } }) => {
         <main className="w-full flex flex-col items-center">
           <ToTop />
           <HeaderProject projeto={validHash} />
-          <div className="w-full h-[60vh] max-[870px]:h-0 bg-white"></div>
+          <div className="w-full h-[60vh] max-[1100px]:h-0 bg-white"></div>
         </main>
       </>
     )

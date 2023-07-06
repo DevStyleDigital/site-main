@@ -33,6 +33,10 @@ body{
     background: linear-gradient(111.23deg, #E9F7FF 9.95%, #FFDBD5 85.17%);
 }
 
+.header_process{
+    height: fit-content;
+    min-height: 80vh;
+}
 
 .header_about{
     height: fit-content;

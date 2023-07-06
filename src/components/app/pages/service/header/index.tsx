@@ -72,7 +72,7 @@ const HeaderAnimationService = () => {
         initial="hidden"
         animate="visible"
       >
-      <HeroText.Img className='right-[50%]  w-[50rem] h-[50rem]  translate-x-[50%] top-[15%] max-lg:text-[3rem] max-md:w-[30rem] max-xl:w-full max-sm:w-screen max-md:h-[35rem] max-xl:h-screen max-md:translate-y-[20%] max-[920px]:translate-y-[10%]'>
+      <HeroText.Img className='right-[50%]  w-[50rem] h-[50rem]  translate-x-[50%] top-[15%] max-lg:text-[3rem] max-md:w-[30rem] max-xl:w-[70%] max-[1100px]:w-full max-sm:w-screen max-xl:h-[70vh] max-md:translate-y-[20%] max-[920px]:translate-y-[10%]'>
         <div className="w-full h-full rounded-full relative">
             <Image
                 src={Fundo}
