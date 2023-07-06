@@ -6,7 +6,7 @@ const Process = () => {
   return (
     <section
       id="process"
-      className="w-full h-fit flex justify-center pb-[4rem] min-h-[160vh] 2xl:min-h-[140vh]  max-lg:min-h-[130vh]  max-[1100px]:min-h-[90vh]  max-sm:min-h-[110vh]"
+      className="w-full h-fit flex justify-center pb-[4rem] min-h-[160vh] max-2xl:min-h-[120vh]  max-lg:min-h-[130vh]  max-[1100px]:min-h-[90vh]  max-sm:min-h-[110vh]"
     >
       <div className="w-[60%] h-auto bg-process flex flex-col items-center p-[4rem] rounded-md  max-2xl:w-[70%] max-xl:w-[80%] max-lg:w-[90%] max-sm:w-[95%] max-sm:p-[1rem] max-[320px]:p-[.5rem] max-[320px]:w-full">
         <HeaderSection.Root>
