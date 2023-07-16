@@ -73,7 +73,7 @@ const HeaderAnimationProcess = () => {
             style={{ rotateX: a, rotateY: b }}
           >
            <motion.div
-              className="iconProcess max-xl:w-[500px] max-sm:w-[400px] z-40"
+              className="iconProcess max-[1600px]:w-[500px] max-sm:w-[400px] z-40"
               ref={cardRef}
               initial={{ scale: 0 }}
               animate={{ rotateY: 180, scale: 1 }}
