@@ -20,6 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head>
       <link rel="icon" href="/icon.png" sizes="any" />
       {/* Google Tag Manager */}
+      <meta name="description" content="Construindo marcas, uma história de sucesso por vez." />
       <Script id="google-analytics" strategy="afterInteractive">
       {`
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

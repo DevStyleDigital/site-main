@@ -241,9 +241,9 @@ body{
 
 
 .FundoImg{
-    width: 40%;
-    height: 50%;
-    top: 50%;
+    width: 450px;
+    height: 519px;
+    top: 60%;
     left: 25%;
     transform: translateY(-50%);
     position: absolute;
