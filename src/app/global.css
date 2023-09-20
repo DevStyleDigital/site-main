@@ -414,6 +414,7 @@ body{
 }
 .swiper-button-next{
     background-color: #5956E8;
+    font-size: 10px;
 }
 
 
@@ -426,7 +427,7 @@ body{
 }
 
 .swiper-button-next:after,.swiper-button-prev:after{
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     color: white;
 }
 
