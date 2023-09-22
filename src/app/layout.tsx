@@ -18,7 +18,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/icon.png" sizes="any" />
       {/* Google Tag Manager */}
       <meta name="description" content="Construindo marcas, uma história de sucesso por vez." />
       <Script id="google-analytics" strategy="afterInteractive">
