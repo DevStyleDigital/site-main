@@ -4,13 +4,13 @@ import Afonso from '@/assets/img/team/afonso.jpg'
 import Guilherme from '@/assets/img/team/guilherme.png'
 
 export const TeamArray: iTeams[] = [
-  // {
-  //   id: 2,
-  //   name: 'Thainara Camargo',
-  //   carer: 'Co Founder',
-  //   linkedin: 'https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADtyPYEBJm0aow4oxyT_O4bghI52wpyY06M&keywords=thainara%20camargo&origin=RICH_QUERY_SUGGESTION&position=0&searchId=5946fa62-1c5c-4836-b5fc-1686f9a0b983&sid=Ggp',
-  //   img: Thainara,
-  // },
+  {
+    id: 2,
+    name: 'Thainara Camargo',
+    carer: 'Co Founder',
+    linkedin: 'https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADtyPYEBJm0aow4oxyT_O4bghI52wpyY06M&keywords=thainara%20camargo&origin=RICH_QUERY_SUGGESTION&position=0&searchId=5946fa62-1c5c-4836-b5fc-1686f9a0b983&sid=Ggp',
+    img: Thainara,
+  },
   {
     id: 1,
     name: 'Afonso Bezerra',
