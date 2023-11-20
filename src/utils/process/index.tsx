@@ -22,7 +22,7 @@ export const ProcessArray: iProcess[] = [
     {
         id: 3,
         title: '3. Aprovação',
-        label: 'Finzalizando o layout passaremos para o cliente para ajustes e aprovação e com isso continuaremos com os processos',
+        label: 'Finalizando o layout passaremos para o cliente para ajustes e aprovação e com isso continuaremos com os processos',
         icon: Love
     },
     {
@@ -39,7 +39,7 @@ export const ProcessArray: iProcess[] = [
     },
     {
         id: 6,
-        title: '6. Finzalização do Projeto',
+        title: '6. Finalização do Projeto',
         label: 'Partindo para a última etapa sendo a apresentação e instrução para o uso do sistema para o cliente',
         icon:  Custo
     }
