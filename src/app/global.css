@@ -592,3 +592,8 @@ body{
 .footer-card svg path {
     fill: #292930
 }
+
+.bg-blog {
+    background: linear-gradient(0deg, #FAFBFC 0%, rgba(250, 251, 252, 0.00) 16%), radial-gradient(21.54% 25.71% at 49.98% 30.38%, rgba(250, 251, 252, 0.80) 0%, rgba(250, 251, 252, 0.00) 100%);
+    flex-shrink: 0;
+}

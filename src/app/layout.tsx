@@ -1,12 +1,14 @@
 import { ReactNode } from 'react'
 import { Nunito } from 'next/font/google'
-import Header from '@/components/app/header'
+
 import 'swiper/css'
 import 'swiper/css/navigation'
 import './global.css'
+import 'react-toastify/dist/ReactToastify.css';
 import { SideBarRoot } from '@/components/app/sidebar'
 import Script from 'next/script';
-import Footer from '@/components/app/footer'
+import { AuthProvider } from '@/contexts/auth'
+import { Toast } from './toast'
 
 const nunito = Nunito({
   weight: ['400', '500', '600', '700', '800'],
@@ -32,11 +34,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       {/* End Google Tag Manager */}
       </head>      
       <body className={nunito.className}>
-        <SideBarRoot>
-          <Header />
-          {children}
-          <Footer />
-        </SideBarRoot>
+        <AuthProvider>
+          <SideBarRoot>
+            <Toast />
+            {children}
+          </SideBarRoot>
+        </AuthProvider>
         {/* Google Tag Manager (noscript) */}
         <noscript
             dangerouslySetInnerHTML={{

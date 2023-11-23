@@ -15,7 +15,7 @@ const Header = () => {
     <header className="w-full h-auto flex justify-center items-center px-[2rem] absolute top-0 bg-transparent z-50">
       <div className="flex justify-between max-w-[1400px] items-center w-full border-black-500 pt-[2rem] pb-[.7rem]">
         <h1 className="font-extrabold text-[1.5rem]">{`</> DevStyle`}</h1>
-        <ul className="flex items-center gap-[2rem] max-md:hidden max-lg:gap-[1.5rem]">
+        <ul className="flex items-center gap-[2rem] max-[800px]:hidden max-lg:gap-[1.5rem]">
           {NavsItems.map((item) => {
             return (
               <li
@@ -35,7 +35,7 @@ const Header = () => {
         <button
           aria-label='open'
           onClick={() => setSidebarOpen((prev) => !prev)}
-          className="w-[3rem] h-[3rem] justify-center items-center bg-white rounded-full shadow-md hidden max-md:flex"
+          className="w-[3rem] h-[3rem] justify-center items-center bg-white rounded-full shadow-md hidden max-[800px]:flex"
         >
           <HamburgerMenuIcon className="w-[50%] h-full text-secondary_black-950" />
         </button>
