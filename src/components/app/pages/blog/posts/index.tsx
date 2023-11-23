@@ -4,12 +4,10 @@ import Image from "next/image"
 import Link from "next/link"
 
 const Posts = ({AllPosts}: {AllPosts : any}) => {
-    const newArray = [...AllPosts]
-    newArray.pop()
     return (
         <section className="w-full bg-[#FAFBFC] flex flex-col items-center py-10 gap-10"> 
             <div className="w-[70%] max-[1600px]:w-[80%] max-xl:w-[90%] max-sm:w-[95%] h-full gap-10 grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
-                {newArray.map((blogPost: any) => {
+                {AllPosts.map((blogPost: any) => {
                     return (
                         <Link href={`/blog/${blogPost.id}`} key={blogPost.id} className="w-full min-h-[460px] max-sm:min-h-0 max-sm:h-fit bg-white h-full border border-[#E8E8EA] p-4 rounded-xl flex flex-col gap-5">
                             <div className="w-full min-h-[250px] max-sm:h-[250px] overflow-hidden rounded-xl bg-black">
