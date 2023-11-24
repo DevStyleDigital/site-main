@@ -2,6 +2,9 @@ import { BlogCards } from "@/components/app/admin/blogCards"
 import { getPartialOfPosts } from "@/utils/posts-func"
 import Link from "next/link"
 
+
+export const dynamic = 'force-dynamic'
+
 export const metadata = {
     title: 'Blog | Admin',
 }

@@ -6,6 +6,8 @@ import { PostsForm } from "./posts-form";
 
 export const dynamicParams = false;
 
+export const dynamic = 'force-dynamic'
+
 export const metadata = {
   title: 'Create Post | Admin',
 }
