@@ -22,7 +22,7 @@ const HeaderBlog = ({post, colors} : {post: any, colors:string}) => {
     }
     return (
         <motion.section className={`w-full h-fit flex pt-[120px] pb-[60px] justify-center min-h-[90vh]  relative px-5`}>
-            <div className={'w-full h-1/3 absolute top-0 left-0'} style={{background: colors}}></div>
+            <div className={'w-full h-1/3 absolute max-sm:h-1/5 top-0 left-0'} style={{background: colors}}></div>
             <div className='w-full relative z-[1] flex py-10 justify-center'>
                 <div className='max-w-[1400px] w-full flex flex-col gap-6'>
                     <div className='w-full flex gap-10 items-center'>

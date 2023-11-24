@@ -9,7 +9,7 @@ const Posts = ({AllPosts}: {AllPosts : any}) => {
             <div className="w-[70%] max-[1600px]:w-[80%] max-xl:w-[90%] max-sm:w-[95%] h-full gap-10 grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
                 {AllPosts.map((blogPost: any) => {
                     return (
-                        <Link href={`/blog/${blogPost.id}`} key={blogPost.id} className="w-full min-h-[460px] max-sm:min-h-0 max-sm:h-fit bg-white h-full border border-[#E8E8EA] p-4 rounded-xl flex flex-col gap-5">
+                        <Link href={`/blog/${blogPost.id}`} target="_blank" key={blogPost.id} className="w-full min-h-[460px] max-sm:min-h-0 max-sm:h-fit bg-white h-full border border-[#E8E8EA] p-4 rounded-xl flex flex-col gap-5">
                             <div className="w-full min-h-[250px] max-sm:h-[250px] overflow-hidden rounded-xl bg-black">
                                 <Image src={blogPost.banner.url} alt="banner" width={2800} height={1200} className="w-full h-full object-cover"></Image>
                             </div>
