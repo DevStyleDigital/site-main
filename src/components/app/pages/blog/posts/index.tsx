@@ -16,7 +16,7 @@ const Posts = ({AllPosts}: {AllPosts : any}) => {
                             <div className="w-full h-full justify-between flex flex-col px-2 gap-4 max-sm:gap-8">
                                 <div className="flex flex-col gap-2">
                                     <span className="w-fit px-2 py-1 bg-[#4B6BFB]/5 rounded-sm text-[#4B6BFB] text-sm">{blogPost.type}</span>
-                                    <h2 className="font-bold text-2xl max-w-[70%] break-words text-secondary_black-950 max-[1600px]:text-xl max-[1600px]:max-w-[90%]">{blogPost.title}</h2>
+                                    <h2 className="font-bold text-xl max-w-[70%] break-words text-secondary_black-950 max-[1600px]:max-w-[90%]">{blogPost.title}</h2>
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <div className="flex gap-2 items-center">
