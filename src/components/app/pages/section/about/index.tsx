@@ -45,8 +45,7 @@ const AboutSection = () => {
             </div>
           </HeaderSection.Root>
           <span className="text-secondary_black-950/70 relative z-10 max-md:text-[.8rem]">
-            Somos uma empresa de desenvolvimento de software focando em
-            linguagens atuais do mercado trazendo máxima performance e um design
+            Somos uma empresa de desenvolvimento de software focada em linguagens atuais do mercado trazendo máxima performance e um design
             único em suas páginas e sistemas.
           </span>
           <div className="w-full h-full flex flex-col gap-[3rem] items-end mt-[1.5rem] max-md:items-center">

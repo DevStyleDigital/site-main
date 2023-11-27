@@ -10,31 +10,31 @@ export const ServicesUtils: iService[] = [
   {
     id: 1,
     label: 'Systems Development',
-    text: 'Desenvolvimento de sistemas personalizados facilitando e optimizando as demandas da sua empresa',
+    text: 'Desenvolvimento de sistemas personalizados facilitando e otimizando as demandas da sua empresa.',
     image: Dev,
   },
   {
     id: 2,
     label: 'Custom Designs',
-    text: 'Criação de Designs personalizados buscando layouts atraentes e simples para o usuário',
+    text: 'Criação de Designs personalizados, buscando layouts atraentes e simples para o usuário.',
     image: MegaFone,
   },
   {
     id: 3,
     label: 'App Development',
-    text: 'Desenvolvimento de aplicativos para aparelhos moveis com um design único e funcional.',
+    text: 'Desenvolvimento de aplicativos para aparelhos móveis com um design único e funcional.',
     image: Celular,
   },
   {
     id: 4,
     label: 'Page Development',
-    text: 'Desenvolvimento de páginas únicas e lindas para capitação de leads rápidos',
+    text: 'Desenvolvimento de páginas únicas e performáticas para capitação de leads rápidos.',
     image: LpIcon,
   },
   {
     id: 5,
     label: 'Gestor de Tráfego',
-    text: 'Cuidaremos dos tráfegos de sua página melhorando o índice de Leads.',
+    text: 'Cuidamos dos tráfegos de sua página melhorando o índice de Leads.',
     image: Trafego,
   },
   {
