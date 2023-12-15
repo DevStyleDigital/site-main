@@ -8,7 +8,7 @@ import Cardapio from '@/assets/img/projects/cardapio.png'
 import Haia from '@/assets/img/projects/haia.png'
 import Amac from '@/assets/img/projects/amac.png'
 import GRM from '@/assets/img/projects/grm.png'
-import GRMBanner from '@/assets/img/projects/grmbanner.png'
+import Keypay from '@/assets/img/projects/keypay.png'
 import Material from '@/assets/img/stacks/maetrial.png'
 import Next from '@/assets/img/stacks/NEXT.png'
 import React from '@/assets/img/stacks/react.png'
@@ -26,7 +26,7 @@ export const ProjectsArray: iProjects[] = [
     comment: 'Authentic é um site criado para apresentação do empreendimento ajudando a construtora a conseguir uma capitação de Leads. Tendo a fotos do empreendimento as plantas e um texto de apresentação da construtora e do empreendimento.',
     img: Authentic,
     color: '#E9F7FF',
-    order: 4,
+    order: 5,
     client: 'AG VELASCO',
     duration: 24,
     commit: 47,
@@ -58,7 +58,7 @@ export const ProjectsArray: iProjects[] = [
     comment: 'TratyVet é um WebSite completo com a apresentação da empresa e dos produtos, com um sistema de cadastro como um CMS deixando a empresa com o poder de cadastrar, remover e atualizar produtos. Possibilitando também uma busca dos distribuidores através do cep ou cidade do cliente.',
     img: TratyVet,
     color: '#ffd4d4',
-    order: 3,
+    order: 4,
     client: 'TratyVet',
     duration: 120,
     commit: 25,
@@ -100,7 +100,7 @@ export const ProjectsArray: iProjects[] = [
     comment: 'Prime é um site criado para apresentação da loja de manutenção de motos, podendo conhecer a oficina e os serviços oferecidos pela mesma tendo maior conhecimento da sua localização alem de fixar mais a marca e as cores da marca.',
     img: Prime,
     color: '#FFF3CA',
-    order: 5,
+    order: 7,
     client: 'Prime',
     duration: 16,
     commit: 32,
@@ -132,7 +132,7 @@ export const ProjectsArray: iProjects[] = [
     comment: 'Domus é um site criado para a apresentar a loja de materiais de construção, mostrando os valores dos materiais mais procurados e procurando sempre fixar a marca e as cores da logo. Um site simples porém com todos os elementos claros não ficando massante para o cliente.',
     img: Domus,
     color: '#d1ffca',
-    order: 7,
+    order: 8,
     client: 'Domus',
     duration: 16,
     commit: 11,
@@ -196,7 +196,7 @@ export const ProjectsArray: iProjects[] = [
     comment: 'Esse projeto veio com o intuito de cardapio online para a ficilidade de cadastrar como um CMS, possibilitando novos produtos, menus e até mesmo parceiros que podem ser colocados e divulgados no cardapio. A pedido do cliente foi colocado também um sistema de validação para o acessos dos clientes através de um codigo semanal que o restaurante cadastra.',
     img: Cardapio,
     color: '#cad0ff',
-    order: 8,
+    order: 9,
     client: "Yoshi's",
     duration: 240,
     commit: 132,
@@ -242,7 +242,7 @@ export const ProjectsArray: iProjects[] = [
     comment: 'Haia Sorocaba é um site criado para apresentação do empreendimento ajudando a construtora a conseguir uma capitação de Leads. Tendo a fotos do empreendimento as plantas e um texto de apresentação da construtora e do empreendimento,',
     img: Haia,
     color: '#caffec',
-    order: 2,
+    order: 3,
     client: "GRM Incorporadora",
     duration: 40,
     commit: 6,
@@ -274,7 +274,7 @@ export const ProjectsArray: iProjects[] = [
     comment: 'AMAC é um site criado para apresentação da empresa, podendo conhecer seus projetos e os serviços oferecidos pela mesma tendo maior conhecimento da sua localização além de conseguir vizualizar seus projetos passados.',
     img: Amac,
     color: '#ffecca',
-    order: 9,
+    order: 10,
     client: "AMAC",
     duration: 32,
     commit: 30,
@@ -307,7 +307,7 @@ export const ProjectsArray: iProjects[] = [
       'GRM Incorporadora é um site completo de uma construtora trazendo mais sobre a empresa e apresentando para os clientes, com um CMS os mesmos podem cadastrar textos e imagens dos banners além da página do empreendimento sendo 100% customizavel, criada no proprio CMS.',
     img: GRM,
     color: '#ffcae3',  
-    order: 1,
+    order: 2,
     client: "GRM Incorpodora",
     duration: 120,
     commit: 132,
@@ -338,6 +338,34 @@ export const ProjectsArray: iProjects[] = [
         id: 5,
         name: 'Material UI',
         icon: Material
+      }
+    ]
+  },
+  {
+    id: 10,
+    title: 'KeyPay',
+    type: 'WebSite',
+    comment:
+      'KeyPay é um site completo de um banco trazendo mais sobre a empresa e apresentando para os clientes. Ultilizando modelos 3D para deixar com elementos únicos e trazendo um ar mais moderno e tecnológico.',
+    img: Keypay,
+    color: '#ab8cff79',  
+    order: 1,
+    client: "KeyPay",
+    duration: 120,
+    commit: 153,
+    link: 'https://www.keypay.com.br/',
+    bgColor: 'linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%)',
+    hash: 'sh6b80de837651221e1539ghfkbea876',
+    stacks: [
+      {
+        id: 1,
+        name: 'NextJs',
+        icon: Next
+      },
+      {
+        id: 2,
+        name: 'TailWind CSS',
+        icon: Tailwind
       }
     ]
   },

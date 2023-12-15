@@ -2,13 +2,13 @@
 import Next from '@/assets/svg/next'
 import Image, { StaticImageData } from 'next/image'
 import { useEffect, useState } from 'react'
-import GRM from '@/assets/img/projects/grm.png'
+import Keypay from '@/assets/img/projects/keypay.png'
 import { ProjectsArray } from '@/utils/projects'
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
 
 const ProjectCLient = () => {
-  const [ImageAtual, setImageAtual] = useState<StaticImageData>(GRM)
+  const [ImageAtual, setImageAtual] = useState<StaticImageData>(Keypay)
 
   const variants = {
     offscreen: {
