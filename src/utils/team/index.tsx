@@ -23,7 +23,7 @@ export const TeamArray: iTeams[] = [
   {
     id: 3,
     name: 'Guilheme Brogio',
-    carer: 'FullStack Development',
+    carer: 'CTO & FullStack Development',
     img: Guilherme,
     github: 'https://github.com/gbrogio',
   },
