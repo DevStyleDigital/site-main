@@ -473,11 +473,12 @@ body{
     background: linear-gradient(316.69deg, #FFDA57 -11.19%, #FFDA57 20.41%, #5956E8 71.73%, #5956E8 110.15%);
 }
 
-.scroll-style {
+/* .scroll-style {
     scrollbar-width: thin;
     scrollbar-color: rgba(55, 55, 55, 0) #FFDA5790;
   }
-  
+   */
+   
   /* Chrome, Edge, and Safari */
   .scroll-style::-webkit-scrollbar {
     width: 5px;

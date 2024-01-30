@@ -16,7 +16,8 @@ import SupaBase from '@/assets/img/stacks/supabase.png'
 import Ts from '@/assets/img/stacks/ts.png'
 import Tailwind from '@/assets/img/stacks/tailwind.png'
 import Styled from '@/assets/img/stacks/styled.png'
-
+import Keep from '@/assets/img/projects/keep.png'
+import sabrina from '@/assets/img/projects/sabrina.png'
 
 export const ProjectsArray: iProjects[] = [
   {
@@ -356,6 +357,62 @@ export const ProjectsArray: iProjects[] = [
     link: 'https://www.keypay.com.br/',
     bgColor: 'linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%)',
     hash: 'sh6b80de837651221e1539ghfkbea876',
+    stacks: [
+      {
+        id: 1,
+        name: 'NextJs',
+        icon: Next
+      },
+      {
+        id: 2,
+        name: 'TailWind CSS',
+        icon: Tailwind
+      }
+    ]
+  },
+  {
+    id: 11,
+    title: 'Rodrigues KeepClean',
+    type: 'WebSite',
+    comment:
+      'Rogrigues KeepClean é uma página estrangueira desenvolvida para uma empresa de limpeza, trazendo um design de limpeza e organização.',
+    img: Keep,
+    color: '#8cffba79',  
+    order: 11,
+    client: "Rodrigues",
+    duration: 80,
+    commit: 100,
+    link: 'https://www.rodrigueskeepclean.com/',
+    bgColor: 'linear-gradient(111.23deg, #f3f9da 9.95%, #f0d5ff 85.17%)',
+    hash: 'fghr80de146751221e1765ghfkbea876',
+    stacks: [
+      {
+        id: 1,
+        name: 'NextJs',
+        icon: Next
+      },
+      {
+        id: 2,
+        name: 'TailWind CSS',
+        icon: Tailwind
+      }
+    ]
+  },
+  {
+    id: 12,
+    title: 'Sabrina M. Cunha',
+    type: 'WebSite',
+    comment:
+      'Sabrina M. Cunha é um site para apresentação do trabalho pessoal como uma advogada, trazendo um design mais sério.',
+    img: sabrina,
+    color: '#8ce6ff79',  
+    order: 12,
+    client: "Sabrina M. Cunha",
+    duration: 80,
+    commit: 100,
+    link: 'https://www.rodrigueskeepclean.com/',
+    bgColor: 'linear-gradient(111.23deg, #daf9ea 9.95%, #d5f8ff 85.17%)',
+    hash: 'jkuy7deu146751221e1765ghfkbea876',
     stacks: [
       {
         id: 1,
