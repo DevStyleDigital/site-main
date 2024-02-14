@@ -1,15 +1,15 @@
-import { ReactNode } from 'react'
-import { Slot } from '@radix-ui/react-slot'
-import clsx from 'clsx'
+import { ReactNode } from 'react';
+import { Slot } from '@radix-ui/react-slot';
+import clsx from 'clsx';
 
 const Root = ({
   children,
   divider,
   ...props
 }: {
-  children: ReactNode
-  divider?: boolean
-  className?: string
+  children: ReactNode;
+  divider?: boolean;
+  className?: string;
 }) => {
   return (
     <div
@@ -19,28 +19,22 @@ const Root = ({
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
 const Title = ({
   children,
   asChild,
   ...props
 }: {
-  children: ReactNode
-  asChild: any
+  children: ReactNode;
+  asChild: any;
 }) => {
-  const TitleHeader = asChild ? Slot : 'h1'
-  return <TitleHeader {...props}>{children}</TitleHeader>
-}
+  const TitleHeader = asChild ? Slot : 'h1';
+  return <TitleHeader {...props}>{children}</TitleHeader>;
+};
 
-const PathName = ({
-  children,
-  dark,
-}: {
-  children: ReactNode
-  dark?: boolean
-}) => {
+const PathName = ({ children, dark }: { children: ReactNode; dark?: boolean }) => {
   return (
     <span
       className={clsx(
@@ -52,16 +46,10 @@ const PathName = ({
     >
       {children}
     </span>
-  )
-}
+  );
+};
 
-const Icon = ({
-  children,
-  bgColor,
-}: {
-  children: ReactNode
-  bgColor: string
-}) => {
+const Icon = ({ children, bgColor }: { children: ReactNode; bgColor: string }) => {
   return (
     <div
       className="p-[1.3rem] rounded-full flex justify-center items-center text-white max-lg:p-[1rem] max-md:p-[.8rem]"
@@ -69,12 +57,12 @@ const Icon = ({
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
 export const HeaderSection = {
   Root,
   Title,
   Path: PathName,
   Icon,
-}
+};

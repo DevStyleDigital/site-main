@@ -1,4 +1,4 @@
-import { iResults } from '@/types/results'
+import { iResults } from '@/types/results';
 
 export const ResultsProjectsArray: iResults[] = [
   {
@@ -41,4 +41,4 @@ export const ResultsProjectsArray: iResults[] = [
       </span>
     ),
   },
-]
+];

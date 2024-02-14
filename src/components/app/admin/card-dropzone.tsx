@@ -1,7 +1,13 @@
 /* eslint-disable react/function-component-definition */
 'use client';
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 import { DropzoneInput } from './dropzone-input';
 import Image from 'next/image';
 import { Trash } from 'lucide-react';
@@ -102,7 +108,7 @@ export function CardImageDropzone<T>({
                     <Image
                       src={
                         typeof (image as DropzoneFields).file === 'string'
-                          ? `${((image as DropzoneFields).file as string)}?${Date.now()}`
+                          ? `${(image as DropzoneFields).file as string}?${Date.now()}`
                           : URL.createObjectURL((image as DropzoneFields).file as File)
                       }
                       alt=""
@@ -123,19 +129,21 @@ export function CardImageDropzone<T>({
                       {typeof (image as DropzoneFields).file === 'string'
                         ? 'less than 25Mb'
                         : fileSizeType === 'Mb'
-                        ? `${(
-                            ((image as DropzoneFields).file as File).size / 1000000
-                          ).toFixed(2)}Mb`
-                        : `${(
-                            ((image as DropzoneFields).file as File).size / 1000
-                          ).toFixed(2)}Kb`}
+                          ? `${(
+                              ((image as DropzoneFields).file as File).size / 1000000
+                            ).toFixed(2)}Mb`
+                          : `${(
+                              ((image as DropzoneFields).file as File).size / 1000
+                            ).toFixed(2)}Kb`}
                     </p>
                   </div>
                   <div className="self-center">
                     <button
                       type="button"
                       className="text-red-500 hover:bg-red-500/10 rounded-md p-3"
-                      onClick={() => handleImages((prev: any) => handleDeleteImage(i, prev!))}
+                      onClick={() =>
+                        handleImages((prev: any) => handleDeleteImage(i, prev!))
+                      }
                     >
                       <span className="sr-only">Deletar (image as DropzoneFields)m</span>
                       <Trash />

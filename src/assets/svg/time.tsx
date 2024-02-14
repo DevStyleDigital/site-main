@@ -15,7 +15,7 @@ const Time = () => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default Time
+export default Time;

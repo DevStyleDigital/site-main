@@ -22,7 +22,7 @@ const ProjectsIcon = () => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default ProjectsIcon
+export default ProjectsIcon;

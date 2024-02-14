@@ -1,9 +1,9 @@
-'use client'
-import { WitnessArray } from '@/utils/witness'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import CardWitness from '../Card-witness'
-import { motion } from 'framer-motion'
-import { Navigation } from 'swiper'
+'use client';
+import { WitnessArray } from '@/utils/witness';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import CardWitness from '../Card-witness';
+import { motion } from 'framer-motion';
+import { Navigation } from 'swiper';
 const CarouselWitness = () => {
   return (
     <motion.div
@@ -42,7 +42,7 @@ const CarouselWitness = () => {
                 duration: 1.5 * witness.id,
               },
             },
-          }
+          };
           return (
             <SwiperSlide key={witness.id}>
               <CardWitness
@@ -55,11 +55,11 @@ const CarouselWitness = () => {
                 imgAuthor={witness.autorImage}
               />
             </SwiperSlide>
-          )
+          );
         })}
       </Swiper>
     </motion.div>
-  )
-}
+  );
+};
 
-export default CarouselWitness
+export default CarouselWitness;

@@ -13,7 +13,7 @@ const PageRaking = () => {
         fill="#292930"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default PageRaking
+export default PageRaking;

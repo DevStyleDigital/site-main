@@ -1,9 +1,9 @@
-import IconProx from '@/assets/svg/iconProx'
-import ProjectsIcon from '@/assets/svg/projects'
-import Button from '@/components/button'
-import ProjectCLient from '@/components/projects-client'
-import ResultsTag from '@/components/resultsTag'
-import { HeaderSection } from '@/components/titleSection'
+import IconProx from '@/assets/svg/iconProx';
+import ProjectsIcon from '@/assets/svg/projects';
+import Button from '@/components/button';
+import ProjectCLient from '@/components/projects-client';
+import ResultsTag from '@/components/resultsTag';
+import { HeaderSection } from '@/components/titleSection';
 
 const Projects = () => {
   return (
@@ -20,7 +20,7 @@ const Projects = () => {
             <div className="flex flex-col gap-[.5rem]">
               <HeaderSection.Path>
                 <span className="font-extrabold text-[1rem] tracking-widest text-[#FEC90C]">
-                  //
+                  {'//'}
                 </span>{' '}
                 05 . Projetos
               </HeaderSection.Path>
@@ -38,11 +38,11 @@ const Projects = () => {
           </div>
         </HeaderSection.Root>
         <ProjectCLient />
-        <div className="w-full h-[2px] bg-[#CFCFCF]/20"></div>
+        <div className="w-full h-[2px] bg-[#CFCFCF]/20" />
         <ResultsTag />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

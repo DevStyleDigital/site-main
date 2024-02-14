@@ -1,6 +1,6 @@
-'use client'
-import { ReactNode } from 'react'
-import { motion } from 'framer-motion'
+'use client';
+import { ReactNode } from 'react';
+import { motion } from 'framer-motion';
 
 const item = {
   hidden: { y: 20, opacity: 0 },
@@ -8,25 +8,25 @@ const item = {
     y: 0,
     opacity: 1,
   },
-}
+};
 
-const Hero = ({
-  children,
-  className,
-}: {
-  children: ReactNode
-  className: string
-}) => {
+const Hero = ({ children, className }: { children: ReactNode; className: string }) => {
   return (
     <div
       className={`${className} w-full h-fit min-h-[85vh] max-lg:pt-[6rem] pb-[3rem] flex flex-col gap-[.7rem] items-center justify-center px-[4rem] relative overflow-hidden max-lg:text-center `}
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
-export const TitleHero = ({ children, ...props }: { children: ReactNode, className?: string }) => {
+export const TitleHero = ({
+  children,
+  ...props
+}: {
+  children: ReactNode;
+  className?: string;
+}) => {
   return (
     <motion.h1
       className={`font-bold text-[3.5rem] leading-tight z-10 relative max-xl:max-w-[25rem] max-lg:max-w-[30rem] ${props.className}`}
@@ -34,8 +34,8 @@ export const TitleHero = ({ children, ...props }: { children: ReactNode, classNa
     >
       {children}
     </motion.h1>
-  )
-}
+  );
+};
 
 export const RotaHero = ({ children }: { children: ReactNode }) => {
   return (
@@ -45,8 +45,8 @@ export const RotaHero = ({ children }: { children: ReactNode }) => {
     >
       {children}
     </motion.span>
-  )
-}
+  );
+};
 
 export const SubHero = ({ children }: { children: ReactNode }) => {
   return (
@@ -56,24 +56,30 @@ export const SubHero = ({ children }: { children: ReactNode }) => {
     >
       {children}
     </motion.span>
-  )
-}
+  );
+};
 
-export const Image = ({ children, ...props }: { children: ReactNode, className?: string }) => {
+export const Image = ({
+  children,
+  ...props
+}: {
+  children: ReactNode;
+  className?: string;
+}) => {
   return (
     <div className={`absolute shadow-md rounded-full bg-white  ${props.className}`}>
       {children}
     </div>
-  )
-}
+  );
+};
 
 export const Button = ({ children }: { children: ReactNode }) => {
   return (
     <motion.div variants={item} className="flex gap-[1rem] relative z-50">
       {children}
     </motion.div>
-  )
-}
+  );
+};
 
 export const HeroText = {
   Root: Hero,
@@ -82,4 +88,4 @@ export const HeroText = {
   SubTitle: SubHero,
   Img: Image,
   Buttons: Button,
-}
+};

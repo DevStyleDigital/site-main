@@ -1,6 +1,6 @@
-import ProcessIcon from '@/assets/svg/process'
-import ProcessAnimation from '@/components/app/ProcessAnimation'
-import { HeaderSection } from '@/components/titleSection'
+import ProcessIcon from '@/assets/svg/process';
+import ProcessAnimation from '@/components/app/ProcessAnimation';
+import { HeaderSection } from '@/components/titleSection';
 
 const Process = () => {
   return (
@@ -16,7 +16,7 @@ const Process = () => {
             </HeaderSection.Icon>
             <HeaderSection.Path dark>
               <span className="font-extrabold text-[1rem] tracking-widest text-[#5956E8]">
-                //
+                {'//'}
               </span>{' '}
               03 . Processos
             </HeaderSection.Path>
@@ -30,7 +30,7 @@ const Process = () => {
         <ProcessAnimation />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Process
+export default Process;

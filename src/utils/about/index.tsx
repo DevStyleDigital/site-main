@@ -1,1 +1,1 @@
-export const AboutList = () => {}
+export const AboutList = () => {};

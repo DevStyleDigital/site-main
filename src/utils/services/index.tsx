@@ -1,10 +1,10 @@
-import { iService } from '@/types/services'
-import LpIcon from '../../assets/img/iconsService/LP.png'
-import MegaFone from '../../assets/img/iconsService/megafone.png'
-import Co from '../../assets/img/iconsService/ceo.png'
-import Trafego from '../../assets/img/iconsService/trafego.png'
-import Dev from '../../assets/img/iconsService/dev.png'
-import Celular from '../../assets/img/iconsService/celular.png'
+import { iService } from '@/types/services';
+import LpIcon from '../../assets/img/iconsService/LP.png';
+import MegaFone from '../../assets/img/iconsService/megafone.png';
+import Co from '../../assets/img/iconsService/ceo.png';
+import Trafego from '../../assets/img/iconsService/trafego.png';
+import Dev from '../../assets/img/iconsService/dev.png';
+import Celular from '../../assets/img/iconsService/celular.png';
 
 export const ServicesUtils: iService[] = [
   {
@@ -43,4 +43,4 @@ export const ServicesUtils: iService[] = [
     text: 'Ótimas pontuações para o seu site ficar no topo para buscadores do Google.',
     image: Co,
   },
-]
+];

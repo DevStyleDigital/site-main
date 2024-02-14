@@ -17,8 +17,8 @@ export async function uploadFiles(
               k === 'file' || k === 'eid' || k === 'id'
                 ? false
                 : k === 'id'
-                ? true
-                : defaultFile?.[k as keyof typeof defaultFile] !== v,
+                  ? true
+                  : defaultFile?.[k as keyof typeof defaultFile] !== v,
             )
             .reduce((acc, [k, v]) => ({ ...acc, [k]: v }), {}) as Record<string, string>;
           if (defaultFilesId.includes(item.id) && Object.keys(fileModified).length)

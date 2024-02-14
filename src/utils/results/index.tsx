@@ -1,4 +1,4 @@
-import { iResults } from '@/types/results'
+import { iResults } from '@/types/results';
 
 export const ResultsTagArray: iResults[] = [
   {
@@ -41,4 +41,4 @@ export const ResultsTagArray: iResults[] = [
       </span>
     ),
   },
-]
+];

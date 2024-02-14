@@ -1,5 +1,5 @@
-const IconProx = ({white} : {white?: boolean}) => {
-  const color = white ? '#FFF' : '#5956E8'
+const IconProx = ({ white }: { white?: boolean }) => {
+  const color = white ? '#FFF' : '#5956E8';
   return (
     <svg
       width="14"
@@ -13,7 +13,7 @@ const IconProx = ({white} : {white?: boolean}) => {
         fill={color}
       />
     </svg>
-  )
-}
+  );
+};
 
-export default IconProx
+export default IconProx;

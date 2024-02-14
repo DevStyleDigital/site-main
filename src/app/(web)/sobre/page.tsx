@@ -1,19 +1,19 @@
-import Team from "@/components/app/pages/section/team"
-import AboutSectionPage from "@/components/app/pages/sobre/about"
-import HeaderAnimationAbout from "@/components/app/pages/sobre/header"
-import SocialSection from "@/components/app/pages/sobre/sociais"
-import Values from "@/components/app/pages/sobre/values"
-import { SideBarFundo } from "@/components/app/sidebar"
-import ResultsTag from "@/components/resultsTag"
-import ToTop from "@/components/toTop"
+import Team from '@/components/app/pages/section/team';
+import AboutSectionPage from '@/components/app/pages/sobre/about';
+import HeaderAnimationAbout from '@/components/app/pages/sobre/header';
+import SocialSection from '@/components/app/pages/sobre/sociais';
+import Values from '@/components/app/pages/sobre/values';
+import { SideBarFundo } from '@/components/app/sidebar';
+import ResultsTag from '@/components/resultsTag';
+import ToTop from '@/components/toTop';
 
 export const metadata = {
   title: 'Sobre | DevStyle',
-}
+};
 
 const Sobre = () => {
   return (
-    <>   
+    <>
       <SideBarFundo />
       <main className="w-full flex flex-col items-center">
         <ToTop />
@@ -29,7 +29,7 @@ const Sobre = () => {
         <SocialSection />
       </main>
     </>
-  )
-}
+  );
+};
 
-export default Sobre
+export default Sobre;

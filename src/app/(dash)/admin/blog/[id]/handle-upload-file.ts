@@ -1,4 +1,3 @@
-
 import { supabase } from '@/services/supabase';
 
 export async function uploadFile(
@@ -7,12 +6,12 @@ export async function uploadFile(
   { file, ...item }: any,
   defaultUrl?: string,
 ) {
-  const newFile = file[0].file
+  const newFile = file[0].file;
   const nameDotSplit = newFile.name.split('.');
   const extension = nameDotSplit[nameDotSplit.length - 1];
 
   if (defaultUrl) {
-    const newurl = defaultUrl.split('/')
+    const newurl = defaultUrl.split('/');
     const name = newurl[newurl.length - 1];
     await supabase.storage.from(`blogPost-${eid}`).remove([name]);
   }

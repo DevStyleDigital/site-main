@@ -1,8 +1,8 @@
-'use client'
-import { Card } from '@/components/service/cardService'
-import { ProcessArray } from '@/utils/process'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+'use client';
+import { Card } from '@/components/service/cardService';
+import { ProcessArray } from '@/utils/process';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const ProcessAnimation = () => {
   return (
@@ -29,12 +29,10 @@ const ProcessAnimation = () => {
                 duration: 0.7 * item.id,
               },
             },
-          }
+          };
           return (
             <motion.div variants={variants} key={item.id}>
-              <Card.Root
-                className="w-full h-fit min-h-[450px] max-md:min-h-[0] items-center max-sm:h-[350px] flex flex-col justify-center gap-[2rem] p-[1rem] max-md:p-[.8rem] rounded-3xl card-color-gradient-service border-[1px] border-[#424245]"
-              >
+              <Card.Root className="w-full h-fit min-h-[450px] max-md:min-h-[0] items-center max-sm:h-[350px] flex flex-col justify-center gap-[2rem] p-[1rem] max-md:p-[.8rem] rounded-3xl card-color-gradient-service border-[1px] border-[#424245]">
                 <Card.Image className="w-[8rem] h-[8rem] max-sm:w-[6rem]  max-sm:h-[6rem] rounded-full flex justify-center items-center bg-[#292930] shadow-md">
                   <Image
                     src={item.icon}
@@ -42,7 +40,7 @@ const ProcessAnimation = () => {
                     alt={item.label}
                     width={173}
                     height={138}
-                  ></Image>
+                  />
                 </Card.Image>
                 <div className="flex flex-col gap-[1rem] items-center">
                   <Card.Title className="text-[1.4rem] text-white max-sm:text-[1rem]">
@@ -52,14 +50,14 @@ const ProcessAnimation = () => {
                     {item.label}
                   </Card.Text>
                 </div>
-                <span className='w-[4rem] h-[2px] bg-white'></span>
+                <span className="w-[4rem] h-[2px] bg-white" />
               </Card.Root>
             </motion.div>
-          )
+          );
         })}
       </motion.div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default ProcessAnimation
+export default ProcessAnimation;

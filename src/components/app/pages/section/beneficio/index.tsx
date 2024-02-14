@@ -1,10 +1,10 @@
-import StarBene from '@/assets/svg/star-bene'
-import { HeaderSection } from '@/components/titleSection'
-import Painel from '@/assets/img/painel.png'
-import ImagesAnimate from '@/components/imagesAnimate'
-import PageRaking from '@/assets/svg/page'
-import EngrenagemBene from '@/assets/svg/enge'
-import Pizza from '@/assets/svg/pizza'
+import StarBene from '@/assets/svg/star-bene';
+import { HeaderSection } from '@/components/titleSection';
+import Painel from '@/assets/img/painel.png';
+import ImagesAnimate from '@/components/imagesAnimate';
+import PageRaking from '@/assets/svg/page';
+import EngrenagemBene from '@/assets/svg/enge';
+import Pizza from '@/assets/svg/pizza';
 
 const Beneficios = () => {
   return (
@@ -19,7 +19,7 @@ const Beneficios = () => {
               <div className="flex flex-col gap-[.5rem]">
                 <HeaderSection.Path dark>
                   <span className="font-extrabold text-[1rem] tracking-widest text-[#FEC90C]">
-                    //
+                    {'//'}
                   </span>{' '}
                   07 . Benefício
                 </HeaderSection.Path>
@@ -55,8 +55,8 @@ const Beneficios = () => {
               </div>
             </div>
             <span className="ml-[6rem] mt-[1rem] text-[1rem] text-secondary_black-950/60 max-sm:text-[.8rem]">
-              Rankeamento do site no google deixando assim o seu site em
-              evidência nas pesquisas.
+              Rankeamento do site no google deixando assim o seu site em evidência nas
+              pesquisas.
             </span>
           </div>
           <div className="w-[90%] flex flex-col items-start content">
@@ -69,8 +69,7 @@ const Beneficios = () => {
               </div>
             </div>
             <span className="ml-[6rem] mt-[1rem] text-[1rem] text-secondary_black-950/60 max-sm:text-[.8rem]">
-              Otimização da página deixando-a mais rápida e navegável ao
-              usuário.
+              Otimização da página deixando-a mais rápida e navegável ao usuário.
             </span>
           </div>
           <div className="w-[90%] flex flex-col items-start content">
@@ -83,14 +82,14 @@ const Beneficios = () => {
               </div>
             </div>
             <span className="ml-[6rem] mt-[1rem] text-[1rem] text-secondary_black-950/60 max-sm:text-[.8rem]">
-              Melhores análises e resultados de quem esta acessando a sua página
-              através da gestão de trafego.
+              Melhores análises e resultados de quem esta acessando a sua página através
+              da gestão de trafego.
             </span>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Beneficios
+export default Beneficios;

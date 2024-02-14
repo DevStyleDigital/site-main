@@ -42,7 +42,7 @@ const InstagramIcon = () => {
         </linearGradient>
       </defs>
     </svg>
-  )
-}
+  );
+};
 
-export default InstagramIcon
+export default InstagramIcon;

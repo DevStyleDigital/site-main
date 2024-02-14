@@ -1,61 +1,69 @@
-'use client'
-import Button from '@/components/button'
-import { HeroText } from '@/components/hero'
-import Image from 'next/image'
-import Pc from '@/assets/img/pczinho.png'
-import Microfone from '@/assets/img/microfone.png'
-import Selo from '@/assets/img/selo.png'
-import Mira from '@/assets/img/mira.png'
-import Fundo from '@/assets/img/fundo.png'
-import Triangulo from '@/assets/img/triangulo.png'
-import { motion } from 'framer-motion'
-import { useCallback, useEffect, useRef, useState } from 'react'
+'use client';
+import Button, { ButtonFree } from '@/components/button';
+import { HeroText } from '@/components/hero';
+import Image from 'next/image';
+import Pc from '@/assets/img/pczinho.png';
+import Microfone from '@/assets/img/microfone.png';
+import Selo from '@/assets/img/selo.png';
+import Mira from '@/assets/img/mira.png';
+import Fundo from '@/assets/img/fundo.png';
+import Triangulo from '@/assets/img/triangulo.png';
+import { motion } from 'framer-motion';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import confetti from 'canvas-confetti';
+import { MovingBorder } from '@/components/ui/moving-border';
+import { Sparkles } from 'lucide-react';
 
 const HeaderAnimation = () => {
-  const [handleAnimationIMAGES, setHandleAnimationIMAGES] = useState(true)
-  const cardRef = useRef<HTMLDivElement>(null)
-  const [a, setA] = useState<any>()
-  const [b, setB] = useState<any>()
+  const [handleAnimationIMAGES, setHandleAnimationIMAGES] = useState(true);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const [a, setA] = useState<any>();
+  const [b, setB] = useState<any>();
+
+  const handleConfetti = () => {
+    confetti();
+  };
 
   const handleScrollMove = () => {
-    const scrollPosition = window.pageYOffset
+    const scrollPosition = window.pageYOffset;
     if (scrollPosition >= 500) {
-      setHandleAnimationIMAGES(false)
+      setHandleAnimationIMAGES(false);
     } else {
-      setHandleAnimationIMAGES(true)
+      setHandleAnimationIMAGES(true);
     }
-  }
+  };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScrollMove)
-  }, [])
+    window.addEventListener('scroll', handleScrollMove);
+  }, []);
 
-  const dampen = 80
+  const dampen = 80;
 
   const handleMouseMove = (e: MouseEvent) => {
-    if (!cardRef.current) return 0
-    const rect = cardRef.current.getBoundingClientRect()
-    const newRotateX = e.clientY - rect.top - rect.height / 2
-    setA(-newRotateX / dampen)
-    const newRotateY = e.clientX - rect.left - rect.width / 2
-    setB(newRotateY / dampen)
-  }
+    if (!cardRef.current) return 0;
+    const rect = cardRef.current.getBoundingClientRect();
+    const newRotateX = e.clientY - rect.top - rect.height / 2;
+    setA(-newRotateX / dampen);
+    const newRotateY = e.clientX - rect.left - rect.width / 2;
+    setB(newRotateY / dampen);
+  };
 
   const EventoAdd = useCallback(() => {
-    window.addEventListener('mousemove', handleMouseMove)
-  }, [])
+    window.addEventListener('mousemove', handleMouseMove);
+  }, []);
 
   const EventoRemove = useCallback(() => {
-    window.removeEventListener('mousemove', handleMouseMove)
-  }, [])
+    window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
 
   useEffect(() => {
     if (handleAnimationIMAGES) {
-      EventoAdd()
+      EventoAdd();
     } else {
-      EventoRemove()
+      EventoRemove();
     }
-  }, [handleAnimationIMAGES])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [handleAnimationIMAGES]);
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -67,11 +75,11 @@ const HeaderAnimation = () => {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   return (
     <HeroText.Root className="header_home">
-      <HeroText.Img  className='w-[45%] h-full top-[-50%] right-[-50%]  max-lg:opacity-[15%] translate-x-[-85%] translate-y-[40%] max-2xl:w-[70%] max-[1700px]:w-[50%] max-2xl:translate-x-[-40%] max-xl:w-[80%] max-xl:translate-x-[-30%] max-2xl:h-screen'>
+      <HeroText.Img className="w-[45%] h-full top-[-50%] right-[-50%]  max-lg:opacity-[15%] translate-x-[-85%] translate-y-[40%] max-2xl:w-[70%] max-[1700px]:w-[50%] max-2xl:translate-x-[-40%] max-xl:w-[80%] max-xl:translate-x-[-30%] max-2xl:h-screen">
         <div className="w-full h-full rounded-full relative">
           <Image
             src={Fundo}
@@ -79,7 +87,7 @@ const HeaderAnimation = () => {
             alt="fundoimg"
             width={450}
             height={519}
-          ></Image>
+          />
           <motion.div
             className="w-full h-full relative preserve"
             style={{ rotateX: a, rotateY: b }}
@@ -95,7 +103,7 @@ const HeaderAnimation = () => {
                 damping: 5,
               }}
             >
-              <Image src={Pc} alt="PC" width={695} height={594}></Image>
+              <Image src={Pc} alt="PC" width={695} height={594} />
             </motion.div>
             <motion.div
               className="microfone max-2xl:w-[150px]"
@@ -108,12 +116,7 @@ const HeaderAnimation = () => {
                 damping: 5,
               }}
             >
-              <Image
-                src={Microfone}
-                alt="Microfone"
-                width={211}
-                height={187}
-              ></Image>
+              <Image src={Microfone} alt="Microfone" width={211} height={187} />
             </motion.div>
             <motion.div
               className="selo max-2xl:w-[80px]"
@@ -131,7 +134,7 @@ const HeaderAnimation = () => {
                 },
               }}
             >
-              <Image src={Selo} alt="Selo" width={155} height={155}></Image>
+              <Image src={Selo} alt="Selo" width={155} height={155} />
             </motion.div>
             <motion.div
               className="mira max-2xl:w-[80px] max-2xl:mb-[4rem]"
@@ -149,7 +152,7 @@ const HeaderAnimation = () => {
                 },
               }}
             >
-              <Image src={Mira} alt="Mira" width={138} height={190}></Image>
+              <Image src={Mira} alt="Mira" width={138} height={190} />
             </motion.div>
             <Image
               src={Triangulo}
@@ -157,7 +160,7 @@ const HeaderAnimation = () => {
               alt="triangulo"
               width={30}
               height={33}
-            ></Image>
+            />
           </motion.div>
         </div>
       </HeroText.Img>
@@ -169,34 +172,42 @@ const HeaderAnimation = () => {
       >
         <HeroText.Rota>
           <span className="font-extrabold text-[1rem] tracking-widest text-[#FEC90C]">
-            //
+            {'//'}
           </span>{' '}
           INÍCIO
         </HeroText.Rota>
-        <HeroText.Title className='max-2xl:max-w-[40rem] max-2xl:text-[2.5rem] max-xl:text-[2rem] max-lg:text-[3rem] max-sm:text-[1.5rem]'>
+        <HeroText.Title className="max-2xl:max-w-[40rem] max-2xl:text-[2.5rem] max-xl:text-[2rem] max-lg:text-[3rem] max-sm:text-[1.5rem]">
           Construindo marcas,
-          <br /> uma história de <span className="text-[#5956E8]">sucesso </span>
+          <br /> uma história de{' '}
+          <span className="text-[#5956E8] cursor-pointer" onClick={handleConfetti}>
+            sucesso{' '}
+          </span>
           por vez.
         </HeroText.Title>
         <HeroText.SubTitle>
-          Crie uma marca que ressoe: podemos ajudá-lo a definir e comunicar sua
-          mensagem exclusiva.
+          Crie uma marca que ressoe: podemos ajudá-lo a definir e comunicar sua mensagem
+          exclusiva.
         </HeroText.SubTitle>
         <HeroText.Buttons>
-          <Button fill href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">Nossos serviços</Button>
-          <Button href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">Get Started</Button>
+          <Button
+            fill
+            href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
+          >
+            Nossos serviços
+          </Button>
+          <ButtonFree />
         </HeroText.Buttons>
       </motion.div>
       <motion.div
         className="w-[100vw] h-[90vh] absolute select-none"
         style={{ rotateX: a, rotateY: b }}
       >
-        <div className="w-[4rem] h-[4rem] left-[45%] rounded-full shadow-md absolute top-[13rem] bg-[#f8c6d0] z-2 max-lg:opacity-[30%]"></div>
-        <div className="w-[3rem] h-[3rem] rounded-full shadow-md absolute bottom-[13rem] left-[5rem] bg-[#bee1f9] z-2 max-lg:opacity-[30%]"></div>
-        <div className="w-[2.5rem] h-[2.5rem] rounded-full left-[40%] shadow-md absolute bottom-[8rem] bg-transparent border-[2px] border-[#F8BDBD] z-2 max-lg:opacity-[30%]"></div>
+        <div className="w-[4rem] h-[4rem] left-[45%] rounded-full shadow-md absolute top-[13rem] bg-[#f8c6d0] z-2 max-lg:opacity-[30%]" />
+        <div className="w-[3rem] h-[3rem] rounded-full shadow-md absolute bottom-[13rem] left-[5rem] bg-[#bee1f9] z-2 max-lg:opacity-[30%]" />
+        <div className="w-[2.5rem] h-[2.5rem] rounded-full left-[40%] shadow-md absolute bottom-[8rem] bg-transparent border-[2px] border-[#F8BDBD] z-2 max-lg:opacity-[30%]" />
       </motion.div>
     </HeroText.Root>
-  )
-}
+  );
+};
 
-export default HeaderAnimation
+export default HeaderAnimation;

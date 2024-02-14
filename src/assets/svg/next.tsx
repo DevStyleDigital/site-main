@@ -16,7 +16,7 @@ const Next = () => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default Next
+export default Next;

@@ -18,7 +18,7 @@ export const DropzoneInput = ({
 
   function handleFilesSelected(files: FileList | File[] | null) {
     if (!files || !files.length) return;
-    handleFiles([...files as any]);
+    handleFiles([...(files as any)]);
     if (inputRef.current) inputRef.current.value = '';
   }
 
@@ -31,7 +31,7 @@ export const DropzoneInput = ({
         )}
         onDrop={(ev) => {
           ev.preventDefault();
-          const onlyImages = [...ev.dataTransfer.files as any].filter((file) =>
+          const onlyImages = [...(ev.dataTransfer.files as any)].filter((file) =>
             file.type.includes(
               accept !== 'image/*' ? accept.replaceAll('.', '') : 'image',
             ),

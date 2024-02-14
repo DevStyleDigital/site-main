@@ -1,25 +1,25 @@
-'use client'
+'use client';
 
-import clsx from 'clsx'
-import { useEffect, useState } from 'react'
+import clsx from 'clsx';
+import { useEffect, useState } from 'react';
 
 const ToTop = () => {
-  const [handleTop, setHandleTop] = useState(false)
+  const [handleTop, setHandleTop] = useState(false);
 
   const handleScrollMove = () => {
-    const scrollPosition = window.pageYOffset
+    const scrollPosition = window.pageYOffset;
     if (scrollPosition >= 500) {
-      setHandleTop(true)
+      setHandleTop(true);
     } else {
-      setHandleTop(false)
+      setHandleTop(false);
     }
-  }
+  };
   useEffect(() => {
-    window.addEventListener('scroll', handleScrollMove)
-  }, [])
+    window.addEventListener('scroll', handleScrollMove);
+  }, []);
 
   function ScrollTo() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
 
   return (
@@ -47,11 +47,11 @@ const ToTop = () => {
             fill="currentColor"
             fillRule="evenodd"
             clipRule="evenodd"
-          ></path>
+          />
         </svg>
       </button>
     </>
-  )
-}
+  );
+};
 
-export default ToTop
+export default ToTop;

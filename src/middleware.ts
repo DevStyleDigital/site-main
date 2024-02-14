@@ -7,7 +7,8 @@ export async function middleware(request: NextRequest) {
   if (request.nextUrl.pathname.startsWith('/admin')) {
     const cookieStore = request.cookies;
     const token = cookieStore.get('__AUTH')?.value;
-    if (!token || token === 'null') return  NextResponse.redirect(new URL('/login', request.url));
+    if (!token || token === 'null')
+      return NextResponse.redirect(new URL('/login', request.url));
 
     const isInvalid = await supabase.auth
       .getUser(token)
@@ -22,4 +23,4 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   matcher: ['/admin/:path*', '/admin'],
-}
+};

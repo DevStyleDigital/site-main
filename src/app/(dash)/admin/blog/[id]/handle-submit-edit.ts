@@ -7,26 +7,24 @@ export async function onSubmitEdit(
   data: any,
   fields: {
     posts: any | undefined;
-    banner: any,
-    autorPhoto: any
+    banner: any;
+    autorPhoto: any;
   },
 ) {
   if (!fields.posts.id) return;
   const id = fields.posts.id;
 
-  console.log(fields)
-
   try {
     const banner = fields.banner[0].file.name
-    ? await handleUploadBanner(
-      id,
-      fields.banner,
-      'banner',
-      'Banner',
-      fields.posts.banner.url,
-      )
+      ? await handleUploadBanner(
+          id,
+          fields.banner,
+          'banner',
+          'Banner',
+          fields.posts.banner.url,
+        )
       : undefined;
-      
+
     if (banner?.error) throw 'err';
 
     const bannerAutor = fields.autorPhoto[0].file.name

@@ -27,7 +27,7 @@ const ComentarioIcon = () => {
         fill="#C556D7"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default ComentarioIcon
+export default ComentarioIcon;

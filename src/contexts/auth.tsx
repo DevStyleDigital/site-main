@@ -57,8 +57,8 @@ export const AuthProvider = ({ children }: BTypes.FCChildren) => {
     return supabase.auth
       .signOut()
       .then(() => {
-        handleUser(null)
-        router.push('/login')
+        handleUser(null);
+        router.push('/login');
       })
       .catch(() => handleUser(null))
       .finally(() => setLoading(false));

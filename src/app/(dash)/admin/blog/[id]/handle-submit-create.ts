@@ -7,8 +7,8 @@ import { deletePost } from '@/utils/posts-func';
 export async function onSubmitCreate(
   data: any,
   fields: {
-    banner: any,
-    autorPhoto: any
+    banner: any;
+    autorPhoto: any;
   },
 ) {
   const id = uuid();
@@ -16,14 +16,18 @@ export async function onSubmitCreate(
   try {
     const banner = await handleUploadBanner(id, fields.banner!, 'banner', 'Banner');
     const values = { ...data, id };
-    console.log(fields.banner)
 
     if (banner?.error) throw 'err';
-    
-    const bannerAutor = await handleUploadBanner(id, fields.autorPhoto!, 'autorPhoto', 'AutorPhoto');
-    
+
+    const bannerAutor = await handleUploadBanner(
+      id,
+      fields.autorPhoto!,
+      'autorPhoto',
+      'AutorPhoto',
+    );
+
     if (bannerAutor?.error) throw 'err';
-  
+
     const hasError = await supabase
       .from('blog')
       .insert({ ...values, banner, bannerAutor })
@@ -41,9 +45,7 @@ export async function onSubmitCreate(
   } catch {
     await deletePost(id);
 
-    toast.error(
-      'Ocorreu algum erro ao criar seu post. Tente novamente mais tarde.',
-    );
+    toast.error('Ocorreu algum erro ao criar seu post. Tente novamente mais tarde.');
     throw false;
   }
 }

@@ -1,16 +1,13 @@
-import About from '../../../../../assets/img/about.png'
-import { HeaderSection } from '@/components/titleSection'
-import Icon from '@/assets/svg/Icon'
-import ResultsIcon from '@/assets/svg/results'
-import Time from '@/assets/svg/team'
-import ImagesAnimate from '@/components/imagesAnimate'
+import About from '../../../../../assets/img/about.png';
+import { HeaderSection } from '@/components/titleSection';
+import Icon from '@/assets/svg/Icon';
+import ResultsIcon from '@/assets/svg/results';
+import Time from '@/assets/svg/team';
+import ImagesAnimate from '@/components/imagesAnimate';
 
 const AboutSection = () => {
   return (
-    <section
-      id="about"
-      className="w-full h-fit flex justify-center bg-white py-[4rem]"
-    >
+    <section id="about" className="w-full h-fit flex justify-center bg-white py-[4rem]">
       <div className="w-[70%] flex h-full relative max-xl:w-[80%] max-lg:flex-col max-lg:items-center">
         <ImagesAnimate
           min={1320}
@@ -31,22 +28,22 @@ const AboutSection = () => {
               <div className="flex flex-col gap-[.5rem]">
                 <HeaderSection.Path dark>
                   <span className="font-extrabold text-[1rem] tracking-widest text-[#FEC90C]">
-                    //
+                    {'//'}
                   </span>{' '}
                   02 . Sobre nós
                 </HeaderSection.Path>
                 <HeaderSection.Title asChild>
                   <h1 className="text-[1.4rem] text-secondary_black-950 font-medium leading-tight max-md:text-[1rem]">
-                    A empresa número 1 em serviços para desenvolvimento de
-                    software
+                    A empresa número 1 em serviços para desenvolvimento de software
                   </h1>
                 </HeaderSection.Title>
               </div>
             </div>
           </HeaderSection.Root>
           <span className="text-secondary_black-950/70 relative z-10 max-md:text-[.8rem]">
-            Somos uma empresa de desenvolvimento de software focada em linguagens atuais do mercado trazendo máxima performance e um design
-            único em suas páginas e sistemas.
+            Somos uma empresa de desenvolvimento de software focada em linguagens atuais
+            do mercado trazendo máxima performance e um design único em suas páginas e
+            sistemas.
           </span>
           <div className="w-full h-full flex flex-col gap-[3rem] items-end mt-[1.5rem] max-md:items-center">
             <div className="w-[90%] flex flex-col items-start content">
@@ -59,8 +56,8 @@ const AboutSection = () => {
                 </div>
               </div>
               <span className="ml-[6rem] mt-[1rem] text-[1rem] text-secondary_black-950/60 max-md:text-[.8rem]">
-                Resultados garantidos com as tecnologías mais atuais do mercado
-                trazendo maior perfomance.
+                Resultados garantidos com as tecnologías mais atuais do mercado trazendo
+                maior perfomance.
               </span>
             </div>
             <div className="w-[90%] flex flex-col items-start content">
@@ -73,15 +70,15 @@ const AboutSection = () => {
                 </div>
               </div>
               <span className="ml-[6rem] mt-[1rem] text-[1rem] text-secondary_black-950/60 max-md:text-[.8rem]">
-                Profissionais experts em cada área para que você tenha o máximo
-                de resultados em menos tempo.
+                Profissionais experts em cada área para que você tenha o máximo de
+                resultados em menos tempo.
               </span>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;

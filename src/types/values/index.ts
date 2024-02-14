@@ -1,8 +1,8 @@
-import { StaticImageData } from "next/image";
+import { StaticImageData } from 'next/image';
 
 export interface iValues {
-    icon: StaticImageData,
-    label: string,
-    title: string,
-    id: number
+  icon: StaticImageData;
+  label: string;
+  title: string;
+  id: number;
 }

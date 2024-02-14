@@ -13,7 +13,7 @@ const Star = () => {
         fill="#FFB545"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default Star
+export default Star;

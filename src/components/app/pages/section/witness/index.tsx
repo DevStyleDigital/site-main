@@ -1,7 +1,7 @@
-import ComentarioIcon from '@/assets/svg/comentario'
-import CarouselWitness from '@/components/ carouselWitness'
-import ButtonSlide from '@/components/buttonSlide'
-import { HeaderSection } from '@/components/titleSection'
+import ComentarioIcon from '@/assets/svg/comentario';
+import CarouselWitness from '@/components/ carouselWitness';
+import ButtonSlide from '@/components/buttonSlide';
+import { HeaderSection } from '@/components/titleSection';
 
 const Witness = () => {
   return (
@@ -15,14 +15,13 @@ const Witness = () => {
             <div className="flex flex-col gap-[.5rem]">
               <HeaderSection.Path dark>
                 <span className="font-extrabold text-[1rem] tracking-widest text-[#FEC90C]">
-                  //
+                  {'//'}
                 </span>{' '}
                 04 . Testemunhas
               </HeaderSection.Path>
               <HeaderSection.Title asChild>
                 <h1 className="text-[1.4rem] font-semibold text-secondary_black-950 leading-tight max-md:text-[1rem]">
-                  Nós trabalhamos sempre com o cliente garantindo a melhor
-                  entrega.
+                  Nós trabalhamos sempre com o cliente garantindo a melhor entrega.
                 </h1>
               </HeaderSection.Title>
             </div>
@@ -32,7 +31,7 @@ const Witness = () => {
         <CarouselWitness />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Witness
+export default Witness;

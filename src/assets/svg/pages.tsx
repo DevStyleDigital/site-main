@@ -29,7 +29,7 @@ const PagesIcon = () => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default PagesIcon
+export default PagesIcon;

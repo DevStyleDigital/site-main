@@ -2,14 +2,7 @@ import { supabase } from '@/services/supabase';
 import { type iPosts, type PostsPartial } from '@/types/blog/posts';
 
 export async function getPostsById(id: string): Promise<iPosts> {
-  return (
-    await supabase
-      .from('blog')
-      .select(
-        '*',
-      )
-      .eq('id', id)
-  ).data?.[0];
+  return (await supabase.from('blog').select('*').eq('id', id)).data?.[0];
 }
 
 export async function deletePost(id: string) {
@@ -34,11 +27,5 @@ export async function deletePost(id: string) {
 }
 
 export async function getPartialOfPosts(): Promise<PostsPartial[]> {
-  return (
-    (
-      await supabase
-        .from('blog')
-        .select('*')
-    )
-  ).data || [];
+  return (await supabase.from('blog').select('*')).data || [];
 }

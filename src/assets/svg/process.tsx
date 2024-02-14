@@ -12,7 +12,7 @@ const ProcessIcon = () => {
         fill="#8A8A8A"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default ProcessIcon
+export default ProcessIcon;

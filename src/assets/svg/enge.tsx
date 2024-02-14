@@ -13,7 +13,7 @@ const EngrenagemBene = () => {
         fill="#292930"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default EngrenagemBene
+export default EngrenagemBene;

@@ -29,7 +29,7 @@ const Ultilits = () => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default Ultilits
+export default Ultilits;

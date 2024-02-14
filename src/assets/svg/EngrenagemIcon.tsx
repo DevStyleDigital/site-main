@@ -23,7 +23,7 @@ const EngrenagemIcon = () => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default EngrenagemIcon
+export default EngrenagemIcon;

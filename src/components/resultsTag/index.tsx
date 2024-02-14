@@ -1,9 +1,9 @@
-'use client'
-import { ResultsTagArray } from '@/utils/results'
-import { ResultsProjectsArray } from '@/utils/resultsProjects'
-import { motion } from 'framer-motion'
+'use client';
+import { ResultsTagArray } from '@/utils/results';
+import { ResultsProjectsArray } from '@/utils/resultsProjects';
+import { motion } from 'framer-motion';
 
-const ResultsTag = ({project} : {project?: boolean}) => {
+const ResultsTag = ({ project }: { project?: boolean }) => {
   return (
     <motion.div
       initial="offscreen"
@@ -26,7 +26,7 @@ const ResultsTag = ({project} : {project?: boolean}) => {
               duration: 0.7 * result.id,
             },
           },
-        }
+        };
         return (
           <motion.div
             key={result.id}
@@ -44,10 +44,10 @@ const ResultsTag = ({project} : {project?: boolean}) => {
             </h1>
             {result.text}
           </motion.div>
-        )
+        );
       })}
     </motion.div>
-  )
-}
+  );
+};
 
-export default ResultsTag
+export default ResultsTag;

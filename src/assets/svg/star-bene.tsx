@@ -13,7 +13,7 @@ const StarBene = () => {
         strokeWidth="2"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default StarBene
+export default StarBene;

@@ -1,4 +1,4 @@
-import { iNavs } from '@/types/navs'
+import { iNavs } from '@/types/navs';
 
 export const NavsItems: iNavs[] = [
   {
@@ -30,5 +30,5 @@ export const NavsItems: iNavs[] = [
     id: '6',
     label: 'Blog',
     link: '/blog',
-  }
-]
+  },
+];

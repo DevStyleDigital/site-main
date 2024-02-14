@@ -23,7 +23,7 @@ const Icon = () => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default Icon
+export default Icon;

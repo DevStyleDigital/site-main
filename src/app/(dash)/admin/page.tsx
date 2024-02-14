@@ -1,9 +1,9 @@
 export const metadata = {
-    title: 'Admin | DevStyle',
-}
+  title: 'Admin | DevStyle',
+};
 
 const Admin = () => {
-    <h1>a</h1>
-}
+  <h1>a</h1>;
+};
 
-export default Admin
+export default Admin;

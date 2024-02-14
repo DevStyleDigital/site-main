@@ -22,6 +22,6 @@ const Follows = () => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
-export default Follows
+  );
+};
+export default Follows;

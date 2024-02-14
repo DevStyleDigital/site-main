@@ -17,7 +17,7 @@ const Pizza = () => {
         fill="#292930"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default Pizza
+export default Pizza;

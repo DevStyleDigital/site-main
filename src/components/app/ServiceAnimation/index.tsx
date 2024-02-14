@@ -1,9 +1,9 @@
-'use client'
-import IconProx from '@/assets/svg/iconProx'
-import { Card } from '@/components/service/cardService'
-import { ServicesUtils } from '@/utils/services'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+'use client';
+import IconProx from '@/assets/svg/iconProx';
+import { Card } from '@/components/service/cardService';
+import { ServicesUtils } from '@/utils/services';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const ServiceAnimation = () => {
   return (
@@ -30,7 +30,7 @@ const ServiceAnimation = () => {
                 duration: 0.7 * item.id,
               },
             },
-          }
+          };
           return (
             <motion.div variants={variants} key={item.id}>
               <Card.Root
@@ -44,7 +44,7 @@ const ServiceAnimation = () => {
                     alt={item.label}
                     width={173}
                     height={138}
-                  ></Image>
+                  />
                 </Card.Image>
                 <div className="flex flex-col gap-[1rem]">
                   <Card.Title className="text-[1.4rem] text-white max-sm:text-[1rem]">
@@ -60,11 +60,11 @@ const ServiceAnimation = () => {
                 </Card.Button>
               </Card.Root>
             </motion.div>
-          )
+          );
         })}
       </motion.div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default ServiceAnimation
+export default ServiceAnimation;

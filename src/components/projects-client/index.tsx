@@ -1,14 +1,15 @@
-'use client'
-import Next from '@/assets/svg/next'
-import Image, { StaticImageData } from 'next/image'
-import { useEffect, useState } from 'react'
-import Keypay from '@/assets/img/projects/keypay.png'
-import { ProjectsArray } from '@/utils/projects'
-import clsx from 'clsx'
-import { motion } from 'framer-motion'
+'use client';
+import Next from '@/assets/svg/next';
+import Image, { StaticImageData } from 'next/image';
+import { useEffect, useState } from 'react';
+import Keypay from '@/assets/img/projects/keypay.png';
+import { ProjectsArray } from '@/utils/projects';
+import clsx from 'clsx';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const ProjectCLient = () => {
-  const [ImageAtual, setImageAtual] = useState<StaticImageData>(Keypay)
+  const [ImageAtual, setImageAtual] = useState<StaticImageData>(Keypay);
 
   const variants = {
     offscreen: {
@@ -22,17 +23,17 @@ const ProjectCLient = () => {
         duration: 2,
       },
     },
-  }
+  };
 
   function handleActive(identifier: any) {
-    const allBox = document.querySelectorAll('.box-content-projects')
-    const boxSelect = document.querySelector(`#box-${identifier}`)
+    const allBox = document.querySelectorAll('.box-content-projects');
+    const boxSelect = document.querySelector(`#box-${identifier}`);
     allBox.forEach((boxSelect) => {
       if (boxSelect.classList.contains('active')) {
-        boxSelect?.classList.remove('active')
+        boxSelect?.classList.remove('active');
       }
-    })
-    boxSelect?.classList.toggle('active')
+    });
+    boxSelect?.classList.toggle('active');
   }
 
   return (
@@ -52,7 +53,7 @@ const ProjectCLient = () => {
               id={`box-${project.id}`}
               key={project.id}
               className={clsx(
-                `w-full h-[5rem] bg-[#383840] rounded-md p-[2rem] box-content-projects border-[1px] border-[black]/10`,
+                'w-full h-[5rem] bg-[#383840] rounded-md p-[2rem] box-content-projects border-[1px] border-[black]/10',
                 { active: project.order === 1 },
               )}
             >
@@ -61,19 +62,26 @@ const ProjectCLient = () => {
                   <span className="opacity-0 h-0 text-[#FFDC60] font-medium max-sm:text-[.8rem]">
                     {project.type}
                   </span>
-                  <h1 className="text-white/50 font-semibold text-[1.2rem] max-sm:text-[1rem]">
-                    {project.title}
-                  </h1>
+                  <Link
+                    href={project.link || '#'}
+                    target="_blank"
+                    className="text-white/50 hover:underline group font-semibold text-[1.2rem] max-sm:text-[1rem]"
+                  >
+                    {project.title}{' '}
+                    <span className="group-hover:ml-4 !no-underline group-hover:no-underline none transition-all">
+                      &#x279C;
+                    </span>
+                  </Link>
                   <span className="opacity-0 h-0 text-[white]/70 font-medium max-sm:text-[.9rem]  elipses2 max-h-[4rem]">
                     {project.comment}
                   </span>
                 </div>
                 <button
-                  aria-label='prox'
+                  aria-label="prox"
                   type="button"
                   onClick={() => {
-                    handleActive(project.id)
-                    setImageAtual(project.img)
+                    handleActive(project.id);
+                    setImageAtual(project.img);
                   }}
                   className="w-[3rem] h-[3rem] bg-[#292930] rounded-full flex justify-center items-center button-drop"
                 >
@@ -99,7 +107,7 @@ const ProjectCLient = () => {
         </div>
       </motion.div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default ProjectCLient
+export default ProjectCLient;

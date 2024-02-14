@@ -1,8 +1,8 @@
-import { ReactNode } from 'react'
+import { ReactNode } from 'react';
 
 export interface iResults {
-  id: number
-  number: string
-  color: string
-  text: ReactNode
+  id: number;
+  number: string;
+  color: string;
+  text: ReactNode;
 }

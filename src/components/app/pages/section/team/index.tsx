@@ -1,8 +1,8 @@
-import Time from '@/assets/svg/time'
-import Cards from '@/components/cardTeam'
-import { HeaderSection } from '@/components/titleSection'
+import Time from '@/assets/svg/time';
+import Cards from '@/components/cardTeam';
+import { HeaderSection } from '@/components/titleSection';
 
-const Team = ({numSection}: {numSection: string}) => {
+const Team = ({ numSection }: { numSection: string }) => {
   return (
     <section className="w-full h-fit flex justify-center pt-[5rem] pb-[4rem] max-lg:pb-[6rem] max-md:pt-[3rem] max-sm:pb-[3rem]">
       <div className="w-[60%] flex flex-col gap-[2.5rem] items-center max-2xl:w-[70%] max-xl:w-[80%] max-lg:w-[90%]">
@@ -13,7 +13,7 @@ const Team = ({numSection}: {numSection: string}) => {
             </HeaderSection.Icon>
             <HeaderSection.Path dark>
               <span className="font-extrabold text-[1rem] tracking-widest text-[#5956E8]">
-                //
+                {'//'}
               </span>{' '}
               {numSection} . Nosso Time
             </HeaderSection.Path>
@@ -27,7 +27,7 @@ const Team = ({numSection}: {numSection: string}) => {
         <Cards />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;

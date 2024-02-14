@@ -58,7 +58,7 @@ const ResultsIcon = () => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default ResultsIcon
+export default ResultsIcon;

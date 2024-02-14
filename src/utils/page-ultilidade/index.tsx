@@ -1,4 +1,4 @@
-import { iUltilidade } from '@/types/ultilidade'
+import { iUltilidade } from '@/types/ultilidade';
 
 export const UltilidadeArray: iUltilidade[] = [
   {
@@ -16,4 +16,4 @@ export const UltilidadeArray: iUltilidade[] = [
     label: 'Changelog',
     link: '/',
   },
-]
+];

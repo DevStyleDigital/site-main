@@ -1,18 +1,15 @@
-import About from '@/assets/img/about/about-2.png'
-import Phone from '@/assets/img/about/megaphone.png'
-import { HeaderSection } from '@/components/titleSection'
-import Icon from '@/assets/svg/Icon'
-import ImagesAnimate from '@/components/imagesAnimate'
-import Button from '@/components/button'
-import Mira from '@/assets/img/mira.png'
-import Image from 'next/image'
+import About from '@/assets/img/about/about-2.png';
+import Phone from '@/assets/img/about/megaphone.png';
+import { HeaderSection } from '@/components/titleSection';
+import Icon from '@/assets/svg/Icon';
+import ImagesAnimate from '@/components/imagesAnimate';
+import Button from '@/components/button';
+import Mira from '@/assets/img/mira.png';
+import Image from 'next/image';
 
 const AboutSectionPage = () => {
   return (
-    <section
-      id="about"
-      className="w-full h-fit flex justify-center bg-white py-[5rem]"
-    >
+    <section id="about" className="w-full h-fit flex justify-center bg-white py-[5rem]">
       <div className="w-[60%] flex h-full relative max-2xl:w-[80%] max-xl:flex-col max-xl:items-center max-md:justify-center max-md:text-center">
         <ImagesAnimate
           min={200}
@@ -33,41 +30,65 @@ const AboutSectionPage = () => {
               <div className="flex flex-col gap-[.5rem]">
                 <HeaderSection.Path dark>
                   <span className="font-extrabold text-[1rem] tracking-widest text-[#FEC90C]">
-                    //
+                    {'//'}
                   </span>{' '}
                   01 . Sobre nós
                 </HeaderSection.Path>
                 <HeaderSection.Title asChild>
                   <h1 className="text-[1.4rem] text-secondary_black-950 font-medium leading-tight max-md:text-[1rem]">
-                    A empresa número 1 em serviços para desenvolvimento de
-                    software
+                    A empresa número 1 em serviços para desenvolvimento de software
                   </h1>
                 </HeaderSection.Title>
               </div>
             </div>
           </HeaderSection.Root>
-          <div className='w-full flex gap-[1rem] max-md:justify-center max-md:gap-[1rem] max-sm:flex-wrap'>
-            <Button className='!w-fit py-[2rem] pr-[3rem]' fill href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">
-              <Image className='mira-img-button' src={Mira} alt="Mira" width={138} height={190}></Image>
+          <div className="w-full flex gap-[1rem] max-md:justify-center max-md:gap-[1rem] max-sm:flex-wrap">
+            <Button
+              className="!w-fit py-[2rem] pr-[3rem]"
+              fill
+              href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
+            >
+              <Image
+                className="mira-img-button"
+                src={Mira}
+                alt="Mira"
+                width={138}
+                height={190}
+              />
               Desenvolvimento em escala
             </Button>
-            <Button className='!w-fit py-[2rem] pr-[3rem]' fill href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">
-              <Image className='phone-img-button' src={Phone} alt="Mira" width={138} height={190}></Image>
+            <Button
+              className="!w-fit py-[2rem] pr-[3rem]"
+              fill
+              href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
+            >
+              <Image
+                className="phone-img-button"
+                src={Phone}
+                alt="Mira"
+                width={138}
+                height={190}
+              />
               Estratégia & Resultados
             </Button>
           </div>
           <span className="text-secondary_black-950/70 relative z-10 max-md:text-[.8rem]">
-            Uma empresa de desenvolvimento de aplicações web e mobile trazendo soluções para sua empresa e maior visibilidade para sua 
-            marca e com isso melhores resultados para que consiga atingir um maior número de clientes. DevStyle foi criada em 2021 e desde então focamos 
-            em deixar nossos clientes satisfeitos com o nosso trabalho.
+            Uma empresa de desenvolvimento de aplicações web e mobile trazendo soluções
+            para sua empresa e maior visibilidade para sua marca e com isso melhores
+            resultados para que consiga atingir um maior número de clientes. DevStyle foi
+            criada em 2021 e desde então focamos em deixar nossos clientes satisfeitos com
+            o nosso trabalho.
           </span>
-          <Button className='w-fit' href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle.">
-            Get Started
+          <Button
+            className="w-fit"
+            href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
+          >
+            Obter Uma Consulta Gratis
           </Button>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSectionPage
+export default AboutSectionPage;

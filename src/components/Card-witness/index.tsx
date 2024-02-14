@@ -1,16 +1,16 @@
-'use client'
-import Star from '@/assets/svg/star'
-import { motion } from 'framer-motion'
-import Image, { StaticImageData } from 'next/image'
+'use client';
+import Star from '@/assets/svg/star';
+import { motion } from 'framer-motion';
+import Image, { StaticImageData } from 'next/image';
 
 interface CardWitnessProps {
-  companyName: string
-  imgCompany: StaticImageData
-  name: string
-  commented: string
-  cargo: string
-  imgAuthor: StaticImageData
-  variants?: any
+  companyName: string;
+  imgCompany: StaticImageData;
+  name: string;
+  commented: string;
+  cargo: string;
+  imgAuthor: StaticImageData;
+  variants?: any;
 }
 
 const CardWitness = ({
@@ -58,13 +58,13 @@ const CardWitness = ({
       <div className="flex w-full max-sm:justify-between">
         <div className="flex w-full gap-[.8rem] items-center">
           <div className="w-[3rem] h-[3rem] rounded-full max-sm:w-[2rem] max-sm:h-[2rem]">
-              <Image
-                  src={imgAuthor}
-                  className="rounded-full"
-                  alt="img-author"
-                  width={100}
-                  height={100}
-                />
+            <Image
+              src={imgAuthor}
+              className="rounded-full"
+              alt="img-author"
+              width={100}
+              height={100}
+            />
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold text-[1.1rem] text-[#292930] max-sm:text-[.8rem]">
@@ -84,7 +84,7 @@ const CardWitness = ({
         </div>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default CardWitness
+export default CardWitness;
