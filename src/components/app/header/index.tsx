@@ -46,57 +46,59 @@ const Header = () => {
   return (
     <>
       {time && (
-        <div className="fixed top-0 left-0 w-full z-[9999]">
+        <div className="w-full sticky flex top-0 left-0 z-[9999] bg-yellow-400/20 backdrop-blur-lg border-yellow-400/20 border">
           <Link
             href="/"
             role="alert"
-            className="w-full bg-yellow-400/20 backdrop-blur-lg animate-appearance-in border-yellow-400/20 border p-2 items-center justify-center text-center group inline-flex text-sm"
+            className="animate-appearance-in p-2 text-center group inline text-sm w-full"
           >
-            <span className="group-hover:underline">
+            <span className="group-hover:underline inline">
               Super PROMOÇÃO!!! Vai ficar de fora?
             </span>{' '}
-            <span className="w-3 ml-2">🤑</span>
-            <span className="w-2 ml-1">💲</span>
-            <span className="w-5">💲 </span>
+            <span className="w-3 ml-2 inline">🤑</span>
+            <span className="w-2 ml-1 inline">💲</span>
+            <span className="w-5 inline">💲 </span>
             Acaba em {time}
           </Link>
         </div>
       )}
-      <header className="w-full h-auto flex justify-center items-center px-[2rem] absolute top-0 bg-transparent z-50">
-        <div className="flex justify-between max-w-[1400px] items-center w-full border-black-500 pt-[2rem] pb-[.7rem]">
-          <h1 className="font-extrabold text-[1.5rem]">{'</> DevStyle'}</h1>
-          <ul className="flex items-center gap-[2rem] max-[800px]:hidden max-lg:gap-[1.5rem]">
-            {NavsItems.map((item) => {
-              return (
-                <li
-                  key={item.id}
-                  className={clsx('font-medium text-secondary_black-950', {
-                    'border-b-[1px] border-black text-neutral-950':
-                      item.link === `/${newPathname}`,
-                  })}
+      <div className="relative">
+        <header className="w-full h-auto flex justify-center items-center px-[2rem] absolute top-0 bg-transparent z-50">
+          <div className="flex justify-between max-w-[1400px] items-center w-full border-black-500 py-[.7rem]">
+            <h1 className="font-extrabold text-[1.5rem]">{'</> DevStyle'}</h1>
+            <ul className="flex items-center gap-[2rem] max-[800px]:hidden max-lg:gap-[1.5rem]">
+              {NavsItems.map((item) => {
+                return (
+                  <li
+                    key={item.id}
+                    className={clsx('font-medium text-secondary_black-950', {
+                      'border-b-[1px] border-black text-neutral-950':
+                        item.link === `/${newPathname}`,
+                    })}
+                  >
+                    <Link href={item.link}>{item.label}</Link>
+                  </li>
+                );
+              })}
+              <li>
+                <Button
+                  href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
+                  fill
                 >
-                  <Link href={item.link}>{item.label}</Link>
-                </li>
-              );
-            })}
-            <li>
-              <Button
-                href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
-                fill
-              >
-                Contratar
-              </Button>
-            </li>
-          </ul>
-          <button
-            aria-label="open"
-            onClick={() => setSidebarOpen((prev) => !prev)}
-            className="w-[3rem] h-[3rem] justify-center items-center bg-white rounded-full shadow-md hidden max-[800px]:flex"
-          >
-            <HamburgerMenuIcon className="w-[50%] h-full text-secondary_black-950" />
-          </button>
-        </div>
-      </header>
+                  Contratar
+                </Button>
+              </li>
+            </ul>
+            <button
+              aria-label="open"
+              onClick={() => setSidebarOpen((prev) => !prev)}
+              className="w-[3rem] h-[3rem] justify-center items-center bg-white rounded-full shadow-md hidden max-[800px]:flex"
+            >
+              <HamburgerMenuIcon className="w-[50%] h-full text-secondary_black-950" />
+            </button>
+          </div>
+        </header>
+      </div>
     </>
   );
 };

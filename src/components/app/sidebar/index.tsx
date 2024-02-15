@@ -45,17 +45,18 @@ export const SideBarFundo = () => {
       <div
         className={clsx(
           'w-full z-[98] top-0 opacity-0 pointer-events-none left-0 transition-all h-screen fixed bg-black/70',
-          { 'opacity-100 pointer-events-auto': sidebarOpen },
+          { 'opacity-100 !pointer-events-auto': sidebarOpen },
         )}
         onClick={() => setSidebarOpen(false)}
       />
       <aside
         id="sidebar-menu"
-        className={clsx('w-full h-screen fixed z-[99] translate-x-full transition-all', {
-          '-translate-x-0 pointer-events-auto': sidebarOpen,
-        })}
+        className={clsx(
+          'w-fit h-screen fixed z-[99] right-0 translate-x-full duration-1000 transition-all',
+          { '!translate-x-0 !pointer-events-auto': sidebarOpen },
+        )}
       >
-        <div className="relative z-40 float-right w-[60%] h-full bg-black/50 backdrop-blur-lg border-l-white border-l">
+        <div className="relative z-40 float-right w-[260px] h-full bg-black/50 backdrop-blur-lg border-l-white border-l">
           <div className="absolute w-full flex flex-col gap-12 p-[2rem] top-0 h-full z-50">
             <div className="w-full flex justify-end">
               <button

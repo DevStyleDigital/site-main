@@ -6,7 +6,7 @@ import { ReactNode } from 'react';
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
-      <div className="fixed bottom-24 md:bottom-8 right-8 flex z-[100] rounded-full bg-green-600 hover:scale-105 transition-all">
+      <div className="fixed bottom-4 right-4 flex z-[100] rounded-full bg-green-600 hover:scale-105 transition-all">
         <a
           href={`https://wa.me/5515988045279?text=${encodeURIComponent(
             'Olá vim do site!',
