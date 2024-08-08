@@ -18,7 +18,7 @@ import Tailwind from '@/assets/img/stacks/tailwind.png';
 import Styled from '@/assets/img/stacks/styled.png';
 import Keep from '@/assets/img/projects/keep.png';
 import sabrina from '@/assets/img/projects/sabrina.png';
-import TratyEcommerce from "@/assets/img/projects/tratyjpg.jpg"
+import TratyEcommerce from '@/assets/img/projects/tratyjpg.jpg';
 
 export const ProjectsArray: iProjects[] = [
   {
