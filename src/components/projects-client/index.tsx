@@ -2,14 +2,14 @@
 import Next from '@/assets/svg/next';
 import Image, { StaticImageData } from 'next/image';
 import { useEffect, useState } from 'react';
-import Keypay from '@/assets/img/projects/keypay.png';
+import TratyVet from '@/assets/img/projects/tratyjpg.jpg';
 import { ProjectsArray } from '@/utils/projects';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const ProjectCLient = () => {
-  const [ImageAtual, setImageAtual] = useState<StaticImageData>(Keypay);
+  const [ImageAtual, setImageAtual] = useState<StaticImageData>(TratyVet);
 
   const variants = {
     offscreen: {
