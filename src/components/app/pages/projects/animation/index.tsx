@@ -3,34 +3,15 @@ import IconProx from '@/assets/svg/iconProx';
 import Button from '@/components/button';
 import { ProjectsArray } from '@/utils/projects';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 const AnimationCards = () => {
   return (
-    <motion.div
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 0.1 }}
+    <div
       className="w-full h-full grid grid-cols-2 max-[1150px]:grid-cols-1 grid-rows-auto gap-[2rem] content-center"
     >
       {ProjectsArray.sort((a, b) => a.order - b.order).map((project) => {
-        const variants = {
-          offscreen: {
-            opacity: 0,
-            y: 200,
-          },
-          onscreen: {
-            y: 0,
-            opacity: 1,
-            transition: {
-              type: 'spring',
-              duration: 0.5 * project.order,
-            },
-          },
-        };
         return (
-          <motion.div
-            variants={variants}
+          <div
             key={project.id}
             className="w-full h-full p-[1.5rem] grid grid-cols-2 grid-rows-1 max-sm:grid-cols-1 max-sm:grid-rows-2 rounded-2xl shadow-sm gap-[1rem]"
             style={{ background: `${project.color}` }}
@@ -57,10 +38,10 @@ const AnimationCards = () => {
                 Leia sobre <IconProx white />
               </Button>
             </div>
-          </motion.div>
+          </div>
         );
       })}
-    </motion.div>
+    </div>
   );
 };
 

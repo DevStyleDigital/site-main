@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <>
       <SideBarFundo />
-      <main className="w-full flex flex-col items-center scroll-snap">
+      <main className="w-full flex flex-col items-center">
         <ToTop />
         <HeaderAnimationProjects />
         <section className="w-full h-fit flex justify-center py-[4rem] max-md:py-[2rem] bg-secondary_black-950">
