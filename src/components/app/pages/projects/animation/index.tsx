@@ -6,9 +6,7 @@ import Image from 'next/image';
 
 const AnimationCards = () => {
   return (
-    <div
-      className="w-full h-full grid grid-cols-2 max-[1150px]:grid-cols-1 grid-rows-auto gap-[2rem] content-center"
-    >
+    <div className="w-full h-full grid grid-cols-2 max-[1150px]:grid-cols-1 grid-rows-auto gap-[2rem] content-center">
       {ProjectsArray.sort((a, b) => a.order - b.order).map((project) => {
         return (
           <div

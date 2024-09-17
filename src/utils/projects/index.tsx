@@ -19,7 +19,7 @@ import Styled from '@/assets/img/stacks/styled.png';
 import Keep from '@/assets/img/projects/keep.png';
 import sabrina from '@/assets/img/projects/sabrina.png';
 import TratyEcommerce from '@/assets/img/projects/tratyjpg.jpg';
-import Essencial from '@/assets/img/projects/essencial.png'
+import Essencial from '@/assets/img/projects/essencial.png';
 
 export const ProjectsArray: iProjects[] = [
   {
