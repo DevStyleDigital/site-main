@@ -20,7 +20,7 @@ import Keep from '@/assets/img/projects/keep.png';
 import sabrina from '@/assets/img/projects/sabrina.png';
 import TratyEcommerce from '@/assets/img/projects/tratyjpg.jpg';
 import Essencial from '@/assets/img/projects/essencial.png';
-import Deal from '@/assets/img/deal.png'
+import Deal from '@/assets/img/deal.png';
 
 export const ProjectsArray: iProjects[] = [
   {
