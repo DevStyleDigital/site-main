@@ -13,6 +13,7 @@ import Material from '@/assets/img/stacks/maetrial.png';
 import Next from '@/assets/img/stacks/NEXT.png';
 import React from '@/assets/img/stacks/react.png';
 import SupaBase from '@/assets/img/stacks/supabase.png';
+import Stripe from '@/assets/img/stacks/stripe.jpeg';
 import Ts from '@/assets/img/stacks/ts.png';
 import Tailwind from '@/assets/img/stacks/tailwind.png';
 import Styled from '@/assets/img/stacks/styled.png';
@@ -21,6 +22,7 @@ import sabrina from '@/assets/img/projects/sabrina.png';
 import TratyEcommerce from '@/assets/img/projects/tratyjpg.jpg';
 import Essencial from '@/assets/img/projects/essencial.png';
 import Deal from '@/assets/img/deal.png';
+import Ghost from '@/assets/img/projects/ghost.png'
 
 export const ProjectsArray: iProjects[] = [
   {
@@ -31,7 +33,7 @@ export const ProjectsArray: iProjects[] = [
       'Authentic é um site criado para apresentação do empreendimento ajudando a construtora a conseguir uma capitação de Leads. Tendo a fotos do empreendimento as plantas e um texto de apresentação da construtora e do empreendimento.',
     img: Authentic,
     color: '#E9F7FF',
-    order: 8,
+    order: 9,
     client: 'AG VELASCO',
     duration: 24,
     commit: 47,
@@ -64,7 +66,7 @@ export const ProjectsArray: iProjects[] = [
       'TratyVet é um WebSite completo com a apresentação da empresa e dos produtos, com um sistema de cadastro como um CMS deixando a empresa com o poder de cadastrar, remover e atualizar produtos. Possibilitando também uma busca dos distribuidores através do cep ou cidade do cliente.',
     img: TratyVet,
     color: '#ffd4d4',
-    order: 6,
+    order: 7,
     client: 'TratyVet',
     duration: 120,
     commit: 25,
@@ -107,7 +109,7 @@ export const ProjectsArray: iProjects[] = [
       'Prime é um site criado para apresentação da loja de manutenção de motos, podendo conhecer a oficina e os serviços oferecidos pela mesma tendo maior conhecimento da sua localização alem de fixar mais a marca e as cores da marca.',
     img: Prime,
     color: '#FFF3CA',
-    order: 10,
+    order: 11,
     client: 'Prime',
     duration: 16,
     commit: 32,
@@ -140,7 +142,7 @@ export const ProjectsArray: iProjects[] = [
       'Domus é um site criado para a apresentar a loja de materiais de construção, mostrando os valores dos materiais mais procurados e procurando sempre fixar a marca e as cores da logo. Um site simples porém com todos os elementos claros não ficando massante para o cliente.',
     img: Domus,
     color: '#d1ffca',
-    order: 12,
+    order: 13,
     client: 'Domus',
     duration: 16,
     commit: 11,
@@ -173,7 +175,7 @@ export const ProjectsArray: iProjects[] = [
       'Vista Jataí é um site criado para apresentação do empreendimento ajudando a construtora a conseguir uma capitação de Leads. Tendo a fotos do empreendimento as plantas e um texto de apresentação da construtora e do empreendimento.',
     img: Vista,
     color: '#e7caff',
-    order: 9,
+    order: 10,
     client: 'Julio&Julio',
     duration: 32,
     commit: 14,
@@ -206,7 +208,7 @@ export const ProjectsArray: iProjects[] = [
       'Esse projeto veio com o intuito de cardapio online para a ficilidade de cadastrar como um CMS, possibilitando novos produtos, menus e até mesmo parceiros que podem ser colocados e divulgados no cardapio. A pedido do cliente foi colocado também um sistema de validação para o acessos dos clientes através de um codigo semanal que o restaurante cadastra.',
     img: Cardapio,
     color: '#cad0ff',
-    order: 11,
+    order: 12,
     client: "Yoshi's",
     duration: 240,
     commit: 132,
@@ -254,7 +256,7 @@ export const ProjectsArray: iProjects[] = [
       'Haia Sorocaba é um site criado para apresentação do empreendimento ajudando a construtora a conseguir uma capitação de Leads. Tendo a fotos do empreendimento as plantas e um texto de apresentação da construtora e do empreendimento,',
     img: Haia,
     color: '#caffec',
-    order: 7,
+    order: 8,
     client: 'GRM Incorporadora',
     duration: 40,
     commit: 6,
@@ -287,7 +289,7 @@ export const ProjectsArray: iProjects[] = [
       'AMAC é um site criado para apresentação da empresa, podendo conhecer seus projetos e os serviços oferecidos pela mesma tendo maior conhecimento da sua localização além de conseguir vizualizar seus projetos passados.',
     img: Amac,
     color: '#ffecca',
-    order: 13,
+    order: 14,
     client: 'AMAC',
     duration: 32,
     commit: 30,
@@ -419,7 +421,7 @@ export const ProjectsArray: iProjects[] = [
       'Rogrigues KeepClean é uma página estrangueira desenvolvida para uma empresa de limpeza, trazendo um design de limpeza e organização.',
     img: Keep,
     color: '#8cffba79',
-    order: 14,
+    order: 15,
     client: 'Rodrigues',
     duration: 80,
     commit: 100,
@@ -447,7 +449,7 @@ export const ProjectsArray: iProjects[] = [
       'Sabrina M. Cunha é um site para apresentação do trabalho pessoal como uma advogada, trazendo um design mais sério.',
     img: sabrina,
     color: '#8ce6ff79',
-    order: 15,
+    order: 16,
     client: 'Sabrina M. Cunha',
     duration: 80,
     commit: 100,
@@ -508,7 +510,7 @@ export const ProjectsArray: iProjects[] = [
       'Deal Empreendimentos é um site com um CMS que edita e cadastra a página como o cliente deseja.',
     img: Deal,
     color: '#8ce6ff79',
-    order: 5,
+    order: 6,
     client: 'CoreAg',
     duration: 80,
     commit: 100,
@@ -530,6 +532,44 @@ export const ProjectsArray: iProjects[] = [
         id: 3,
         name: 'Supabase',
         icon: SupaBase,
+      },
+    ],
+  },
+  {
+    id: 16,
+    title: 'Ghosty Saas',
+    type: 'Saas',
+    comment:
+      'GHOSTY é uma plataforma SaaS projetada para proteger suas páginas e conteúdos contra ataques maliciosos. Com tecnologia avançada de segurança, ela monitora, detecta e bloqueia ameaças em tempo real, garantindo que suas campanhas e sites permaneçam seguros e operando sem interrupções.',
+    img: Ghost,
+    color: '#1AFF0F',
+    order: 5,
+    client: 'Ghosty',
+    duration: 140,
+    commit: 250,
+    link: 'https://www.ghosty.me/',
+    bgColor: 'linear-gradient(to top, #0ec4bc, #00d6b2, #00e698, #00f46b, #1aff0f)',
+    hash: 'dm1g36ae857941124e1539ghfkrty876',
+    stacks: [
+      {
+        id: 1,
+        name: 'NextJs',
+        icon: Next,
+      },
+      {
+        id: 2,
+        name: 'TailWind CSS',
+        icon: Tailwind,
+      },
+      {
+        id: 3,
+        name: 'Supabase',
+        icon: SupaBase,
+      },
+      {
+        id: 4,
+        name: 'Stripe',
+        icon: Stripe,
       },
     ],
   },
