@@ -542,13 +542,13 @@ export const ProjectsArray: iProjects[] = [
     comment:
       'GHOSTY é uma plataforma SaaS projetada para proteger suas páginas e conteúdos contra ataques maliciosos. Com tecnologia avançada de segurança, ela monitora, detecta e bloqueia ameaças em tempo real, garantindo que suas campanhas e sites permaneçam seguros e operando sem interrupções.',
     img: Ghost,
-    color: '#1AFF0F',
+    color: '#8F9496',
     order: 5,
     client: 'Ghosty',
     duration: 140,
     commit: 250,
     link: 'https://www.ghosty.me/',
-    bgColor: 'linear-gradient(to top, #0ec4bc, #00d6b2, #00e698, #00f46b, #1aff0f)',
+    bgColor: 'linear-gradient(to top, #0e8dc4, #4490b7, #6192ab, #7993a0, #8f9496)',
     hash: 'dm1g36ae857941124e1539ghfkrty876',
     stacks: [
       {
