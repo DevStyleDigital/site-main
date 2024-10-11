@@ -14,7 +14,7 @@ const Cards = () => {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.2 }}
-      className="w-full gap-[2rem] justify-center grid grid-cols-3 max-md:gris-cols-2 max-sm:grid-cols-1 max-sm:w-[90%]"
+      className="w-full gap-[2rem] justify-center grid grid-cols-3 max-md:gris-cols-2 max-sm:grid-cols-1 max-sm:w-[80%]"
     >
       {TeamArray.map((team) => {
         const variants = {
@@ -35,10 +35,10 @@ const Cards = () => {
             variants={variants}
             key={team.id}
             className={clsx(
-              'w-[100%] h-full flex flex-col items-center gap-[.8rem] p-[1rem] rounded-2xl card-co',
+              'w-full h-full flex flex-col items-center gap-[.8rem] p-[1rem] rounded-2xl  card-co',
             )}
           >
-            <div className="w-full max-h-[330px] h-full overflow-hidden rounded-t-xl">
+            <div className="w-full max-h-[400px] h-full overflow-hidden rounded-t-xl">
               <Image
                 src={team.img}
                 alt="img-person"

@@ -1,6 +1,6 @@
 import { iTeams } from '@/types/team';
-import Thainara from '@/assets/img/team/thainara.jpg';
-import Afonso from '@/assets/img/team/afonso.jpg';
+import Thainara from '@/assets/img/team/thainara2.jpg';
+import Afonso from '@/assets/img/team/afonso2.jpg';
 import Guilherme from '@/assets/img/team/guilherme.png';
 
 export const TeamArray: iTeams[] = [
