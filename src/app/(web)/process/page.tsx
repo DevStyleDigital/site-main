@@ -8,7 +8,7 @@ import ProcessSectionPage from '@/components/app/pages/process/aboutprocess';
 import ProcessRevenue from '@/components/app/pages/process/receita';
 
 export const metadata = {
-  title: 'Processos | DevStyle',
+  title: 'Processos | Nesxp',
 };
 
 const Process = () => {

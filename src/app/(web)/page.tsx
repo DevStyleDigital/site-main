@@ -11,7 +11,7 @@ import { SideBarFundo } from '@/components/app/sidebar';
 import ToTop from '@/components/toTop';
 
 export const metadata = {
-  title: 'Início | DevStyle',
+  title: 'Início | Nesxp',
 };
 
 const Home = () => {

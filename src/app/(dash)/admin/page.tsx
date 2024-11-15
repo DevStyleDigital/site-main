@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Admin | DevStyle',
+  title: 'Admin | Nesxp',
 };
 
 const Admin = () => {

@@ -54,7 +54,7 @@ export const ButtonFree = ({ invert }: { invert?: boolean }) => (
         'hover:bg-white/5 !border-white text-white ring-0': invert,
       },
     )}
-    href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
+    href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+Nesxp."
   >
     <MovingBorder duration={100000} rx="10%" ry="10%">
       <Sparkles size="2rem" className="opacity-5" />

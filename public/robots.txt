@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://devstyle.com.br/
+Host: https://nesxp.com.br/
 
 # Sitemaps
-Sitemap: https://devstyle.com.br/sitemap.xml
+Sitemap: https://nesxp.com.br/sitemap.xml

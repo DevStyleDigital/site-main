@@ -51,7 +51,7 @@ const FormLogin = () => {
     >
       <div className="w-[70%] max-2xl:w-[90%] flex flex-col h-full justify-center relative max-md:w-full">
         <h1 className="font-extrabold text-[1.5rem] absolute top-0 left-0 max-sm:text-[1rem]">
-          {'</> DevStyle'}
+          {'</> Nesxp'}
         </h1>
         <div className="w-full flex flex-col gap-3 max-md:mt-10">
           <h1 className="font-extrabold text-[#141624] text-[2.5rem] max-lg:text-[2rem] max-[850px]:text-[1.5rem] max-md:text-[1.8rem] max-[360px]:text-[1.5rem]">

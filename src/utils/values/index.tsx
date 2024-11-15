@@ -10,7 +10,7 @@ export const ValuesArray: iValues[] = [
     id: 1,
     title: 'Eficiência',
     label:
-      'Nós da DevStyle acreditamos que a eficiencia é uma questão de comprometimento.',
+      'Nós da Nesxp acreditamos que a eficiencia é uma questão de comprometimento.',
     icon: Eficiencia,
   },
   {

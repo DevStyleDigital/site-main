@@ -22,14 +22,14 @@ const SocialSection = () => {
               </HeaderSection.Path>
               <HeaderSection.Title asChild>
                 <h1 className="text-[1.4rem] font-semibold text-[#292930] leading-tight max-md:text-[1rem]">
-                  Siga a DevStyle e não perca nenhuma novidade
+                  Siga a Nesxp e não perca nenhuma novidade
                 </h1>
               </HeaderSection.Title>
             </div>
           </div>
           <div className="max-sm:hidden">
             <Button
-              href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
+              href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+Nesxp."
               fill
             >
               Veja mais <IconProx />

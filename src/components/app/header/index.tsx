@@ -65,7 +65,7 @@ const Header = () => {
       <div className="relative">
         <header className="w-full h-auto flex justify-center items-center px-[2rem] absolute top-0 bg-transparent z-50">
           <div className="flex justify-between max-w-[1400px] items-center w-full border-black-500 py-[.7rem]">
-            <h1 className="font-extrabold text-[1.5rem]">{'</> DevStyle'}</h1>
+            <h1 className="font-extrabold text-[1.5rem]">{'</> Nesxp'}</h1>
             <ul className="flex items-center gap-[2rem] max-[800px]:hidden max-lg:gap-[1.5rem]">
               {NavsItems.map((item) => {
                 return (
@@ -82,7 +82,7 @@ const Header = () => {
               })}
               <li>
                 <Button
-                  href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
+                  href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+Nesxp."
                   fill
                 >
                   Contratar

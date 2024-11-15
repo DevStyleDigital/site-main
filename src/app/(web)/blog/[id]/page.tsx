@@ -4,7 +4,7 @@ import { getPostsById } from '@/utils/posts-func';
 import { notFound } from 'next/navigation';
 
 export const metadata = {
-  title: 'Blog | DevStyle',
+  title: 'Blog | Nesxp',
 };
 
 const Post = async ({ params }: { params: { id: string } }) => {

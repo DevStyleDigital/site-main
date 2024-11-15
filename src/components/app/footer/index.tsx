@@ -16,7 +16,7 @@ const Footer = () => {
     <section className="w-full h-fit py-[4rem] flex justify-center items-center bg-secondary_black-950 max-sm:pb-[2rem] max-sm:px-[1rem]">
       <div className="w-[80%] h-[80%] flex gap-[5rem] justify-center max-xl:w-[95%] max-lg:flex-col max-lg:items-center">
         <div className="w-[22rem] h-[35rem] max-lg:w-[60%] max-sm:w-[90%] max-lg:h-auto flex flex-col gap-[1rem] items-center rounded-lg shadow-md bg-[#3C3C45] py-[3.5rem] px-[2rem]">
-          <h1 className="text-white font-bold text-[1.9rem]">{'</> DevStyle'}</h1>
+          <h1 className="text-white font-bold text-[1.9rem]">{'</> Nesxp'}</h1>
           <div className="flex flex-col gap-[1rem] max-lg:items-center">
             <Image
               src={Logo}
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <Link
             target="_blank"
-            href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
+            href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+Nesxp."
             className="w-full h-full rounded-md bg-green-500 flex justify-center gap-[1rem] items-center footer-card transition-all max-lg:h-[4rem] max-sm:h-[3.5rem] hover:scale-[1.02]"
           >
             <span className="text-secondary_black-950 font-semibold text-[1.1rem] max-lg:text-[1.2rem] max-sm:text-[1rem]">
@@ -53,7 +53,7 @@ const Footer = () => {
                 +55 15 98804 5279
               </span>
               <span className="text-white/50 font-medium text-[.8rem]">
-                comercial@devstyle.com.br
+                comercial@Nesxp.com.br
               </span>
             </div>
             <div className="flex flex-col gap-[1rem] max-sm:items-center max-sm:text-center">
@@ -126,7 +126,7 @@ const Footer = () => {
           <div className="flex flex-col gap-[.7rem] max-sm:gap-[1.2rem]">
             <div className="h-[1.5px] bg-[#727274]/70" />
             <span className="text-[.8rem] text-right text-white/60 max-sm:text-center">
-              Copyright © DevStyle | Designed by AfonsoBezerra - Powered by DevStyle
+              Copyright © Nesxp | Designed by AfonsoBezerra - Powered by Nesxp
             </span>
           </div>
         </div>

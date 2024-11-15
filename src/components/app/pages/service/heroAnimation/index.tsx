@@ -101,12 +101,12 @@ const HeroStartAnimation = () => {
         </h1>
         <div className="flex items-center gap-[1rem]">
           <Button
-            href="https://api.whatsapp.com/send/?phone=5515988045279&text=Ol%C3%A1%2C+vim+do+site+DevStyle.&type=phone_number&app_absent=0"
+            href="https://api.whatsapp.com/send/?phone=5515988045279&text=Ol%C3%A1%2C+vim+do+site+Nesxp.&type=phone_number&app_absent=0"
             fill
           >
             Saber mais
           </Button>
-          <Button href="https://api.whatsapp.com/send/?phone=5515988045279&text=Ol%C3%A1%2C+vim+do+site+DevStyle.&type=phone_number&app_absent=0">
+          <Button href="https://api.whatsapp.com/send/?phone=5515988045279&text=Ol%C3%A1%2C+vim+do+site+Nesxp.&type=phone_number&app_absent=0">
             Começar agora
           </Button>
         </div>

@@ -5,7 +5,7 @@ import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 
 export const metadata = {
-  title: 'Login | DevStyle',
+  title: 'Login | Nesxp',
 };
 
 const LoginPage = () => {

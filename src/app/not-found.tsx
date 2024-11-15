@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
     <>
       <head>
-        <title>NotFound | DevStyle</title>
+        <title>NotFound | Nesxp</title>
       </head>
       <div className="w-full h-fit min-h-[80vh] py-[2rem] flex justify-center items-center">
         <div className="w-[60%] flex flex-col items-center gap-[.5rem] max-sm:w-[90%] max-sm:mt-[3rem]">

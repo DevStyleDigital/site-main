@@ -7,7 +7,7 @@ import { formateDate } from '@/hooks/formateDate';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Blog | DevStyle',
+  title: 'Blog | Nesxp',
 };
 
 const Blog = async () => {

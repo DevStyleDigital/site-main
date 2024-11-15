@@ -8,7 +8,7 @@ import ResultsTag from '@/components/resultsTag';
 import ToTop from '@/components/toTop';
 
 export const metadata = {
-  title: 'Sobre | DevStyle',
+  title: 'Sobre | Nesxp',
 };
 
 const Sobre = () => {

@@ -46,7 +46,7 @@ const AboutSectionPage = () => {
             <Button
               className="!w-fit py-[2rem] pr-[3rem]"
               fill
-              href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
+              href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+Nesxp."
             >
               <Image
                 className="mira-img-button"
@@ -60,7 +60,7 @@ const AboutSectionPage = () => {
             <Button
               className="!w-fit py-[2rem] pr-[3rem]"
               fill
-              href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
+              href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+Nesxp."
             >
               <Image
                 className="phone-img-button"
@@ -75,13 +75,13 @@ const AboutSectionPage = () => {
           <span className="text-secondary_black-950/70 relative z-10 max-md:text-[.8rem]">
             Uma empresa de desenvolvimento de aplicações web e mobile trazendo soluções
             para sua empresa e maior visibilidade para sua marca e com isso melhores
-            resultados para que consiga atingir um maior número de clientes. DevStyle foi
+            resultados para que consiga atingir um maior número de clientes. Nesxp foi
             criada em 2021 e desde então focamos em deixar nossos clientes satisfeitos com
             o nosso trabalho.
           </span>
           <Button
             className="w-fit"
-            href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+DevStyle."
+            href="https://wa.me/5515988045279?text=Ol%C3%A1%2C+vim+do+site+Nesxp."
           >
             Obter Uma Consulta Gratis
           </Button>

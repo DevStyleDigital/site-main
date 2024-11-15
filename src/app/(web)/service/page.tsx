@@ -5,7 +5,7 @@ import ServicesSection from '@/components/app/pages/section/services';
 import HeroStart from '@/components/app/pages/service/heroStart';
 
 export const metadata = {
-  title: 'Serviços | DevStyle',
+  title: 'Serviços | Nesxp',
 };
 
 const Servicos = () => {
