@@ -15,13 +15,20 @@ const Text = ({ children, ...props }: { children: ReactNode; className: string }
   return <span {...props}>{children}</span>;
 };
 
-const Button = ({ children, ...props }: { children: ReactNode; className: string, href?: string }) => {
-  if(props.href){
+const Button = ({
+  children,
+  ...props
+}: {
+  children: ReactNode;
+  className: string;
+  href?: string;
+}) => {
+  if (props.href) {
     return (
-      <Link href={props.href} target='blank' aria-label='link' {...props}>
+      <Link href={props.href} target="blank" aria-label="link" {...props}>
         {children}
       </Link>
-    )
+    );
   }
   return (
     <button aria-label="button" {...props}>
